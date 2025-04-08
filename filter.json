@@ -1,0 +1,10 @@
+{
+    "type": "filter",
+    "name": "Bozo iron filter",
+    "description": "💀",
+    "modules": [
+        {
+            "modulePath": "theatre_of_blood/mod_theatre_of_blood.json"
+        }
+    ]
+}
