@@ -10,7 +10,6 @@
             "type": "style",
             "exampleItem": "Dawnbringer",
             "default": {
-                "backgroundColor": "#000000",
                 "borderColor": "#ff0000",
                 "textColor": "#ff0000",
                 "menuTextColor": "#ff0000"
