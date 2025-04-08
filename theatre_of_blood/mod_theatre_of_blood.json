@@ -23,11 +23,11 @@
             "type": "style",
             "exampleItem": "Salve amulet (e)",
             "default": {
-                "backgroundColor": "#f99619",
-                "borderColor": "#f99619",
-                "textColor": "#000000",
-                "textAccentColor": "#000000",
-                "menuTextColor": "#000000"
+                "backgroundColor": "#000000",
+                "borderColor": "#ff0000",
+                "textColor": "#ff0000",
+                "textAccentColor": "#ff0000",
+                "menuTextColor": "#ff0000"
             }
         }
     ]
