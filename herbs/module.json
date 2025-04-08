@@ -48,6 +48,52 @@
       ],
       "default": ["guam leaf", "marrentill", "tarromin", "harralander"]
     },
+        {
+      "type": "enumlist",
+      "macroName": "VAR_HERB_seed_SHOW",
+      "label": "Herb seeds to always show regardless of value",
+      "enum": [
+        "Guam seed",
+        "Marrentill seed",
+        "Tarromin seed",
+        "Harralander seed",
+        "Ranarr seed",
+        "Toadflax seed",
+        "Irit seed",
+        "Avantoe seed",
+        "Kwuarm seed",
+        "Snapdragon seed",
+        "Huasca seed",
+        "Cadantine seed",
+        "Lantadyme seed",
+        "Dwarf weed seed",
+        "Torstol seed"
+      ],
+      "default": []
+    },
+    {
+      "type": "enumlist",
+      "macroName": "VAR_HERB_seed_HIDE",
+      "label": "Herb seeds to always hide regardless of value",
+      "enum": [
+        "Guam seed",
+        "Marrentill seed",
+        "Tarromin seed",
+        "Harralander seed",
+        "Ranarr seed",
+        "Toadflax seed",
+        "Irit seed",
+        "Avantoe seed",
+        "Kwuarm seed",
+        "Snapdragon seed",
+        "Huasca seed",
+        "Cadantine seed",
+        "Lantadyme seed",
+        "Dwarf weed seed",
+        "Torstol seed"
+      ],
+      "default": ["Guam seed", "Marrentill seed", "Tarromin seed", "Harralander seed"]
+    },
     {
       "type": "style",
       "macroName": "VAR_HERB_CUSTOMSTYLE",
