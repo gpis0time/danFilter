@@ -13,7 +13,6 @@
                 "backgroundColor": "#000000",
                 "borderColor": "#ff0000",
                 "textColor": "#ff0000",
-                "textAccentColor": "#ff0000",
                 "menuTextColor": "#ff0000"
             }
         },
@@ -26,7 +25,6 @@
                 "backgroundColor": "#000000",
                 "borderColor": "#ff0000",
                 "textColor": "#ff0000",
-                "textAccentColor": "#ff0000",
                 "menuTextColor": "#ff0000"
             }
         }
