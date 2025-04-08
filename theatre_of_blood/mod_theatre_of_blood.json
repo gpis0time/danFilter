@@ -10,11 +10,11 @@
             "type": "style",
             "exampleItem": "Dawnbringer",
             "default": {
-                "backgroundColor": "#50ad62a7",
-                "borderColor": "#FFb8a22e",
-                "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFad62a7"
+                "backgroundColor": "#000000",
+                "borderColor": "#ff0000",
+                "textColor": "#ff0000",
+                "textAccentColor": "#ff0000",
+                "menuTextColor": "#ff0000"
             }
         },
         {
@@ -23,11 +23,11 @@
             "type": "style",
             "exampleItem": "Salve amulet (e)",
             "default": {
-                "backgroundColor": "#50e39cb1",
-                "borderColor": "#FFf5f3f3",
-                "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFe39cb1"
+                "backgroundColor": "#f99619",
+                "borderColor": "#f99619",
+                "textColor": "#000000",
+                "textAccentColor": "#000000",
+                "menuTextColor": "#000000"
             }
         }
     ]
