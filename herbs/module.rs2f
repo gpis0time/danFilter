@@ -18,12 +18,18 @@
   "*torstol",\
 ]
 
+#define CONST_FARMING_SEEDS_HERB_LIST ["Guam seed", "Marrentill seed", "Tarromin seed", "Harralander seed", "Ranarr seed", "Toadflax seed", "Irit seed", "Avantoe seed", "Kwuarm seed", "Snapdragon seed", "Huasca seed", "Cadantine seed", "Lantadyme seed", "Dwarf weed seed", "Torstol seed"]
+
+
 #define CONST_HERB_DEFAULTCOLOR GREEN
 
 #define VAR_HERB_MINVALUE 0
 #define VAR_HERB_SHOW []
 #define VAR_HERB_HIDE []
 #define VAR_HERB_CUSTOMSTYLE 
+
+#define VAR_HERB_seed_SHOW []
+#define VAR_HERB_seed_HIDE []
 
 apply (name:CONST_HERB_HERBS) {
   textColor = CONST_HERB_DEFAULTCOLOR;
@@ -34,6 +40,11 @@ apply (name:CONST_HERB_HERBS && value:<VAR_HERB_MINVALUE) { hidden = true; }
 
 if (name:VAR_HERB_SHOW) { hidden = false; }
 if (name:VAR_HERB_HIDE) { hidden = true; }
+
+if (name:CONST_HERB_HERBS) {}
+
+if (name:VAR_HERB_seed_SHOW) { hidden = false; }
+if (name:VAR_HERB_seed_HIDE) { hidden = true; }
 
 if (name:CONST_HERB_HERBS) {}
 
