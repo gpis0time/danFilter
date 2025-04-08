@@ -6,5 +6,8 @@
         {
             "modulePath": "theatre_of_blood/mod_theatre_of_blood.json"
         }
+                {
+            "modulePath": "herbs/mod_herb.json.json"
+        }
     ]
 }
