@@ -36,6 +36,11 @@ apply (name:CONST_HERB_HERBS) {
   VAR_HERB_CUSTOMSTYLE
 }
 
+apply (name:CONST_FARMING_SEEDS_HERB_LIST) {
+  textColor = CONST_HERB_DEFAULTCOLOR;
+  VAR_HERB_CUSTOMSTYLE
+}
+
 apply (name:CONST_HERB_HERBS && value:<VAR_HERB_MINVALUE) { hidden = true; }
 
 if (name:VAR_HERB_SHOW) { hidden = false; }
@@ -48,4 +53,5 @@ if (name:VAR_HERB_seed_HIDE) { hidden = true; }
 
 if (name:CONST_HERB_HERBS) {}
 
+if (name:CONST_FARMING_SEEDS_HERB_LIST) {}
 // endmodule:herb
