@@ -1,6 +1,6 @@
 {
   "name": "Herbs",
-  "rs2fPath": "mod_herb.rs2f",
+  "rs2fPath": "module.rs2f",
   "inputs": [
     {
       "type": "enumlist",
