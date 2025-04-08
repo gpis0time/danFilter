@@ -46,7 +46,7 @@
         "dwarf weed",
         "torstol"
       ],
-      "default": ["guam leaf", "marrentill", "tarromin", "harralander"]
+      "default": ["guam leaf", "marrentill", "tarromin"]
     },
     {
       "type": "style",
