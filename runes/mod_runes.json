@@ -56,7 +56,6 @@
             "type": "style",
             "exampleItem": "Water rune",
             "default": {}
-            }
         },
         {
             "macroName": "VAR_WATER_RUNE_MIN_QUANTITY",
