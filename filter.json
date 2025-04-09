@@ -1,4 +1,4 @@
-{
+    {
     "type": "filter",
     "name": "Bozo iron filter",
     "description": "💀",
@@ -17,6 +17,9 @@
         },
         {
             "modulePath": "logs/mod_logs.json"
+        },
+        {
+            "modulePath": "bars/mod_bars.json"
         },
         {
             "modulePath": "bars/mod_bars.json"
