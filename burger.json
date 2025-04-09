@@ -1,0 +1,10 @@
+    {
+    "type": "filter",
+    "name": "Bozo iron filter",
+    "description": "💀",
+    "modules": [
+        {
+            "modulePath": "food/mod_food.json"
+        }
+    ]
+}
