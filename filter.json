@@ -11,6 +11,21 @@
         },
         {
             "modulePath": "potions/mod_potions.json"
+        },
+        {
+            "modulePath": "runes/mod_runes.json"
+        },
+        {
+            "modulePath": "logs/mod_logs.json"
+        },
+        {
+            "modulePath": "ores/mod_ores.json"
+        },
+        {
+            "modulePath": "bars/mod_bars.json"
+        },
+        {
+            "modulePath": "food/mod_food.json"
         }
     ]
 }
