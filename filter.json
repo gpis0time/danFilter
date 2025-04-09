@@ -20,9 +20,6 @@
         },
         {
             "modulePath": "ores/mod_ores.json"
-        },
-        {
-            "modulePath": "bars/mod_bars.json"
         }
     ]
 }
