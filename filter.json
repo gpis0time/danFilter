@@ -22,7 +22,7 @@
             "modulePath": "bars/mod_bars.json"
         },
         {
-            "modulePath": "ores/mod_ores.json"
+            "modulePath": "food/mod_food.json"
         }
     ]
 }
