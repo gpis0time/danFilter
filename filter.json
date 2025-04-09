@@ -19,10 +19,10 @@
             "modulePath": "logs/mod_logs.json"
         },
         {
-         "modulePath": "bars/mod_bars.json"
+            "modulePath": "bars/mod_bars.json"
         },
         {
-         "modulePath": "food/mod_food.json"
+            "modulePath": "food/mod_food.json"
         }
     ]
 }
