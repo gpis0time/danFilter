@@ -8,6 +8,9 @@
         },
         {
             "modulePath": "herbs/module.json"
+        },
+        {
+            "modulePath": "potions/mod_potions.json"
         }
     ]
 }
