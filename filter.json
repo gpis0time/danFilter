@@ -4,6 +4,9 @@
     "description": "💀",
     "modules": [
         {
+            "modulePath": "item_values/mod_item_values.json"
+        },
+        {
             "modulePath": "theatre_of_blood/mod_theatre_of_blood.json"
         },
         {
