@@ -40,10 +40,9 @@
             "exampleItem": "Bronze bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50554127",
-                "borderColor": "#FF554127",
-                "menuTextColor": "#FF554127"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -61,8 +60,7 @@
             "exampleItem": "Iron bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#504C4545",
+                "backgroundColor": "#00000000",
                 "borderColor": "#FF4C4545",
                 "menuTextColor": "#FF4C4545"
             }
@@ -82,10 +80,9 @@
             "exampleItem": "Silver bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#509C9CA7",
-                "borderColor": "#FF9C9CA7",
-                "menuTextColor": "#FF9C9CA7"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -103,10 +100,9 @@
             "exampleItem": "Steel bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50887E7E",
-                "borderColor": "#FF887E7E",
-                "menuTextColor": "#FF887E7E"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -124,10 +120,9 @@
             "exampleItem": "Gold bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50CBA618",
-                "borderColor": "#FFCBA618",
-                "menuTextColor": "#FFCBA618"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -145,10 +140,9 @@
             "exampleItem": "Mithril bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50484869",
-                "borderColor": "#FF484869",
-                "menuTextColor": "#FF484869"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -166,10 +160,9 @@
             "exampleItem": "Adamantite bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50485A48",
-                "borderColor": "#FF485A48",
-                "menuTextColor": "#FF485A48"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -187,10 +180,9 @@
             "exampleItem": "Runite bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#504B6570",
-                "borderColor": "#FF4B6570",
-                "menuTextColor": "#FF4B6570"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -208,10 +200,9 @@
             "exampleItem": "Elemental metal",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50691094",
-                "borderColor": "#FF691094",
-                "menuTextColor": "#FF691094"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -229,10 +220,9 @@
             "exampleItem": "Primed bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#509F9F93",
-                "borderColor": "#FF9F9F93",
-                "menuTextColor": "#FF9F9F93"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -250,10 +240,9 @@
             "exampleItem": "Primed mind bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#509B6913",
-                "borderColor": "#FF9B6913",
-                "menuTextColor": "#FF9B6913"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -271,10 +260,9 @@
             "exampleItem": "Blurite bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#508485C8",
-                "borderColor": "#FF8485C8",
-                "menuTextColor": "#FF8485C8"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -292,10 +280,9 @@
             "exampleItem": "Enchanted bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#506F6E4B",
-                "borderColor": "#FF6F6E4B",
-                "menuTextColor": "#FF6F6E4B"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -313,10 +300,9 @@
             "exampleItem": "Lovakite bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#505E1409",
-                "borderColor": "#FF5E1409",
-                "menuTextColor": "#FF5E1409"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
@@ -334,10 +320,9 @@
             "exampleItem": "'Perfect' gold bar",
             "default": {
                 "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#50B79517",
-                "borderColor": "#FFB79517",
-                "menuTextColor": "#FFB79517"
+                "backgroundColor": "#00000000",
+                "borderColor": "#FF4C4545",
+                "menuTextColor": "#FF4C4545"
             }
         },
         {
