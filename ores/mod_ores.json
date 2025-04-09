@@ -23,7 +23,10 @@
                 "Blurite ore",
                 "Lovakite ore"
             ],
-            "default": []
+            "default": [
+                "Copper ore",
+                "Tin ore"
+            ]
         },
         {
             "macroName": "VAR_COPPER_ORE_CUSTOMSTYLE",
@@ -86,7 +89,7 @@
             "label": "Iron ore minimum quantity",
             "group": "Iron ore",
             "type": "number",
-            "default": 0
+            "default": 2
         },
         {
             "macroName": "VAR_SILVER_ORE_CUSTOMSTYLE",
@@ -128,7 +131,7 @@
             "label": "Coal minimum quantity",
             "group": "Coal",
             "type": "number",
-            "default": 0
+            "default": 2
         },
         {
             "macroName": "VAR_GOLD_ORE_CUSTOMSTYLE",
@@ -170,7 +173,7 @@
             "label": "Mithril ore minimum quantity",
             "group": "Mithril ore",
             "type": "number",
-            "default": 0
+            "default": 2
         },
         {
             "macroName": "VAR_ADAMANTITE_ORE_CUSTOMSTYLE",
