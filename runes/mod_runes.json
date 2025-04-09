@@ -32,9 +32,7 @@
                 "Steam rune",
                 "Lava rune"
             ],
-            "default": [
-                "borderColor": "#808080"
-            ]
+            "default": []
         },
         {
             "macroName": "VAR_AIR_RUNE_CUSTOMSTYLE",
