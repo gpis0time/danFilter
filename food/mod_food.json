@@ -24,7 +24,11 @@
                 "Cooked wild kebbit",
                 "Cooked larupia",
                 "Cooked barb-tailed kebbit",
-                "Cooked graahk"
+                "Cooked graahk",
+                "Cooked kyatt",
+                "Cooked pyre fox",
+                "Cooked sunlight antelope",
+                "Cooked dashing kebbit"
             ]
         },
         {
@@ -62,14 +66,23 @@
             "default": [
                 "Shrimp",
                 "Sardine",
+                "Karambwanji",
                 "Herring",
                 "Anchovies",
                 "Mackerel",
                 "Trout",
                 "Cod",
                 "Pike",
+                "Slimy eel",
                 "Salmon",
-                "Tuna"
+                "Tuna",
+                "Rainbow fish",
+                "Cave eel",
+                "Lobster",
+                "Bass",
+                "Swordfish",
+                "Lava eel",
+                "Monkfish"
             ]
         },
         {
