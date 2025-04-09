@@ -17,9 +17,6 @@
         },
         {
             "modulePath": "logs/mod_logs.json"
-        },
-        {
-            "modulePath": "ores/mod_ores.json"
         }
     ]
 }
