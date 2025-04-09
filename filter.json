@@ -20,9 +20,6 @@
         },
         {
             "modulePath": "bars/mod_bars.json"
-        },
-        {
-            "modulePath": "food/mod_food.json"
         }
     ]
 }
