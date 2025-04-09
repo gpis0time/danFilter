@@ -4,7 +4,7 @@
     "description": "💀",
     "modules": [
         {
-            "modulePath": "mod_ores.json"
+            "modulePath": "ores/mod_ores.json"
         }
     ]
 }
