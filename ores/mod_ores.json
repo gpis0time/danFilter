@@ -115,10 +115,10 @@
             "type": "style",
             "exampleItem": "Coal",
             "default": {
-                "textColor": "#66B2FF",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
@@ -135,10 +135,10 @@
             "type": "style",
             "exampleItem": "Gold ore",
             "default": {
-                "textColor": "#66B2FF",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
@@ -155,10 +155,10 @@
             "type": "style",
             "exampleItem": "Mithril ore",
             "default": {
-                "textColor": "#66B2FF",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
@@ -175,10 +175,10 @@
             "type": "style",
             "exampleItem": "Adamantite ore",
             "default": {
-                "textColor": "#66B2FF",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
@@ -195,10 +195,10 @@
             "type": "style",
             "exampleItem": "Runite ore",
             "default": {
-                "textColor": "#66B2FF",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
