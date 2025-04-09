@@ -23,7 +23,10 @@
                 "Blurite ore",
                 "Lovakite ore"
             ],
-            "default": []
+            "default": [
+                "Copper ore",
+                "Tin ore"
+            ]
         },
         {
             "macroName": "VAR_COPPER_ORE_CUSTOMSTYLE",
