@@ -23,6 +23,9 @@
         },
         {
             "modulePath": "food/mod_food.json"
+        },
+        {
+            "modulePath": "mod_ores.json"
         }
     ]
 }
