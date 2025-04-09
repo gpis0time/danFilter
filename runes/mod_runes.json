@@ -32,7 +32,9 @@
                 "Steam rune",
                 "Lava rune"
             ],
-            "default": []
+            "default": [
+                "borderColor": "#808080"
+            ]
         },
         {
             "macroName": "VAR_AIR_RUNE_CUSTOMSTYLE",
@@ -40,7 +42,9 @@
             "group": "Air rune",
             "type": "style",
             "exampleItem": "Air rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_AIR_RUNE_MIN_QUANTITY",
@@ -55,7 +59,9 @@
             "group": "Water rune",
             "type": "style",
             "exampleItem": "Water rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_WATER_RUNE_MIN_QUANTITY",
@@ -70,7 +76,9 @@
             "group": "Earth rune",
             "type": "style",
             "exampleItem": "Earth rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_EARTH_RUNE_MIN_QUANTITY",
@@ -85,7 +93,9 @@
             "group": "Fire rune",
             "type": "style",
             "exampleItem": "Fire rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_FIRE_RUNE_MIN_QUANTITY",
@@ -100,7 +110,9 @@
             "group": "Mind rune",
             "type": "style",
             "exampleItem": "Mind rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_MIND_RUNE_MIN_QUANTITY",
@@ -115,7 +127,9 @@
             "group": "Body rune",
             "type": "style",
             "exampleItem": "Body rune",
-            "default": {}
+            "default": {
+                "borderColor": "#808080"
+            }
         },
         {
             "macroName": "VAR_BODY_RUNE_MIN_QUANTITY",
