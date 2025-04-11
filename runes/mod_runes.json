@@ -363,10 +363,10 @@
             "type": "style",
             "exampleItem": "Dust rune",
             "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#50746241",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
+                "textColor": "#99FF99",
+                "backgroundColor": "#50D28019",
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
