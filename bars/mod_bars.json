@@ -159,10 +159,10 @@
             "type": "style",
             "exampleItem": "Adamantite bar",
             "default": {
-                "textColor": "#FF9600",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#FF9600",
-                "menuTextColor": "#FF9600"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
@@ -179,10 +179,10 @@
             "type": "style",
             "exampleItem": "Runite bar",
             "default": {
-                "textColor": "#FF9600",
+                "textColor": "#99FF99",
                 "backgroundColor": "#00000000",
-                "borderColor": "#FF9600",
-                "menuTextColor": "#FF9600"
+                "borderColor": "#99FF99",
+                "menuTextColor": "#99FF99"
             }
         },
         {
