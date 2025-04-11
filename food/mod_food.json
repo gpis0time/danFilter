@@ -274,11 +274,11 @@
             "type": "style",
             "exampleItem": "Shark",
             "default": {
-                "backgroundColor": "#50b7977c",
-                "borderColor": "#FFb7977c",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFb7977c"
+                "menuTextColor": "#FFdad9d4"
             }
         },
         {
@@ -287,7 +287,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Sea turtle",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_MANTA_RAY_CUSTOMSTYLE",
@@ -296,11 +302,11 @@
             "type": "style",
             "exampleItem": "Manta ray",
             "default": {
-                "backgroundColor": "#5069503a",
-                "borderColor": "#FF69503a",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFffc38d"
+                "menuTextColor": "#FFdad9d4"
             }
         },
         {
@@ -310,11 +316,11 @@
             "type": "style",
             "exampleItem": "Anglerfish",
             "default": {
-                "backgroundColor": "#50624b18",
-                "borderColor": "#FF624b18",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFffd480"
+                "menuTextColor": "#FFdad9d4"
             }
         },
         {
@@ -324,11 +330,11 @@
             "type": "style",
             "exampleItem": "Dark crab",
             "default": {
-                "backgroundColor": "#504a5e4b",
-                "borderColor": "#FF4a5e4b",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FF9aff90"
+                "menuTextColor": "#FFdad9d4"
             }
         }
     ]
