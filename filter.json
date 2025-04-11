@@ -7,6 +7,9 @@
             "modulePath": "item_values/mod_item_values.json"
         },
         {
+            "modulePath": "global/mod_global.json"
+        },
+        {
             "modulePath": "theatre_of_blood/mod_theatre_of_blood.json"
         },
         {
