@@ -511,6 +511,20 @@
                 "textAccentColor": "#FF000000",
                 "menuTextColor": "#FF9aff90"
             }
+        },
+        {
+            "macroName": "VAR_SUMMER_PIE_CUSTOMSTYLE",
+            "label": "Summer pie custom style",
+            "group": "Food style",
+            "type": "style",
+            "exampleItem": "Summer pie",
+            "default": {
+                "backgroundColor": "#504a5e4b",
+                "borderColor": "#FF4a5e4b",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FF9aff90"
+            }
         }
     ]
 }
