@@ -44,14 +44,14 @@
       "macroName": "VAR_CURRENCY_USERSTYLE",
       "default": {
         "textColor": "#f1c40f"
-      }, 
-      {
-            "macroName": "VAR_COINS_MIN_QUANTITY",
-            "label": "Coins minimum quantity",
-            "group": "Coins Filtering",
-            "type": "number",
-            "default": 2000
-        }
+    }, 
+    {
+      "macroName": "VAR_COINS_MIN_QUANTITY",
+      "label": "Coins minimum quantity",
+      "group": "Coins Filtering",
+      "type": "number",
+      "default": 2000
+      }
     }
   ]
 }
