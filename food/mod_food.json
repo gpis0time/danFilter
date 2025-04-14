@@ -505,11 +505,11 @@
             "type": "style",
             "exampleItem": "Dark crab",
             "default": {
-                "backgroundColor": "#504a5e4b",
-                "borderColor": "#FF4a5e4b",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FF9aff90"
+                "menuTextColor": "#FFdad9d4"
             }
         },
         {
@@ -519,11 +519,11 @@
             "type": "style",
             "exampleItem": "Summer pie",
             "default": {
-                "backgroundColor": "#504a5e4b",
-                "borderColor": "#FF4a5e4b",
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FF9aff90"
+                "menuTextColor": "#FFdad9d4"
             }
         }
     ]
