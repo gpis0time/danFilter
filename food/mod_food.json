@@ -6,7 +6,7 @@
     "inputs": [
         {
             "macroName": "VAR_FOOD_HUNTER_FOODS_HIDE",
-            "label": "Hunter foods to hide",
+            "label": "Hunter foods to force hidden",
             "group": "Food filters",
             "type": "enumlist",
             "enum": [
@@ -24,16 +24,12 @@
                 "Cooked wild kebbit",
                 "Cooked larupia",
                 "Cooked barb-tailed kebbit",
-                "Cooked graahk",
-                "Cooked kyatt",
-                "Cooked pyre fox",
-                "Cooked sunlight antelope",
-                "Cooked dashing kebbit"
+                "Cooked graahk"
             ]
         },
         {
             "macroName": "VAR_FOOD_FISH_FOODS_HIDE",
-            "label": "Fish foods to hide",
+            "label": "Fish foods to force hidden",
             "group": "Food filters",
             "type": "enumlist",
             "enum": [
@@ -61,9 +57,50 @@
                 "Sea turtle",
                 "Manta ray",
                 "Anglerfish",
-                "Dark crab"
+                "Dark crab",
+                "Summer pie"
             ],
             "default": [
+                "Shrimp",
+                "Sardine",
+                "Herring",
+                "Anchovies",
+                "Mackerel",
+                "Trout",
+                "Cod",
+                "Pike",
+                "Salmon",
+                "Tuna"
+            ]
+        },
+        {
+            "macroName": "VAR_FOOD_HUNTER_FOODS_SHOW",
+            "label": "Hunter foods to force shown",
+            "group": "Food filters",
+            "type": "enumlist",
+            "enum": [
+                "Cooked wild kebbit",
+                "Cooked larupia",
+                "Cooked barb-tailed kebbit",
+                "Cooked graahk",
+                "Cooked kyatt",
+                "Cooked pyre fox",
+                "Cooked sunlight antelope",
+                "Cooked dashing kebbit",
+                "Cooked moonlight antelope"
+            ],
+            "default": [
+                "Cooked sunlight antelope",
+                "Cooked dashing kebbit",
+                "Cooked moonlight antelope"
+            ]
+        },
+        {
+            "macroName": "VAR_FOOD_FISH_FOODS_SHOW",
+            "label": "Fish foods to force shown",
+            "group": "Food filters",
+            "type": "enumlist",
+            "enum": [
                 "Shrimp",
                 "Sardine",
                 "Karambwanji",
@@ -82,7 +119,25 @@
                 "Bass",
                 "Swordfish",
                 "Lava eel",
-                "Monkfish"
+                "Monkfish",
+                "Cooked karambwan",
+                "Shark",
+                "Sea turtle",
+                "Manta ray",
+                "Anglerfish",
+                "Dark crab",
+                "Summer pie"
+            ],
+            "default": [
+                "Swordfish",
+                "Lava eel",
+                "Monkfish",
+                "Cooked karambwan",
+                "Shark",
+                "Sea turtle",
+                "Manta ray",
+                "Anglerfish",
+                "Dark crab"
             ]
         },
         {
@@ -91,7 +146,13 @@
             "group": "Food group style",
             "type": "style",
             "exampleItem": "Cooked moonlight antelope",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_FOOD_FISH_CUSTOMSTYLE",
@@ -99,7 +160,13 @@
             "group": "Food group style",
             "type": "style",
             "exampleItem": "Tuna",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_SHRIMP_CUSTOMSTYLE",
@@ -107,7 +174,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Shrimp",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_SARDINE_CUSTOMSTYLE",
@@ -115,7 +188,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Sardine",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_KARAMBWANJI_CUSTOMSTYLE",
@@ -123,7 +202,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Karambwanji",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_HERRING_CUSTOMSTYLE",
@@ -131,7 +216,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Herring",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_ANCHOVIES_CUSTOMSTYLE",
@@ -139,7 +230,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Anchovies",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_MACKEREL_CUSTOMSTYLE",
@@ -147,7 +244,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Mackerel",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_TROUT_CUSTOMSTYLE",
@@ -155,7 +258,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Trout",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_COD_CUSTOMSTYLE",
@@ -163,7 +272,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Cod",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_PIKE_CUSTOMSTYLE",
@@ -171,7 +286,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Pike",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_SLIMY_EEL_CUSTOMSTYLE",
@@ -179,7 +300,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Slimy eel",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_SALMON_CUSTOMSTYLE",
@@ -187,7 +314,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Salmon",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_TUNA_CUSTOMSTYLE",
@@ -195,7 +328,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Tuna",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_RAINBOW_FISH_CUSTOMSTYLE",
@@ -203,7 +342,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Rainbow fish",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_CAVE_EEL_CUSTOMSTYLE",
@@ -211,7 +356,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Cave eel",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_LOBSTER_CUSTOMSTYLE",
@@ -219,7 +370,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Lobster",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_BASS_CUSTOMSTYLE",
@@ -227,7 +384,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Bass",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_SWORDFISH_CUSTOMSTYLE",
@@ -235,7 +398,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Swordfish",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_LAVA_EEL_CUSTOMSTYLE",
@@ -243,7 +412,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Lava eel",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_MONKFISH_CUSTOMSTYLE",
@@ -251,7 +426,13 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Monkfish",
-            "default": {}
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            }
         },
         {
             "macroName": "VAR_KARAMBWAN_CUSTOMSTYLE",
@@ -287,13 +468,7 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Sea turtle",
-            "default": {
-                "backgroundColor": "#50dad9d4",
-                "borderColor": "#FFdad9d4",
-                "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFdad9d4"
-            }
+            "default": {}
         },
         {
             "macroName": "VAR_MANTA_RAY_CUSTOMSTYLE",
@@ -329,6 +504,19 @@
             "group": "Food style",
             "type": "style",
             "exampleItem": "Dark crab",
+            "default": {
+                "backgroundColor": "#50dad9d4",
+                "borderColor": "#FFdad9d4",
+                "textColor": "#FFFFFFFF",
+                "textAccentColor": "#FF000000",
+                "menuTextColor": "#FFdad9d4"
+            },
+            {
+            "macroName": "VAR_SUMMER_PIE_CUSTOMSTYLE",
+            "label": "Summer pie custom style",
+            "group": "Food style",
+            "type": "style",
+            "exampleItem": "Summer pie",
             "default": {
                 "backgroundColor": "#50dad9d4",
                 "borderColor": "#FFdad9d4",
