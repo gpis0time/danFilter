@@ -144,7 +144,7 @@
             "type": "style",
             "exampleItem": "Bronze bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -154,7 +154,7 @@
             "type": "style",
             "exampleItem": "Iron bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -164,7 +164,7 @@
             "type": "style",
             "exampleItem": "Silver bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -174,7 +174,7 @@
             "type": "style",
             "exampleItem": "Steel bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -184,7 +184,7 @@
             "type": "style",
             "exampleItem": "Gold bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -194,7 +194,7 @@
             "type": "style",
             "exampleItem": "Mithril bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -204,7 +204,7 @@
             "type": "style",
             "exampleItem": "Adamantite bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -214,7 +214,7 @@
             "type": "style",
             "exampleItem": "Runite bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -224,7 +224,7 @@
             "type": "style",
             "exampleItem": "Elemental metal",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -234,7 +234,7 @@
             "type": "style",
             "exampleItem": "Primed bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -244,7 +244,7 @@
             "type": "style",
             "exampleItem": "Primed mind bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -254,7 +254,7 @@
             "type": "style",
             "exampleItem": "Blurite bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -264,7 +264,7 @@
             "type": "style",
             "exampleItem": "Enchanted bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -274,7 +274,7 @@
             "type": "style",
             "exampleItem": "Lovakite bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         },
         {
@@ -284,7 +284,7 @@
             "type": "style",
             "exampleItem": "'Perfect' gold bar",
             "default": {
-                "menuTextColor": "#9b59b6"
+                "menuTextColor": "#95a5a6"
             }
         }
     ]
