@@ -505,11 +505,12 @@
             "type": "style",
             "exampleItem": "Dark crab",
             "default": {
-                "backgroundColor": "#50dad9d4",
-                "borderColor": "#FFdad9d4",
+                "backgroundColor": "#504a5e4b",
+                "borderColor": "#FF4a5e4b",
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
-                "menuTextColor": "#FFdad9d4"
+                "menuTextColor": "#FF9aff90"
+            }
         }
     ]
 }
