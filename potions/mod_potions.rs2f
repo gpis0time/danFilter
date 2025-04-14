@@ -8,6 +8,7 @@
 #define VAR_SERUM_207_CUSTOMSTYLE 
 #define VAR_COMPOST_POTION_CUSTOMSTYLE 
 #define VAR_RESTORE_POTION_CUSTOMSTYLE 
+#define VAR_BRESTORE_POTION_CUSTOMSTYLE 
 #define VAR_ENERGY_POTION_CUSTOMSTYLE 
 #define VAR_DEFENCE_POTION_CUSTOMSTYLE 
 #define VAR_AGILITY_POTION_CUSTOMSTYLE 
@@ -75,6 +76,10 @@ apply (name:"Compost potion(*") {
     VAR_COMPOST_POTION_CUSTOMSTYLE 
 }
 apply (name:"Restore potion(*") {
+    VAR_RESTORE_POTION_CUSTOMSTYLE 
+}
+}
+apply (name:"Blighted super restore(*") {
     VAR_RESTORE_POTION_CUSTOMSTYLE 
 }
 apply (name:"Energy potion(*") {
