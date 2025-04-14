@@ -10,6 +10,9 @@
             "modulePath": "global/mod_global.json"
         },
         {
+            "modulePath": "module/currency/module.json"
+        },
+        {
             "modulePath": "theatre_of_blood/mod_theatre_of_blood.json"
         },
         {
