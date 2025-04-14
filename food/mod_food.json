@@ -510,7 +510,7 @@
                 "textColor": "#FFFFFFFF",
                 "textAccentColor": "#FF000000",
                 "menuTextColor": "#FFdad9d4"
-            },
+        },
             {
             "macroName": "VAR_SUMMER_PIE_CUSTOMSTYLE",
             "label": "Summer pie custom style",
