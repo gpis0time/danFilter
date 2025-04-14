@@ -78,7 +78,6 @@ apply (name:"Compost potion(*") {
 apply (name:"Restore potion(*") {
     VAR_RESTORE_POTION_CUSTOMSTYLE 
 }
-}
 apply (name:"Blighted super restore(*") {
     VAR_BSUPER_RESTORE_CUSTOMSTYLE 
 }
