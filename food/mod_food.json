@@ -21,10 +21,6 @@
                 "Cooked moonlight antelope"
             ],
             "default": [
-                "Cooked wild kebbit",
-                "Cooked larupia",
-                "Cooked barb-tailed kebbit",
-                "Cooked graahk"
             ]
         },
         {
@@ -61,16 +57,6 @@
                 "Summer pie"
             ],
             "default": [
-                "Shrimp",
-                "Sardine",
-                "Herring",
-                "Anchovies",
-                "Mackerel",
-                "Trout",
-                "Cod",
-                "Pike",
-                "Salmon",
-                "Tuna"
             ]
         },
         {
