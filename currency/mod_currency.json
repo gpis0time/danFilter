@@ -82,7 +82,7 @@
             "label": "Coins minimum quantity",
             "group": "Currency Filters",
             "type": "number",
-            "default": 0
+            "default": 2000
         },
         {
             "macroName": "VAR_ECTO_TOKEN_MIN_QUANTITY",
