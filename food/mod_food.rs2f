@@ -126,7 +126,7 @@ apply (name:"Anglerfish") {
 apply (name:"Dark crab") {
     VAR_DARK_CRAB_CUSTOMSTYLE 
 }
-apply (name:"Dark crab") {
+apply (name:"Summer pie") {
     VAR_SUMMER_PIE_CUSTOMSTYLE
 }
 
