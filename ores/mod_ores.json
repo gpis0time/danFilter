@@ -6,7 +6,7 @@
     "inputs": [
         {
             "macroName": "VAR_ORES_HIDE",
-            "label": "Ores to hide",
+            "label": "Ores to force hidden",
             "type": "enumlist",
             "enum": [
                 "Copper ore",
@@ -25,269 +25,230 @@
             ],
             "default": [
                 "Copper ore",
-                "Tin ore"
+                "Tin ore",
+                "Silver ore"
             ]
-        },
-        {
-            "macroName": "VAR_COPPER_ORE_CUSTOMSTYLE",
-            "label": "Copper ore custom style",
-            "group": "Copper ore",
-            "type": "style",
-            "exampleItem": "Copper ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
         },
         {
             "macroName": "VAR_COPPER_ORE_MIN_QUANTITY",
             "label": "Copper ore minimum quantity",
-            "group": "Copper ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_TIN_ORE_CUSTOMSTYLE",
-            "label": "Tin ore custom style",
-            "group": "Tin ore",
-            "type": "style",
-            "exampleItem": "Tin ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_TIN_ORE_MIN_QUANTITY",
             "label": "Tin ore minimum quantity",
-            "group": "Tin ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_IRON_ORE_CUSTOMSTYLE",
-            "label": "Iron ore custom style",
-            "group": "Iron ore",
-            "type": "style",
-            "exampleItem": "Iron ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_IRON_ORE_MIN_QUANTITY",
             "label": "Iron ore minimum quantity",
-            "group": "Iron ore",
+            "group": "Ore Filters",
             "type": "number",
             "default": 2
-        },
-        {
-            "macroName": "VAR_SILVER_ORE_CUSTOMSTYLE",
-            "label": "Silver ore custom style",
-            "group": "Silver ore",
-            "type": "style",
-            "exampleItem": "Silver ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
         },
         {
             "macroName": "VAR_SILVER_ORE_MIN_QUANTITY",
             "label": "Silver ore minimum quantity",
-            "group": "Silver ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_COAL_ORE_CUSTOMSTYLE",
-            "label": "Coal custom style",
-            "group": "Coal",
-            "type": "style",
-            "exampleItem": "Coal",
-            "default": {
-                "textColor": "#99FF99",
-                "backgroundColor": "#00000000",
-                "borderColor": "#99FF99",
-                "menuTextColor": "#99FF99"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_COAL_ORE_MIN_QUANTITY",
             "label": "Coal minimum quantity",
-            "group": "Coal",
+            "group": "Ore Filters",
             "type": "number",
             "default": 2
-        },
-        {
-            "macroName": "VAR_GOLD_ORE_CUSTOMSTYLE",
-            "label": "Gold ore custom style",
-            "group": "Gold ore",
-            "type": "style",
-            "exampleItem": "Gold ore",
-            "default": {
-                "textColor": "#99FF99",
-                "backgroundColor": "#00000000",
-                "borderColor": "#99FF99",
-                "menuTextColor": "#99FF99"
-            }
         },
         {
             "macroName": "VAR_GOLD_ORE_MIN_QUANTITY",
             "label": "Gold ore minimum quantity",
-            "group": "Gold ore",
+            "group": "Ore Filters",
             "type": "number",
             "default": 2
-        },
-        {
-            "macroName": "VAR_MITHRIL_ORE_CUSTOMSTYLE",
-            "label": "Mithril ore custom style",
-            "group": "Mithril ore",
-            "type": "style",
-            "exampleItem": "Mithril ore",
-            "default": {
-                "textColor": "#99FF99",
-                "backgroundColor": "#00000000",
-                "borderColor": "#99FF99",
-                "menuTextColor": "#99FF99"
-            }
         },
         {
             "macroName": "VAR_MITHRIL_ORE_MIN_QUANTITY",
             "label": "Mithril ore minimum quantity",
-            "group": "Mithril ore",
+            "group": "Ore Filters",
             "type": "number",
             "default": 2
         },
         {
-            "macroName": "VAR_ADAMANTITE_ORE_CUSTOMSTYLE",
-            "label": "Adamantite ore custom style",
-            "group": "Adamantite ore",
-            "type": "style",
-            "exampleItem": "Adamantite ore",
-            "default": {
-                "textColor": "#99FF99",
-                "backgroundColor": "#00000000",
-                "borderColor": "#99FF99",
-                "menuTextColor": "#99FF99"
-            }
-        },
-        {
             "macroName": "VAR_ADAMANTITE_ORE_MIN_QUANTITY",
             "label": "Adamantite ore minimum quantity",
-            "group": "Adamantite ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_RUNITE_ORE_CUSTOMSTYLE",
-            "label": "Runite ore custom style",
-            "group": "Runite ore",
-            "type": "style",
-            "exampleItem": "Runite ore",
-            "default": {
-                "textColor": "#99FF99",
-                "backgroundColor": "#00000000",
-                "borderColor": "#99FF99",
-                "menuTextColor": "#99FF99"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_RUNITE_ORE_MIN_QUANTITY",
             "label": "Runite ore minimum quantity",
-            "group": "Runite ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_DAEYALT_ORE_CUSTOMSTYLE",
-            "label": "Daeyalt ore custom style",
-            "group": "Daeyalt ore",
-            "type": "style",
-            "exampleItem": "Daeyalt ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_DAEYALT_ORE_MIN_QUANTITY",
             "label": "Daeyalt ore minimum quantity",
-            "group": "Daeyalt ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_BLASTED_ORE_CUSTOMSTYLE",
-            "label": "Blasted ore custom style",
-            "group": "Blasted ore",
-            "type": "style",
-            "exampleItem": "Blasted ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_BLASTED_ORE_MIN_QUANTITY",
             "label": "Blasted ore minimum quantity",
-            "group": "Blasted ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_BLURITE_ORE_CUSTOMSTYLE",
-            "label": "Blurite ore custom style",
-            "group": "Blurite ore",
-            "type": "style",
-            "exampleItem": "Blurite ore",
-            "default": {
-                "textColor": "#66B2FF",
-                "backgroundColor": "#00000000",
-                "borderColor": "#66B2FF",
-                "menuTextColor": "#66B2FF"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_BLURITE_ORE_MIN_QUANTITY",
             "label": "Blurite ore minimum quantity",
-            "group": "Blurite ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
-        },
-        {
-            "macroName": "VAR_LOVAKITE_ORE_CUSTOMSTYLE",
-            "label": "Lovakite ore custom style",
-            "group": "Lovakite ore",
-            "type": "style",
-            "exampleItem": "Lovakite ore",
-            "default": {
-                "textColor": "#FFFFFFFF",
-                "textAccentColor": "#FF000000",
-                "backgroundColor": "#505C1009",
-                "borderColor": "#FF5C1009",
-                "menuTextColor": "#FF5C1009"
-            }
+            "default": 2
         },
         {
             "macroName": "VAR_LOVAKITE_ORE_MIN_QUANTITY",
             "label": "Lovakite ore minimum quantity",
-            "group": "Lovakite ore",
+            "group": "Ore Filters",
             "type": "number",
-            "default": 0
+            "default": 2
+        },
+        {
+            "macroName": "VAR_COPPER_ORE_CUSTOMSTYLE",
+            "label": "Copper ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Copper ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_TIN_ORE_CUSTOMSTYLE",
+            "label": "Tin ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Tin ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_IRON_ORE_CUSTOMSTYLE",
+            "label": "Iron ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Iron ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_SILVER_ORE_CUSTOMSTYLE",
+            "label": "Silver ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Silver ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_COAL_ORE_CUSTOMSTYLE",
+            "label": "Coal custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Coal",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_GOLD_ORE_CUSTOMSTYLE",
+            "label": "Gold ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Gold ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_MITHRIL_ORE_CUSTOMSTYLE",
+            "label": "Mithril ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Mithril ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_ADAMANTITE_ORE_CUSTOMSTYLE",
+            "label": "Adamantite ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Adamantite ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_RUNITE_ORE_CUSTOMSTYLE",
+            "label": "Runite ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Runite ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_DAEYALT_ORE_CUSTOMSTYLE",
+            "label": "Daeyalt ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Daeyalt ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_BLASTED_ORE_CUSTOMSTYLE",
+            "label": "Blasted ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Blasted ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_BLURITE_ORE_CUSTOMSTYLE",
+            "label": "Blurite ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Blurite ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
+        },
+        {
+            "macroName": "VAR_LOVAKITE_ORE_CUSTOMSTYLE",
+            "label": "Lovakite ore custom style",
+            "group": "Custom Styling",
+            "type": "style",
+            "exampleItem": "Lovakite ore",
+            "default": {
+                "menuTextColor": "#95a5a6"
+            }
         }
     ]
 }
