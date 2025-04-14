@@ -33,7 +33,7 @@
 #define VAR_MANTA_RAY_CUSTOMSTYLE 
 #define VAR_ANGLERFISH_CUSTOMSTYLE 
 #define VAR_DARK_CRAB_CUSTOMSTYLE 
-
+#define VAR_SUMMER_PIE_CUSTOMSTYLE 
 
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
@@ -126,7 +126,9 @@ apply (name:"Anglerfish") {
 apply (name:"Dark crab") {
     VAR_DARK_CRAB_CUSTOMSTYLE 
 }
-
+apply (name:"Dark crab") {
+    VAR_SUMMER_PIE_CUSTOMSTYLE
+}
 
 
 // endmodule:food
