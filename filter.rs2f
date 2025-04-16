@@ -37,7 +37,7 @@ label: Show Despawn Timer
 type: boolean
 label: Show Tradeable Value
 */
-#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE true
+#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE false
 
 /*@ define:input:global_defaults
 type: boolean
@@ -49,13 +49,13 @@ label: Show Untradeable Value
 type: boolean
 label: Hide world spawn items
 */
-#define VAR_GLOBAL_HIDE_SPAWN_ITEMS false
+#define VAR_GLOBAL_HIDE_SPAWN_ITEMS true
 
 /*@ define:input:global_defaults
 type: boolean
 label: Hide items owned by other players
 */
-#define VAR_GLOBAL_HIDE_OTHER_PLAYERS_ITEMS false
+#define VAR_GLOBAL_HIDE_OTHER_PLAYERS_ITEMS true
 
 /*@ define:input:global_defaults
 type: style
@@ -386,7 +386,7 @@ type: number
 label: Minimum value
 group: Tier 1
 */
-#define VAR_VALUES_TIER_1_VALUE 20001
+#define VAR_VALUES_TIER_1_VALUE 20000
 
 /*@ define:input:item_tiers
 type: number
@@ -1598,7 +1598,7 @@ enum: [
   "Bearded gorilla bones"
 ]
 */
-#define VAR_BONES_HIDE ["Bones","Wolf bones","Burnt bones","Monkey bones","Bat bones","Big bones","Jogre bones","Wyrmling bones","Zogre bones"]
+#define VAR_BONES_HIDE ["Bones","Wolf bones","Burnt bones","Monkey bones","Bat bones","Big bones","Jogre bones","Wyrmling bones","Zogre bones","Shaikahan bones"]
 
 /*@ define:input:remains
 type: enumlist
@@ -1611,7 +1611,7 @@ enum: [
   "Infernal ashes"
 ]
 */
-#define VAR_ASHES_HIDE ["Fiendish ashes","Vile ashes"]
+#define VAR_ASHES_HIDE ["Fiendish ashes","Vile ashes","Malicious ashes"]
 
 /*@ define:input:remains
 type: enumlist
@@ -4211,7 +4211,7 @@ enum: [
   "Lovakite ore"
 ]
 */
-#define VAR_ORES_HIDE []
+#define VAR_ORES_HIDE ["Copper ore","Tin ore","Silver ore"]
 
 
 /*@ define:input:ores
@@ -4324,56 +4324,56 @@ type: number
 label: Copper ore minimum quantity
 group: Ore Filters
 */
-#define VAR_COPPER_ORE_MIN_QUANTITY 0
+#define VAR_COPPER_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Tin ore minimum quantity
 group: Ore Filters
 */
-#define VAR_TIN_ORE_MIN_QUANTITY 0
+#define VAR_TIN_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Iron ore minimum quantity
 group: Ore Filters
 */
-#define VAR_IRON_ORE_MIN_QUANTITY 0
+#define VAR_IRON_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Silver ore minimum quantity
 group: Ore Filters
 */
-#define VAR_SILVER_ORE_MIN_QUANTITY 0
+#define VAR_SILVER_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Coal minimum quantity
 group: Ore Filters
 */
-#define VAR_COAL_ORE_MIN_QUANTITY 0
+#define VAR_COAL_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Gold ore minimum quantity
 group: Ore Filters
 */
-#define VAR_GOLD_ORE_MIN_QUANTITY 0
+#define VAR_GOLD_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Mithril ore minimum quantity
 group: Ore Filters
 */
-#define VAR_MITHRIL_ORE_MIN_QUANTITY 0
+#define VAR_MITHRIL_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Adamantite ore minimum quantity
 group: Ore Filters
 */
-#define VAR_ADAMANTITE_ORE_MIN_QUANTITY 0
+#define VAR_ADAMANTITE_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
@@ -4387,28 +4387,28 @@ type: number
 label: Daeyalt ore minimum quantity
 group: Ore Filters
 */
-#define VAR_DAEYALT_ORE_MIN_QUANTITY 0
+#define VAR_DAEYALT_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Blasted ore minimum quantity
 group: Ore Filters
 */
-#define VAR_BLASTED_ORE_MIN_QUANTITY 0
+#define VAR_BLASTED_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Blurite ore minimum quantity
 group: Ore Filters
 */
-#define VAR_BLURITE_ORE_MIN_QUANTITY 0
+#define VAR_BLURITE_ORE_MIN_QUANTITY 2
 
 /*@ define:input:ores
 type: number
 label: Lovakite ore minimum quantity
 group: Ore Filters
 */
-#define VAR_LOVAKITE_ORE_MIN_QUANTITY 0
+#define VAR_LOVAKITE_ORE_MIN_QUANTITY 2
 
 
 
@@ -4968,49 +4968,49 @@ type: number
 label: Bronze bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_BRONZE_BAR_MIN_QUANTITY 0
+#define VAR_BRONZE_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Iron bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_IRON_BAR_MIN_QUANTITY 0
+#define VAR_IRON_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Silver bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_SILVER_BAR_MIN_QUANTITY 0
+#define VAR_SILVER_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Steel bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_STEEL_BAR_MIN_QUANTITY 0
+#define VAR_STEEL_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Gold bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_GOLD_BAR_MIN_QUANTITY 0
+#define VAR_GOLD_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Mithril bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_MITHRIL_BAR_MIN_QUANTITY 0
+#define VAR_MITHRIL_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Adamantite bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_ADAMANTITE_BAR_MIN_QUANTITY 0
+#define VAR_ADAMANTITE_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
@@ -5024,49 +5024,49 @@ type: number
 label: Elemental metal minimum quantity
 group: Bar Filtering
 */
-#define VAR_ELEMENTAL_METAL_MIN_QUANTITY 0
+#define VAR_ELEMENTAL_METAL_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Primed bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_PRIMED_BAR_MIN_QUANTITY 0
+#define VAR_PRIMED_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Primed mind bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_PRIMED_MIND_BAR_MIN_QUANTITY 0
+#define VAR_PRIMED_MIND_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Blurite bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_BLURITE_BAR_MIN_QUANTITY 0
+#define VAR_BLURITE_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Enchanted bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_ENCHANTED_BAR_MIN_QUANTITY 0
+#define VAR_ENCHANTED_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: Lovakite bar minimum quantity
 group: Bar Filtering
 */
-#define VAR_LOVAKITE_BAR_MIN_QUANTITY 0
+#define VAR_LOVAKITE_BAR_MIN_QUANTITY 2
 
 /*@ define:input:bars
 type: number
 label: "'Perfect' gold bar minimum quantity"
 group: Bar Filtering
 */
-#define VAR_PERFECT_GOLD_BAR_MIN_QUANTITY 0
+#define VAR_PERFECT_GOLD_BAR_MIN_QUANTITY 2
 
 
 
@@ -5279,7 +5279,7 @@ enum: [
   }
 ]
 */
-#define VAR_HERBS_HIDE ["*Tarromin","*Harralander"]
+#define VAR_HERBS_HIDE ["*Tarromin","*Harralander","*Marrentill","*Guam leaf"]
 
 /*@ define:input:herbs
 type: enumlist
@@ -5347,7 +5347,7 @@ enum: [
   }
 ]
 */
-#define VAR_HERBS_SHOW ["*Ranarr weed","*Huasca","*Snapdragon","*Torstol"]
+#define VAR_HERBS_SHOW []
 
 
 /*@ define:input:herbs
@@ -6057,7 +6057,7 @@ enum: [
   }
 ]
 */
-#define VAR_POTIONS_HIDE ["Attack potion(*","Strength potion(*","Serum 207(*","Compost potion(*","Restore potion(*","Energy potion(*","Defence potion(*","Agility potion(*","Combat potion(*","Fishing potion(*","Hunter potion(*","Antidote+(*"]
+#define VAR_POTIONS_HIDE []
 
 /*@ define:input:potions
 type: enumlist
@@ -6847,7 +6847,7 @@ enum: [
   "Cooked moonlight antelope"
 ]
 */
-#define VAR_FOOD_HUNTER_FOODS_HIDE ["Cooked wild kebbit","Cooked larupia","Cooked barb-tailed kebbit","Cooked graahk"]
+#define VAR_FOOD_HUNTER_FOODS_HIDE []
 
 /*@ define:input:food
 type: enumlist
@@ -6881,7 +6881,7 @@ enum: [
   "Dark crab"
 ]
 */
-#define VAR_FOOD_FISH_FOODS_HIDE ["Shrimp","Sardine","Herring","Anchovies","Mackerel","Trout","Cod","Pike","Salmon","Tuna"]
+#define VAR_FOOD_FISH_FOODS_HIDE []
 
 /*@ define:input:food
 type: enumlist
@@ -6899,7 +6899,7 @@ enum: [
   "Cooked moonlight antelope"
 ]
 */
-#define VAR_FOOD_HUNTER_FOODS_SHOW ["Cooked sunlight antelope","Cooked dashing kebbit","Cooked moonlight antelope"]
+#define VAR_FOOD_HUNTER_FOODS_SHOW []
 
 /*@ define:input:food
 type: enumlist
@@ -6933,7 +6933,7 @@ enum: [
   "Dark crab"
 ]
 */
-#define VAR_FOOD_FISH_FOODS_SHOW ["Swordfish","Lava eel","Monkfish","Cooked karambwan","Shark","Sea turtle","Manta ray","Anglerfish","Dark crab"]
+#define VAR_FOOD_FISH_FOODS_SHOW []
 
 
 /*@ define:input:food
