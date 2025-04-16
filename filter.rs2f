@@ -1,4 +1,4 @@
-meta { name = "bozo iron filter"; description = "undefined"; }
+meta { name = "bozo iron filter (updated: 16/04/2025)"; description = "undefined"; }
 
 /*@ define:module:global_defaults
 ---
@@ -5355,7 +5355,7 @@ enum: [
   }
 ]
 */
-#define VAR_HERBS_HIDE ["*Tarromin","*Harralander","*Marrentill","*Guam leaf"]
+#define VAR_HERBS_HIDE ["*Tarromin","*Harralander","*Marrentill","*Guam leaf","Guam seed","Marrentill seed","Tarromin seed","Harralander seed"]
 
 /*@ define:input:herbs
 type: enumlist
@@ -5492,7 +5492,7 @@ label: Guam leaf custom style
 group: Custom Styling
 exampleItem: Guam leaf
 */
-#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#ff00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -6343,6 +6343,10 @@ enum: [
     "label": "Super restore"
   },
   {
+    "value": "Blighted super restore(*",
+    "label": "Blighted super restore"
+  },
+  {
     "value": "Sanfew serum(*",
     "label": "Sanfew serum"
   },
@@ -6551,6 +6555,10 @@ enum: [
     "label": "Super restore"
   },
   {
+    "value": "Blighted super restore(*",
+    "label": "Blighted super restore"
+  },
+  {
     "value": "Sanfew serum(*",
     "label": "Sanfew serum"
   },
@@ -6672,7 +6680,7 @@ enum: [
   }
 ]
 */
-#define VAR_POTIONS_SHOW ["Anti-venom(*","Anti-venom+(*","Antidote++(*","Antifire potion(*","Bastion potion(*","Battlemage potion(*","Divine bastion potion(*","Divine battlemage potion(*","Divine magic potion(*","Divine ranging potion(*","Divine super attack potion(*","Divine super combat potion(*","Divine super defence potion(*","Divine super strength potion(*","Extended anti-venom+(*","Extended antifire(*","Extended super antifire(*","Forgotten brew(*","Goading potion(*","Menaphite remedy(*","Prayer regeneration potion(*","Ranging potion(*","Sanfew serum(*","Saradomin brew(*","Stamina potion(*","Super antifire potion(*","Super combat potion(*","Super restore(*"]
+#define VAR_POTIONS_SHOW []
 
 
 
@@ -6815,6 +6823,13 @@ label: Super restore
 exampleItem: Super restore(4)
 */
 #define VAR_SUPER_RESTORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AE3F6C";borderColor = "#FFAE3F6C";textAccentColor = "#FF000000";menuTextColor = "#FFAE3F6C";
+
+/*@ define:input:potions
+type: style
+label: Blighted super restore
+exampleItem: Blighted super restore(4)
+*/
+#define VAR_BLIGHTED_SUPER_RESTORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AE3F6C";borderColor = "#FFAE3F6C";textAccentColor = "#FF000000";menuTextColor = "#FFAE3F6C";
 
 /*@ define:input:potions
 type: style
@@ -7096,6 +7111,9 @@ apply (name:"Prayer regeneration potion(*") {
 apply (name:"Super restore(*") {
     VAR_SUPER_RESTORE_CUSTOMSTYLE 
 }
+apply (name:"Super restore(*") {
+    VAR_BLIGHTED_SUPER_RESTORE_CUSTOMSTYLE 
+}
 apply (name:"Sanfew serum(*") {
     VAR_SANFEW_SERUM_CUSTOMSTYLE 
 }
@@ -7236,6 +7254,7 @@ description: |
   "Manta ray", \
   "Anglerfish", \
   "Dark crab", \
+  "Summer pie", \
 ]
 
 /*@ define:input:food
@@ -7285,7 +7304,8 @@ enum: [
   "Sea turtle",
   "Manta ray",
   "Anglerfish",
-  "Dark crab"
+  "Dark crab",
+  "Summer pie"
 ]
 */
 #define VAR_FOOD_FISH_FOODS_HIDE []
@@ -7337,7 +7357,8 @@ enum: [
   "Sea turtle",
   "Manta ray",
   "Anglerfish",
-  "Dark crab"
+  "Dark crab",
+  "Summer pie"
 ]
 */
 #define VAR_FOOD_FISH_FOODS_SHOW []
@@ -7349,7 +7370,7 @@ label: Hunter food style
 group: Food group style
 exampleItem: Cooked moonlight antelope
 */
-#define VAR_FOOD_HUNTER_CUSTOMSTYLE 
+#define VAR_FOOD_HUNTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7357,7 +7378,7 @@ label: Fish food default style
 group: Food group style
 exampleItem: Tuna
 */
-#define VAR_FOOD_FISH_CUSTOMSTYLE 
+#define VAR_FOOD_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7365,7 +7386,7 @@ label: Shrimp custom style
 group: Food style
 exampleItem: Shrimp
 */
-#define VAR_SHRIMP_CUSTOMSTYLE 
+#define VAR_SHRIMP_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7373,7 +7394,7 @@ label: Sardine custom style
 group: Food style
 exampleItem: Sardine
 */
-#define VAR_SARDINE_CUSTOMSTYLE 
+#define VAR_SARDINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7381,7 +7402,7 @@ label: Karambwanji custom style
 group: Food style
 exampleItem: Karambwanji
 */
-#define VAR_KARAMBWANJI_CUSTOMSTYLE 
+#define VAR_KARAMBWANJI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7389,7 +7410,7 @@ label: Herring custom style
 group: Food style
 exampleItem: Herring
 */
-#define VAR_HERRING_CUSTOMSTYLE 
+#define VAR_HERRING_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7397,7 +7418,7 @@ label: Anchovies custom style
 group: Food style
 exampleItem: Anchovies
 */
-#define VAR_ANCHOVIES_CUSTOMSTYLE 
+#define VAR_ANCHOVIES_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7405,7 +7426,7 @@ label: Mackerel custom style
 group: Food style
 exampleItem: Mackerel
 */
-#define VAR_MACKEREL_CUSTOMSTYLE 
+#define VAR_MACKEREL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7413,7 +7434,7 @@ label: Trout custom style
 group: Food style
 exampleItem: Trout
 */
-#define VAR_TROUT_CUSTOMSTYLE 
+#define VAR_TROUT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7421,7 +7442,7 @@ label: Cod custom style
 group: Food style
 exampleItem: Cod
 */
-#define VAR_COD_CUSTOMSTYLE 
+#define VAR_COD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7429,7 +7450,7 @@ label: Pike custom style
 group: Food style
 exampleItem: Pike
 */
-#define VAR_PIKE_CUSTOMSTYLE 
+#define VAR_PIKE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7437,7 +7458,7 @@ label: Slimy eel custom style
 group: Food style
 exampleItem: Slimy eel
 */
-#define VAR_SLIMY_EEL_CUSTOMSTYLE 
+#define VAR_SLIMY_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7445,7 +7466,7 @@ label: Salmon custom style
 group: Food style
 exampleItem: Salmon
 */
-#define VAR_SALMON_CUSTOMSTYLE 
+#define VAR_SALMON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7453,7 +7474,7 @@ label: Tuna custom style
 group: Food style
 exampleItem: Tuna
 */
-#define VAR_TUNA_CUSTOMSTYLE 
+#define VAR_TUNA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7461,7 +7482,7 @@ label: Rainbow fish custom style
 group: Food style
 exampleItem: Rainbow fish
 */
-#define VAR_RAINBOW_FISH_CUSTOMSTYLE 
+#define VAR_RAINBOW_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7469,7 +7490,7 @@ label: Cave eel custom style
 group: Food style
 exampleItem: Cave eel
 */
-#define VAR_CAVE_EEL_CUSTOMSTYLE 
+#define VAR_CAVE_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7477,7 +7498,7 @@ label: Lobster custom style
 group: Food style
 exampleItem: Lobster
 */
-#define VAR_LOBSTER_CUSTOMSTYLE 
+#define VAR_LOBSTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7485,7 +7506,7 @@ label: Bass custom style
 group: Food style
 exampleItem: Bass
 */
-#define VAR_BASS_CUSTOMSTYLE 
+#define VAR_BASS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7493,7 +7514,7 @@ label: Swordfish custom style
 group: Food style
 exampleItem: Swordfish
 */
-#define VAR_SWORDFISH_CUSTOMSTYLE 
+#define VAR_SWORDFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7501,7 +7522,7 @@ label: Lava eel custom style
 group: Food style
 exampleItem: Lava eel
 */
-#define VAR_LAVA_EEL_CUSTOMSTYLE 
+#define VAR_LAVA_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7509,7 +7530,7 @@ label: Monkfish custom style
 group: Food style
 exampleItem: Monkfish
 */
-#define VAR_MONKFISH_CUSTOMSTYLE 
+#define VAR_MONKFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7525,7 +7546,7 @@ label: Shark custom style
 group: Food style
 exampleItem: Shark
 */
-#define VAR_SHARK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50b7977c";borderColor = "#FFb7977c";textAccentColor = "#FF000000";menuTextColor = "#FFb7977c";
+#define VAR_SHARK_CUSTOMSTYLE textColor textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7533,7 +7554,7 @@ label: Sea turtle custom style
 group: Food style
 exampleItem: Sea turtle
 */
-#define VAR_SEA_TURTLE_CUSTOMSTYLE 
+#define VAR_SEA_TURTLE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
 
 /*@ define:input:food
 type: style
@@ -7541,7 +7562,7 @@ label: Manta ray custom style
 group: Food style
 exampleItem: Manta ray
 */
-#define VAR_MANTA_RAY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5069503a";borderColor = "#FF69503a";textAccentColor = "#FF000000";menuTextColor = "#FFffc38d";
+#define VAR_MANTA_RAY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7549,7 +7570,7 @@ label: Anglerfish custom style
 group: Food style
 exampleItem: Anglerfish
 */
-#define VAR_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50624b18";borderColor = "#FF624b18";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";
+#define VAR_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7557,9 +7578,15 @@ label: Dark crab custom style
 group: Food style
 exampleItem: Dark crab
 */
-#define VAR_DARK_CRAB_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504a5e4b";borderColor = "#FF4a5e4b";textAccentColor = "#FF000000";menuTextColor = "#FF9aff90";
+#define VAR_DARK_CRAB_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
-
+/*@ define:input:food
+type: style
+label: Summer pie custom style
+group: Food style
+exampleItem: Summer pie
+*/
+#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
@@ -7656,4 +7683,7 @@ apply (name:"Anglerfish") {
 }
 apply (name:"Dark crab") {
     VAR_DARK_CRAB_CUSTOMSTYLE 
+}
+apply (name:"Dark crab") {
+    VAR_SUMMER_PIE_CUSTOMSTYLE 
 }
