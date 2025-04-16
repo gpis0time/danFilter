@@ -5949,7 +5949,7 @@ group: Herb seed Quantity Filtering
 /*@ define:input:herbs
 type: number
 label: Marrentill seed minimum quantity
-group: Herb  seed Quantity Filtering
+group: Herb seed Quantity Filtering
 */
 #define VAR_SEEDS_MARRENTILL_MIN_QUANTITY 0
 
@@ -6033,7 +6033,7 @@ group: Herb seed Quantity Filtering
 /*@ define:input:herbs
 type: number
 label: Dwarf weed seed minimum quantity
-group: Herb Quantity Filtering
+group: Herb seed Quantity Filtering
 */
 #define VAR_SEEDS_DWARF_WEED_MIN_QUANTITY 0
 
