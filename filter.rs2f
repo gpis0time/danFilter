@@ -1598,7 +1598,7 @@ enum: [
   "Bearded gorilla bones"
 ]
 */
-#define VAR_BONES_HIDE ["Bones","Wolf bones","Burnt bones","Monkey bones","Bat bones","Big bones","Jogre bones","Wyrmling bones","Zogre bones","Shaikahan bones"]
+#define VAR_BONES_HIDE ["Bones","Wolf bones","Burnt bones","Monkey bones","Bat bones","Big bones","Jogre bones","Wyrmling bones","Zogre bones","Shaikahan bones","Bearded gorilla bones","Gorilla bones","Medium ninja monkey bones","Small ninja monkey bones","Large zombie monkey bones","Small zombie monkey bones","Bleached bones","Ourg bones","Dagannoth bones","Raurg bones","Fayrg bones"]
 
 /*@ define:input:remains
 type: enumlist
@@ -5204,7 +5204,24 @@ description: |
   "*lantadyme", \
   "*dwarf weed", \
   "*torstol", \
+  "Guam seed", \
+  "Marrentill seed", \
+  "Tarromin seed", \
+  "Harralander seed", \
+  "Ranarr seed", \
+  "Toadflax seed", \
+  "Irit seed", \
+  "Avantoe seed", \
+  "Kwuarm seed", \
+  "Snapdragon seed", \
+  "Huasca seed", \
+  "Cadantine seed", \
+  "Lantadyme seed", \
+  "Dwarf weed seed", \
+  "Torstol seed", \
 ]
+
+
 
 /*@ define:input:herbs
 type: number
@@ -5275,6 +5292,66 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Guam seed",
+    "label": "Guam seed"
+  },
+  {
+    "value": "Marrentill seed",
+    "label": "Marrentill seed"
+  },
+  {
+    "value": "Tarromin seed",
+    "label": "Tarromin seed"
+  },
+  {
+    "value": "Harralander seed",
+    "label": "Harralander seed"
+  },
+  {
+    "value": "Ranarr seed",
+    "label": "Ranarr seed"
+  },
+  {
+    "value": "Toadflax seed",
+    "label": "Toadflax seed"
+  },
+  {
+    "value": "Irit seed",
+    "label": "Irit seed"
+  },
+  {
+    "value": "Avantoe seed",
+    "label": "Avantoe seed"
+  },
+  {
+    "value": "Kwuarm seed",
+    "label": "Kwuarm seed"
+  },
+  {
+    "value": "Huasca seed",
+    "label": "Huasca seed"
+  },
+  {
+    "value": "Snapdragon seed",
+    "label": "Snapdragon seed"
+  },
+  {
+    "value": "Cadantine seed",
+    "label": "Cadantine seed"
+  },
+  {
+    "value": "Lantadyme seed",
+    "label": "Lantadyme seed"
+  },
+  {
+    "value": "Dwarf weed seed",
+    "label": "Dwarf weed seed"
+  },
+  {
+    "value": "Torstol seed",
+    "label": "Torstol seed"
   }
 ]
 */
@@ -5343,6 +5420,66 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Guam seed",
+    "label": "Guam seed"
+  },
+  {
+    "value": "Marrentill seed",
+    "label": "Marrentill seed"
+  },
+  {
+    "value": "Tarromin seed",
+    "label": "Tarromin seed"
+  },
+  {
+    "value": "Harralander seed",
+    "label": "Harralander seed"
+  },
+  {
+    "value": "Ranarr seed",
+    "label": "Ranarr seed"
+  },
+  {
+    "value": "Toadflax seed",
+    "label": "Toadflax seed"
+  },
+  {
+    "value": "Irit seed",
+    "label": "Irit seed"
+  },
+  {
+    "value": "Avantoe seed",
+    "label": "Avantoe seed"
+  },
+  {
+    "value": "Kwuarm seed",
+    "label": "Kwuarm seed"
+  },
+  {
+    "value": "Huasca seed",
+    "label": "Huasca seed"
+  },
+  {
+    "value": "Snapdragon seed",
+    "label": "Snapdragon seed"
+  },
+  {
+    "value": "Cadantine seed",
+    "label": "Cadantine seed"
+  },
+  {
+    "value": "Lantadyme seed",
+    "label": "Lantadyme seed"
+  },
+  {
+    "value": "Dwarf weed seed",
+    "label": "Dwarf weed seed"
+  },
+  {
+    "value": "Torstol seed",
+    "label": "Torstol seed"
   }
 ]
 */
@@ -5355,7 +5492,7 @@ label: Guam leaf custom style
 group: Custom Styling
 exampleItem: Guam leaf
 */
-#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5009550d";borderColor = "#FF09550d";textAccentColor = "#FF000000";menuTextColor = "#FF09550d";
+#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5363,7 +5500,7 @@ label: Marrentill custom style
 group: Custom Styling
 exampleItem: Marrentill
 */
-#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500c7610";borderColor = "#FF0c7610";textAccentColor = "#FF000000";menuTextColor = "#FF0c7610";
+#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5371,7 +5508,7 @@ label: Tarromin custom style
 group: Custom Styling
 exampleItem: Tarromin
 */
-#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500c7138";borderColor = "#FF0c7138";textAccentColor = "#FF000000";menuTextColor = "#FF0c7138";
+#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5379,7 +5516,7 @@ label: Harralander custom style
 group: Custom Styling
 exampleItem: Harralander
 */
-#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5054780c";borderColor = "#FF54780c";textAccentColor = "#FF000000";menuTextColor = "#FF54780c";
+#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5387,7 +5524,7 @@ label: Ranarr weed custom style
 group: Custom Styling
 exampleItem: Ranarr weed
 */
-#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503c5f09";borderColor = "#FF3c5f09";textAccentColor = "#FF000000";menuTextColor = "#FF3c5f09";
+#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5395,7 +5532,7 @@ label: Toadflax custom style
 group: Custom Styling
 exampleItem: Toadflax
 */
-#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50002400";borderColor = "#FF002400";textAccentColor = "#FF000000";menuTextColor = "#FF002400";
+#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5403,7 +5540,7 @@ label: Irit leaf custom style
 group: Custom Styling
 exampleItem: Irit leaf
 */
-#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50507436";borderColor = "#FF507436";textAccentColor = "#FF000000";menuTextColor = "#FF507436";
+#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5411,7 +5548,7 @@ label: Avantoe custom style
 group: Custom Styling
 exampleItem: Avantoe
 */
-#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50145326";borderColor = "#FF145326";textAccentColor = "#FF000000";menuTextColor = "#FF145326";
+#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5419,7 +5556,7 @@ label: Kwuarm custom style
 group: Custom Styling
 exampleItem: Kwuarm
 */
-#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504d5709";borderColor = "#FF4d5709";textAccentColor = "#FF000000";menuTextColor = "#FF4d5709";
+#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5427,7 +5564,7 @@ label: Huasca custom style
 group: Custom Styling
 exampleItem: Huasca
 */
-#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50513748";borderColor = "#FF513748";textAccentColor = "#FF000000";menuTextColor = "#FF513748";
+#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5435,7 +5572,7 @@ label: Snapdragon custom style
 group: Custom Styling
 exampleItem: Snapdragon
 */
-#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503e4b08";borderColor = "#FF3e4b08";textAccentColor = "#FF000000";menuTextColor = "#FF3e4b08";
+#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5443,7 +5580,7 @@ label: Cadantine custom style
 group: Custom Styling
 exampleItem: Cadantine
 */
-#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5044501c";borderColor = "#FF44501c";textAccentColor = "#FF000000";menuTextColor = "#FF44501c";
+#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5451,7 +5588,7 @@ label: Lantadyme custom style
 group: Custom Styling
 exampleItem: Lantadyme
 */
-#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5008473c";borderColor = "#FF08473c";textAccentColor = "#FF000000";menuTextColor = "#FF08473c";
+#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5459,7 +5596,7 @@ label: Dwarf weed custom style
 group: Custom Styling
 exampleItem: Dwarf weed
 */
-#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50094809";borderColor = "#FF094809";textAccentColor = "#FF000000";menuTextColor = "#FF094809";
+#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 /*@ define:input:herbs
 type: style
@@ -5467,7 +5604,127 @@ label: Torstol custom style
 group: Custom Styling
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5009570c";borderColor = "#FF09570c";textAccentColor = "#FF000000";menuTextColor = "#FF09570c";
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Guam seed custom style
+group: Custom Styling
+exampleItem: Guam seed
+*/
+#define VAR_HERBS_GUAM_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Marrentill seed custom style
+group: Custom Styling
+exampleItem: Marrentill seed
+*/
+#define VAR_HERBS_MARRENTILL_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Tarromin seed custom style
+group: Custom Styling
+exampleItem: Tarromin seed
+*/
+#define VAR_HERBS_TARROMIN_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Harralander seed custom style
+group: Custom Styling
+exampleItem: Harralander seed
+*/
+#define VAR_HERBS_HARRALANDER_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Ranarr seed custom style
+group: Custom Styling
+exampleItem: Ranarr seed
+*/
+#define VAR_HERBS_RANARR_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Toadflax seed custom style
+group: Custom Styling
+exampleItem: Toadflax seed
+*/
+#define VAR_HERBS_TOADFLAX_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Irit seed custom style
+group: Custom Styling
+exampleItem: Irit seed
+*/
+#define VAR_HERBS_IRIT_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Avantoe seed custom style
+group: Custom Styling
+exampleItem: Avantoe seed
+*/
+#define VAR_HERBS_AVANTOE_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Kwuarm seed custom style
+group: Custom Styling
+exampleItem: Kwuarm seed
+*/
+#define VAR_HERBS_KWUARM_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Huasca seed custom style
+group: Custom Styling
+exampleItem: Huasca seed
+*/
+#define VAR_HERBS_HUASCA_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Snapdragon seed custom style
+group: Custom Styling
+exampleItem: Snapdragon seed
+*/
+#define VAR_HERBS_SNAPDRAGON_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Cadantine seed custom style
+group: Custom Styling
+exampleItem: Cadantine seed
+*/
+#define VAR_HERBS_CADANTINE_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Lantadyme seed custom style
+group: Custom Styling
+exampleItem: Lantadyme seed
+*/
+#define VAR_HERBS_LANTADYME_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Dwarf weed seed custom style
+group: Custom Styling
+exampleItem: Dwarf weed seed
+*/
+#define VAR_HERBS_DWARF_WEED_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+/*@ define:input:herbs
+type: style
+label: Torstol seed custom style
+group: Custom Styling
+exampleItem: Torstol seed
+*/
+#define VAR_HERBS_TORSTOL_SEED_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
 
 
 /*@ define:input:herbs
@@ -5682,6 +5939,112 @@ group: Noted Herb Quantity Filtering
 #define VAR_HERBS_TORSTOL_NOTED_MIN_QUANTITY 0
 
 
+/*@ define:input:herbs
+type: number
+label: Guam seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_GUAM_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Marrentill seed minimum quantity
+group: Herb  seed Quantity Filtering
+*/
+#define VAR_SEEDS_MARRENTILL_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Tarromin seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_TARROMIN_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Harralander seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_HARRALANDER_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Ranarr seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_RANARR_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Toadflax seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_TOADFLAX_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Irit seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_IRIT_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Avantoe seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_AVANTOE_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Kwuarm seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_KWUARM_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Huasca seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_HUASCA_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Snapdragon seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_SNAPDRAGON_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Cadantine seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_CADANTINE_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Lantadyme seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_LANTADYME_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Dwarf weed seed minimum quantity
+group: Herb Quantity Filtering
+*/
+#define VAR_SEEDS_DWARF_WEED_MIN_QUANTITY 0
+
+/*@ define:input:herbs
+type: number
+label: Torstol seed minimum quantity
+group: Herb seed Quantity Filtering
+*/
+#define VAR_SEEDS_TORSTOL_MIN_QUANTITY 0
+
+
 apply (name:CONST_ALL_HERBS && value:<VAR_HERBS_MINIMUM_VALUE) {
     hidden = true;
 }
@@ -5701,6 +6064,9 @@ apply (name:"*guam leaf" && quantity:<VAR_HERBS_GUAM_LEAF_MIN_QUANTITY) {
 apply (name:"*guam leaf" && noted:true && quantity:<VAR_HERBS_GUAM_LEAF_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Guam seed" && quantity:<VAR_SEEDS_GUAM_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*marrentill") {
     VAR_HERBS_MARRENTILL_CUSTOMSTYLE 
@@ -5709,6 +6075,9 @@ apply (name:"*marrentill" && quantity:<VAR_HERBS_MARRENTILL_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*marrentill" && noted:true && quantity:<VAR_HERBS_MARRENTILL_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Marrentill seed" && quantity:<VAR_SEEDS_MARRENTILL_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5721,6 +6090,9 @@ apply (name:"*tarromin" && quantity:<VAR_HERBS_TARROMIN_MIN_QUANTITY) {
 apply (name:"*tarromin" && noted:true && quantity:<VAR_HERBS_TARROMIN_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Tarromin seed" && quantity:<VAR_SEEDS_TARROMIN_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*harralander") {
     VAR_HERBS_HARRALANDER_CUSTOMSTYLE 
@@ -5729,6 +6101,9 @@ apply (name:"*harralander" && quantity:<VAR_HERBS_HARRALANDER_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*harralander" && noted:true && quantity:<VAR_HERBS_HARRALANDER_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Harralander seed" && quantity:<VAR_SEEDS_HARRALANDER_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5741,6 +6116,9 @@ apply (name:"*ranarr weed" && quantity:<VAR_HERBS_RANARR_WEED_MIN_QUANTITY) {
 apply (name:"*ranarr weed" && noted:true && quantity:<VAR_HERBS_RANARR_WEED_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Ranarr seed" && quantity:<VAR_SEEDS_RANARR_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*toadflax") {
     VAR_HERBS_TOADFLAX_CUSTOMSTYLE 
@@ -5749,6 +6127,9 @@ apply (name:"*toadflax" && quantity:<VAR_HERBS_TOADFLAX_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*toadflax" && noted:true && quantity:<VAR_HERBS_TOADFLAX_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Toadflax seed" && quantity:<VAR_SEEDS_TOADFLAX_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5761,6 +6142,9 @@ apply (name:"*irit leaf" && quantity:<VAR_HERBS_IRIT_LEAF_MIN_QUANTITY) {
 apply (name:"*irit leaf" && noted:true && quantity:<VAR_HERBS_IRIT_LEAF_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Irit seed" && quantity:<VAR_SEEDS_IRIT_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*avantoe") {
     VAR_HERBS_AVANTOE_CUSTOMSTYLE 
@@ -5769,6 +6153,9 @@ apply (name:"*avantoe" && quantity:<VAR_HERBS_AVANTOE_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*avantoe" && noted:true && quantity:<VAR_HERBS_AVANTOE_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Avantoe seed" && quantity:<VAR_SEEDS_AVANTOE_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5781,6 +6168,9 @@ apply (name:"*kwuarm" && quantity:<VAR_HERBS_KWUARM_MIN_QUANTITY) {
 apply (name:"*kwuarm" && noted:true && quantity:<VAR_HERBS_KWUARM_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Kwuarm seed" && quantity:<VAR_SEEDS_KWUARM_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*huasca") {
     VAR_HERBS_HUASCA_CUSTOMSTYLE 
@@ -5789,6 +6179,9 @@ apply (name:"*huasca" && quantity:<VAR_HERBS_HUASCA_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*huasca" && noted:true && quantity:<VAR_HERBS_HUASCA_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Huasca seed" && quantity:<VAR_SEEDS_HUASCA_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5801,6 +6194,9 @@ apply (name:"*snapdragon" && quantity:<VAR_HERBS_SNAPDRAGON_MIN_QUANTITY) {
 apply (name:"*snapdragon" && noted:true && quantity:<VAR_HERBS_SNAPDRAGON_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Snapdragon seed" && quantity:<VAR_SEEDS_SNAPDRAGON_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*cadantine") {
     VAR_HERBS_CADANTINE_CUSTOMSTYLE 
@@ -5809,6 +6205,9 @@ apply (name:"*cadantine" && quantity:<VAR_HERBS_CADANTINE_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*cadantine" && noted:true && quantity:<VAR_HERBS_CADANTINE_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Cadantine seed" && quantity:<VAR_SEEDS_CADANTINE_MIN_QUANTITY) {
     hidden = true;
 }
 
@@ -5821,6 +6220,9 @@ apply (name:"*lantadyme" && quantity:<VAR_HERBS_LANTADYME_MIN_QUANTITY) {
 apply (name:"*lantadyme" && noted:true && quantity:<VAR_HERBS_LANTADYME_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Lantadyme seed" && quantity:<VAR_SEEDS_LANTADYME_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*dwarf weed") {
     VAR_HERBS_DWARF_WEED_CUSTOMSTYLE 
@@ -5831,6 +6233,9 @@ apply (name:"*dwarf weed" && quantity:<VAR_HERBS_DWARF_WEED_MIN_QUANTITY) {
 apply (name:"*dwarf weed" && noted:true && quantity:<VAR_HERBS_DWARF_WEED_NOTED_MIN_QUANTITY) {
     hidden = true;
 }
+apply (name:"Dwarf weed seed" && quantity:<VAR_SEEDS_DWARF_WEED_MIN_QUANTITY) {
+    hidden = true;
+}
 
 apply (name:"*torstol") {
     VAR_HERBS_TORSTOL_CUSTOMSTYLE 
@@ -5839,6 +6244,9 @@ apply (name:"*torstol" && quantity:<VAR_HERBS_TORSTOL_MIN_QUANTITY) {
     hidden = true;
 }
 apply (name:"*torstol" && noted:true && quantity:<VAR_HERBS_TORSTOL_NOTED_MIN_QUANTITY) {
+    hidden = true;
+}
+apply (name:"Torstol seed" && quantity:<VAR_SEEDS_TORSTOL_MIN_QUANTITY) {
     hidden = true;
 }
 
