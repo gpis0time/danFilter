@@ -5475,11 +5475,9 @@ group: Custom Styling
 exampleItem: Air rune
 */
 #define VAR_AIR_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50E1DEDE";\
-  borderColor = "#FFE1DEDE";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFE1DEDE";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5488,11 +5486,9 @@ group: Custom Styling
 exampleItem: Mind rune
 */
 #define VAR_MIND_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50D58A2E";\
-  borderColor = "#FFD58A2E";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFD58A2E";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5501,11 +5497,9 @@ group: Custom Styling
 exampleItem: Water rune
 */
 #define VAR_WATER_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50151AA7";\
-  borderColor = "#FF151AA7";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF151AA7";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5514,11 +5508,9 @@ group: Custom Styling
 exampleItem: Earth rune
 */
 #define VAR_EARTH_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#506D490D";\
-  borderColor = "#FF6D490D";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF6D490D";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5527,11 +5519,9 @@ group: Custom Styling
 exampleItem: Fire rune
 */
 #define VAR_FIRE_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50A72215";\
-  borderColor = "#FFA72215";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFA72215";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5540,11 +5530,9 @@ group: Custom Styling
 exampleItem: Body rune
 */
 #define VAR_BODY_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#501A21CF";\
-  borderColor = "#FF1A21CF";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF1A21CF";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5553,11 +5541,9 @@ group: Custom Styling
 exampleItem: Cosmic rune
 */
 #define VAR_COSMIC_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50E0DE1A";\
-  borderColor = "#FFE0DE1A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFE0DE1A";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5566,11 +5552,9 @@ group: Custom Styling
 exampleItem: Chaos rune
 */
 #define VAR_CHAOS_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50E0A81A";\
-  borderColor = "#FFE0A81A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFE0A81A";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5579,11 +5563,9 @@ group: Custom Styling
 exampleItem: Nature rune
 */
 #define VAR_NATURE_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50168B1A";\
-  borderColor = "#FF168B1A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF168B1A";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5592,11 +5574,9 @@ group: Custom Styling
 exampleItem: Law rune
 */
 #define VAR_LAW_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#501A22E0";\
-  borderColor = "#FF1A22E0";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF1A22E0";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5605,11 +5585,9 @@ group: Custom Styling
 exampleItem: Death rune
 */
 #define VAR_DEATH_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50E4E1E1";\
-  borderColor = "#FFE4E1E1";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFE4E1E1";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5618,11 +5596,9 @@ group: Custom Styling
 exampleItem: Sunfire rune
 */
 #define VAR_SUNFIRE_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50DFA81A";\
-  borderColor = "#FFDFA81A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFDFA81A";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5631,12 +5607,9 @@ group: Custom Styling
 exampleItem: Astral rune
 */
 #define VAR_ASTRAL_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50CDB5CD";\
-  borderColor = "#FFCDB5CD";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFCDB5CD";
-
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 /*@ define:input:runes
 type: style
 label: Blood rune custom style
@@ -5644,11 +5617,9 @@ group: Custom Styling
 exampleItem: Blood rune
 */
 #define VAR_BLOOD_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50891D11";\
-  borderColor = "#FF891D11";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF891D11";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5657,11 +5628,9 @@ group: Custom Styling
 exampleItem: Soul rune
 */
 #define VAR_SOUL_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#509192D3";\
-  borderColor = "#FF9192D3";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF9192D3";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5670,11 +5639,9 @@ group: Custom Styling
 exampleItem: Wrath rune
 */
 #define VAR_WRATH_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50353030";\
-  borderColor = "#FF353030";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF353030";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5683,11 +5650,9 @@ group: Custom Styling
 exampleItem: Mist rune
 */
 #define VAR_MIST_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50C8C0C0";\
-  borderColor = "#FFC8C0C0";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFC8C0C0";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5696,11 +5661,9 @@ group: Custom Styling
 exampleItem: Dust rune
 */
 #define VAR_DUST_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50746241";\
-  borderColor = "#FF746241";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF746241";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5709,11 +5672,9 @@ group: Custom Styling
 exampleItem: Mud rune
 */
 #define VAR_MUD_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#505D3B17";\
-  borderColor = "#FF5D3B17";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF5D3B17";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5722,11 +5683,9 @@ group: Custom Styling
 exampleItem: Smoke rune
 */
 #define VAR_SMOKE_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50534D4D";\
-  borderColor = "#FF534D4D";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF534D4D";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5735,11 +5694,9 @@ group: Custom Styling
 exampleItem: Steam rune
 */
 #define VAR_STEAM_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50AEAEB7";\
-  borderColor = "#FFAEAEB7";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFAEAEB7";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 /*@ define:input:runes
 type: style
@@ -5748,11 +5705,9 @@ group: Custom Styling
 exampleItem: Lava rune
 */
 #define VAR_LAVA_RUNE_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50D28019";\
-  borderColor = "#FFD28019";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFD28019";
+  textColor = "#9b59b6";\
+  borderColor = "#9b59b6";\
+  menuTextColor = "#9b59b6";
 
 
 /*@ define:input:runes
@@ -6116,11 +6071,9 @@ group: Custom Styling
 exampleItem: Logs
 */
 #define VAR_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50AF8F51";\
-  borderColor = "#FF7F623A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF7F623A";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6129,11 +6082,9 @@ group: Custom Styling
 exampleItem: Oak logs
 */
 #define VAR_OAK_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50A7875E";\
-  borderColor = "#FF8B6B40";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF8B6B40";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6142,11 +6093,9 @@ group: Custom Styling
 exampleItem: Willow logs
 */
 #define VAR_WILLOW_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#5071673F";\
-  borderColor = "#FF564D20";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF564D20";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6155,11 +6104,9 @@ group: Custom Styling
 exampleItem: Maple logs
 */
 #define VAR_MAPLE_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50846230";\
-  borderColor = "#FF704C0D";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF704C0D";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6168,11 +6115,9 @@ group: Custom Styling
 exampleItem: Yew logs
 */
 #define VAR_YEW_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50856D3D";\
-  borderColor = "#FF5C4409";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF5C4409";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6181,11 +6126,9 @@ group: Custom Styling
 exampleItem: Magic logs
 */
 #define VAR_MAGIC_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#502AA79A";\
-  borderColor = "#FF8F8560";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF8F8560";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6194,11 +6137,9 @@ group: Custom Styling
 exampleItem: Redwood logs
 */
 #define VAR_REDWOOD_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50B87242";\
-  borderColor = "#FF73460D";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF73460D";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6207,11 +6148,9 @@ group: Custom Styling
 exampleItem: Teak logs
 */
 #define VAR_TEAK_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50937243";\
-  borderColor = "#FFBFA26C";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFBFA26C";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6220,11 +6159,9 @@ group: Custom Styling
 exampleItem: Mahogany logs
 */
 #define VAR_MAHOGANY_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50693F09";\
-  borderColor = "#FFBEA16C";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFBEA16C";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6233,11 +6170,9 @@ group: Custom Styling
 exampleItem: Achey tree logs
 */
 #define VAR_ACHEY_TREE_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#508C805E";\
-  borderColor = "#FF746642";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF746642";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6246,11 +6181,9 @@ group: Custom Styling
 exampleItem: Arctic pine logs
 */
 #define VAR_ARCTIC_PINE_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50CBAC73";\
-  borderColor = "#FFAB8C4E";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFAB8C4E";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6259,11 +6192,9 @@ group: Custom Styling
 exampleItem: Scrapey tree logs
 */
 #define VAR_SCRAPEY_TREE_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#503F6409";\
-  borderColor = "#FF7F683A";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF7F683A";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6272,11 +6203,9 @@ group: Custom Styling
 exampleItem: Juniper logs
 */
 #define VAR_JUNIPER_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50A28F6E";\
-  borderColor = "#FF988667";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF988667";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6285,11 +6214,9 @@ group: Custom Styling
 exampleItem: Bark
 */
 #define VAR_BARK_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#5087734B";\
-  borderColor = "#FF483A20";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FF483A20";
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: style
@@ -6298,117 +6225,114 @@ group: Custom Styling
 exampleItem: Blisterwood logs
 */
 #define VAR_BLISTERWOOD_LOGS_CUSTOMSTYLE \
-  textColor = "#FFFFFFFF";\
-  backgroundColor = "#50923A34";\
-  borderColor = "#FFDFDBDB";\
-  textAccentColor = "#FF000000";\
-  menuTextColor = "#FFDFDBDB";
-
+  textColor = "#8e6e53";\
+  borderColor = "#8e6e53";\
+  menuTextColor = "#8e6e53";
 
 /*@ define:input:logs
 type: number
 label: Logs minimum quantity
 group: Logs Filters
 */
-#define VAR_LOGS_MIN_QUANTITY 0
+#define VAR_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Oak logs minimum quantity
 group: Logs Filters
 */
-#define VAR_OAK_LOGS_MIN_QUANTITY 0
+#define VAR_OAK_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Willow logs minimum quantity
 group: Logs Filters
 */
-#define VAR_WILLOW_LOGS_MIN_QUANTITY 0
+#define VAR_WILLOW_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Maple logs minimum quantity
 group: Logs Filters
 */
-#define VAR_MAPLE_LOGS_MIN_QUANTITY 0
+#define VAR_MAPLE_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Yew logs minimum quantity
 group: Logs Filters
 */
-#define VAR_YEW_LOGS_MIN_QUANTITY 0
+#define VAR_YEW_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Magic logs minimum quantity
 group: Logs Filters
 */
-#define VAR_MAGIC_LOGS_MIN_QUANTITY 0
+#define VAR_MAGIC_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Redwood logs minimum quantity
 group: Logs Filters
 */
-#define VAR_REDWOOD_LOGS_MIN_QUANTITY 0
+#define VAR_REDWOOD_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Teak logs minimum quantity
 group: Logs Filters
 */
-#define VAR_TEAK_LOGS_MIN_QUANTITY 0
+#define VAR_TEAK_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Mahogany logs minimum quantity
 group: Logs Filters
 */
-#define VAR_MAHOGANY_LOGS_MIN_QUANTITY 0
+#define VAR_MAHOGANY_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Achey tree logs minimum quantity
 group: Logs Filters
 */
-#define VAR_ACHEY_TREE_LOGS_MIN_QUANTITY 0
+#define VAR_ACHEY_TREE_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Arctic pine logs minimum quantity
 group: Logs Filters
 */
-#define VAR_ARCTIC_PINE_LOGS_MIN_QUANTITY 0
+#define VAR_ARCTIC_PINE_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Scrapey tree logs minimum quantity
 group: Logs Filters
 */
-#define VAR_SCRAPEY_TREE_LOGS_MIN_QUANTITY 0
+#define VAR_SCRAPEY_TREE_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Juniper logs minimum quantity
 group: Logs Filters
 */
-#define VAR_JUNIPER_LOGS_MIN_QUANTITY 0
+#define VAR_JUNIPER_LOGS_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Bark minimum quantity
 group: Logs Filters
 */
-#define VAR_BARK_MIN_QUANTITY 0
+#define VAR_BARK_MIN_QUANTITY 2
 
 /*@ define:input:logs
 type: number
 label: Blisterwood logs minimum quantity
 group: Logs Filters
 */
-#define VAR_BLISTERWOOD_LOGS_MIN_QUANTITY 0
+#define VAR_BLISTERWOOD_LOGS_MIN_QUANTITY 2
 
 
 
