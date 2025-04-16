@@ -4220,7 +4220,7 @@ label: Copper ore custom style
 group: Custom Styling
 exampleItem: Copper ore
 */
-#define VAR_COPPER_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50DA7D37";borderColor = "#FFDA7D37";textAccentColor = "#FF000000";menuTextColor = "#FFDA7D37";
+#define VAR_COPPER_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4228,7 +4228,7 @@ label: Tin ore custom style
 group: Custom Styling
 exampleItem: Tin ore
 */
-#define VAR_TIN_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50887F7E";borderColor = "#FF887F7E";textAccentColor = "#FF000000";menuTextColor = "#FF887F7E";
+#define VAR_TIN_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4236,7 +4236,7 @@ label: Blurite ore custom style
 group: Custom Styling
 exampleItem: Blurite ore
 */
-#define VAR_BLURITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50787ACF";borderColor = "#FF787ACF";textAccentColor = "#FF000000";menuTextColor = "#FF787ACF";
+#define VAR_BLURITE_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4244,7 +4244,7 @@ label: Iron ore custom style
 group: Custom Styling
 exampleItem: Iron ore
 */
-#define VAR_IRON_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C2D22";borderColor = "#FF4C2D22";textAccentColor = "#FF000000";menuTextColor = "#FF4C2D22";
+#define VAR_IRON_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4252,7 +4252,7 @@ label: Daeyalt ore custom style
 group: Custom Styling
 exampleItem: Daeyalt ore
 */
-#define VAR_DAEYALT_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500A645B";borderColor = "#FF0A645B";textAccentColor = "#FF000000";menuTextColor = "#FF0A645B";
+#define VAR_DAEYALT_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4260,7 +4260,7 @@ label: Silver ore custom style
 group: Custom Styling
 exampleItem: Silver ore
 */
-#define VAR_SILVER_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509999A5";borderColor = "#FF9999A5";textAccentColor = "#FF000000";menuTextColor = "#FF9999A5";
+#define VAR_SILVER_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4268,7 +4268,7 @@ label: Coal custom style
 group: Custom Styling
 exampleItem: Coal
 */
-#define VAR_COAL_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50383725";borderColor = "#FF383725";textAccentColor = "#FF000000";menuTextColor = "#FF383725";
+#define VAR_COAL_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4276,7 +4276,7 @@ label: Gold ore custom style
 group: Custom Styling
 exampleItem: Gold ore
 */
-#define VAR_GOLD_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C6A118";borderColor = "#FFC6A118";textAccentColor = "#FF000000";menuTextColor = "#FFC6A118";
+#define VAR_GOLD_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4284,7 +4284,7 @@ label: Blasted ore custom style
 group: Custom Styling
 exampleItem: Blasted ore
 */
-#define VAR_BLASTED_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50515757";borderColor = "#FF515757";textAccentColor = "#FF000000";menuTextColor = "#FF515757";
+#define VAR_BLASTED_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4292,7 +4292,7 @@ label: Mithril ore custom style
 group: Custom Styling
 exampleItem: Mithril ore
 */
-#define VAR_MITHRIL_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5048486A";borderColor = "#FF48486A";textAccentColor = "#FF000000";menuTextColor = "#FF48486A";
+#define VAR_MITHRIL_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4300,7 +4300,7 @@ label: Lovakite ore custom style
 group: Custom Styling
 exampleItem: Lovakite ore
 */
-#define VAR_LOVAKITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505C1009";borderColor = "#FF5C1009";textAccentColor = "#FF000000";menuTextColor = "#FF5C1009";
+#define VAR_LOVAKITE_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4308,7 +4308,7 @@ label: Adamantite ore custom style
 group: Custom Styling
 exampleItem: Adamantite ore
 */
-#define VAR_ADAMANTITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50485B49";borderColor = "#FF485B49";textAccentColor = "#FF000000";menuTextColor = "#FF485B49";
+#define VAR_ADAMANTITE_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: style
@@ -4316,8 +4316,7 @@ label: Runite ore custom style
 group: Custom Styling
 exampleItem: Runite ore
 */
-#define VAR_RUNITE_ORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504D6671";borderColor = "#FF4D6671";textAccentColor = "#FF000000";menuTextColor = "#FF4D6671";
-
+#define VAR_RUNITE_ORE_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:ores
 type: number
@@ -4570,7 +4569,7 @@ label: Sapphire custom style
 group: Custom Styling
 exampleItem: Sapphire
 */
-#define VAR_SAPPHIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500C1273";borderColor = "#FF0C1273";textAccentColor = "#FF000000";menuTextColor = "#FF0C1273";
+#define VAR_SAPPHIRE_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4578,7 +4577,7 @@ label: Emerald custom style
 group: Custom Styling
 exampleItem: Emerald
 */
-#define VAR_EMERALD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500C6B0F";borderColor = "#FF0C6B0F";textAccentColor = "#FF000000";menuTextColor = "#FF0C6B0F";
+#define VAR_EMERALD_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4586,7 +4585,7 @@ label: Ruby custom style
 group: Custom Styling
 exampleItem: Ruby
 */
-#define VAR_RUBY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504E0F08";borderColor = "#FF4E0F08";textAccentColor = "#FF000000";menuTextColor = "#FF4E0F08";
+#define VAR_RUBY_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4594,7 +4593,7 @@ label: Diamond custom style
 group: Custom Styling
 exampleItem: Diamond
 */
-#define VAR_DIAMOND_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50857D7D";borderColor = "#FF857D7D";textAccentColor = "#FF000000";menuTextColor = "#FF857D7D";
+#define VAR_DIAMOND_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4602,7 +4601,7 @@ label: Opal custom style
 group: Custom Styling
 exampleItem: Opal
 */
-#define VAR_OPAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E7D63";borderColor = "#FF7E7D63";textAccentColor = "#FF000000";menuTextColor = "#FF7E7D63";
+#define VAR_OPAL_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4610,7 +4609,7 @@ label: Jade custom style
 group: Custom Styling
 exampleItem: Jade
 */
-#define VAR_JADE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506E7E64";borderColor = "#FF6E7E64";textAccentColor = "#FF000000";menuTextColor = "#FF6E7E64";
+#define VAR_JADE_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4618,7 +4617,7 @@ label: Red topaz custom style
 group: Custom Styling
 exampleItem: Red topaz
 */
-#define VAR_RED_TOPAZ_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50830E4F";borderColor = "#FF830E4F";textAccentColor = "#FF000000";menuTextColor = "#FF830E4F";
+#define VAR_RED_TOPAZ_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4626,7 +4625,7 @@ label: Dragonstone custom style
 group: Custom Styling
 exampleItem: Dragonstone
 */
-#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C0B62";borderColor = "#FF4C0B62";textAccentColor = "#FF000000";menuTextColor = "#FF4C0B62";
+#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 /*@ define:input:gems
 type: style
@@ -4634,7 +4633,7 @@ label: Onyx custom style
 group: Custom Styling
 exampleItem: Onyx
 */
-#define VAR_ONYX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501C1A1A";borderColor = "#FF1C1A1A";textAccentColor = "#FF000000";menuTextColor = "#FF1C1A1A";
+#define VAR_ONYX_CUSTOMSTYLE textColor = "#1abc9c";borderColor = "#1abc9c";menuTextColor = "#1abc9c";
 
 
 /*@ define:input:gems
@@ -4848,7 +4847,7 @@ label: Bronze bar custom style
 group: Custom Styling
 exampleItem: Bronze bar
 */
-#define VAR_BRONZE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50554127";borderColor = "#FF554127";textAccentColor = "#FF000000";menuTextColor = "#FF554127";
+#define VAR_BRONZE_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4856,7 +4855,7 @@ label: Iron bar custom style
 group: Custom Styling
 exampleItem: Iron bar
 */
-#define VAR_IRON_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504C4545";borderColor = "#FF4C4545";textAccentColor = "#FF000000";menuTextColor = "#FF4C4545";
+#define VAR_IRON_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4864,7 +4863,7 @@ label: Silver bar custom style
 group: Custom Styling
 exampleItem: Silver bar
 */
-#define VAR_SILVER_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509C9CA7";borderColor = "#FF9C9CA7";textAccentColor = "#FF000000";menuTextColor = "#FF9C9CA7";
+#define VAR_SILVER_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4872,7 +4871,7 @@ label: Steel bar custom style
 group: Custom Styling
 exampleItem: Steel bar
 */
-#define VAR_STEEL_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50887E7E";borderColor = "#FF887E7E";textAccentColor = "#FF000000";menuTextColor = "#FF887E7E";
+#define VAR_STEEL_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4880,7 +4879,7 @@ label: Gold bar custom style
 group: Custom Styling
 exampleItem: Gold bar
 */
-#define VAR_GOLD_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CBA618";borderColor = "#FFCBA618";textAccentColor = "#FF000000";menuTextColor = "#FFCBA618";
+#define VAR_GOLD_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4888,7 +4887,7 @@ label: Mithril bar custom style
 group: Custom Styling
 exampleItem: Mithril bar
 */
-#define VAR_MITHRIL_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50484869";borderColor = "#FF484869";textAccentColor = "#FF000000";menuTextColor = "#FF484869";
+#define VAR_MITHRIL_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4896,7 +4895,7 @@ label: Adamantite bar custom style
 group: Custom Styling
 exampleItem: Adamantite bar
 */
-#define VAR_ADAMANTITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50485A48";borderColor = "#FF485A48";textAccentColor = "#FF000000";menuTextColor = "#FF485A48";
+#define VAR_ADAMANTITE_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4904,7 +4903,7 @@ label: Runite bar custom style
 group: Custom Styling
 exampleItem: Runite bar
 */
-#define VAR_RUNITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#504B6570";borderColor = "#FF4B6570";textAccentColor = "#FF000000";menuTextColor = "#FF4B6570";
+#define VAR_RUNITE_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4912,7 +4911,7 @@ label: Elemental metal custom style
 group: Custom Styling
 exampleItem: Elemental metal
 */
-#define VAR_ELEMENTAL_METAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50691094";borderColor = "#FF691094";textAccentColor = "#FF000000";menuTextColor = "#FF691094";
+#define VAR_ELEMENTAL_METAL_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4920,7 +4919,7 @@ label: Primed bar custom style
 group: Custom Styling
 exampleItem: Primed bar
 */
-#define VAR_PRIMED_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509F9F93";borderColor = "#FF9F9F93";textAccentColor = "#FF000000";menuTextColor = "#FF9F9F93";
+#define VAR_PRIMED_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4928,7 +4927,7 @@ label: Primed mind bar custom style
 group: Custom Styling
 exampleItem: Primed mind bar
 */
-#define VAR_PRIMED_MIND_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509B6913";borderColor = "#FF9B6913";textAccentColor = "#FF000000";menuTextColor = "#FF9B6913";
+#define VAR_PRIMED_MIND_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4936,7 +4935,7 @@ label: Blurite bar custom style
 group: Custom Styling
 exampleItem: Blurite bar
 */
-#define VAR_BLURITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508485C8";borderColor = "#FF8485C8";textAccentColor = "#FF000000";menuTextColor = "#FF8485C8";
+#define VAR_BLURITE_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4944,7 +4943,7 @@ label: Enchanted bar custom style
 group: Custom Styling
 exampleItem: Enchanted bar
 */
-#define VAR_ENCHANTED_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506F6E4B";borderColor = "#FF6F6E4B";textAccentColor = "#FF000000";menuTextColor = "#FF6F6E4B";
+#define VAR_ENCHANTED_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4952,7 +4951,7 @@ label: Lovakite bar custom style
 group: Custom Styling
 exampleItem: Lovakite bar
 */
-#define VAR_LOVAKITE_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505E1409";borderColor = "#FF5E1409";textAccentColor = "#FF000000";menuTextColor = "#FF5E1409";
+#define VAR_LOVAKITE_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 /*@ define:input:bars
 type: style
@@ -4960,7 +4959,7 @@ label: "'Perfect' gold bar custom style"
 group: Custom Styling
 exampleItem: "'Perfect' gold bar"
 */
-#define VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B79517";borderColor = "#FFB79517";textAccentColor = "#FF000000";menuTextColor = "#FFB79517";
+#define VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE textColor = "#95a5a6";borderColor = "#95a5a6";menuTextColor = "#95a5a6";
 
 
 /*@ define:input:bars
