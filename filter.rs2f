@@ -5492,7 +5492,7 @@ label: Guam leaf custom style
 group: Custom Styling
 exampleItem: Guam leaf
 */
-#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#ff00ff00";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_GUAM_LEAF_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5500,7 +5500,7 @@ label: Marrentill custom style
 group: Custom Styling
 exampleItem: Marrentill
 */
-#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_MARRENTILL_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5508,7 +5508,7 @@ label: Tarromin custom style
 group: Custom Styling
 exampleItem: Tarromin
 */
-#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TARROMIN_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5516,7 +5516,7 @@ label: Harralander custom style
 group: Custom Styling
 exampleItem: Harralander
 */
-#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_HARRALANDER_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5524,7 +5524,7 @@ label: Ranarr weed custom style
 group: Custom Styling
 exampleItem: Ranarr weed
 */
-#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_RANARR_WEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5532,7 +5532,7 @@ label: Toadflax custom style
 group: Custom Styling
 exampleItem: Toadflax
 */
-#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TOADFLAX_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5540,7 +5540,7 @@ label: Irit leaf custom style
 group: Custom Styling
 exampleItem: Irit leaf
 */
-#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_IRIT_LEAF_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5548,7 +5548,7 @@ label: Avantoe custom style
 group: Custom Styling
 exampleItem: Avantoe
 */
-#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_AVANTOE_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5556,7 +5556,7 @@ label: Kwuarm custom style
 group: Custom Styling
 exampleItem: Kwuarm
 */
-#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_KWUARM_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5564,7 +5564,7 @@ label: Huasca custom style
 group: Custom Styling
 exampleItem: Huasca
 */
-#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_HUASCA_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5572,7 +5572,7 @@ label: Snapdragon custom style
 group: Custom Styling
 exampleItem: Snapdragon
 */
-#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_SNAPDRAGON_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5580,7 +5580,7 @@ label: Cadantine custom style
 group: Custom Styling
 exampleItem: Cadantine
 */
-#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_CADANTINE_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5588,7 +5588,7 @@ label: Lantadyme custom style
 group: Custom Styling
 exampleItem: Lantadyme
 */
-#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_LANTADYME_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5596,7 +5596,7 @@ label: Dwarf weed custom style
 group: Custom Styling
 exampleItem: Dwarf weed
 */
-#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_DWARF_WEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5604,7 +5604,7 @@ label: Torstol custom style
 group: Custom Styling
 exampleItem: Torstol
 */
-#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TORSTOL_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5612,7 +5612,7 @@ label: Guam seed custom style
 group: Custom Styling
 exampleItem: Guam seed
 */
-#define VAR_HERBS_GUAM_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_GUAM_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5620,7 +5620,7 @@ label: Marrentill seed custom style
 group: Custom Styling
 exampleItem: Marrentill seed
 */
-#define VAR_HERBS_MARRENTILL_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_MARRENTILL_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5628,7 +5628,7 @@ label: Tarromin seed custom style
 group: Custom Styling
 exampleItem: Tarromin seed
 */
-#define VAR_HERBS_TARROMIN_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TARROMIN_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5636,7 +5636,7 @@ label: Harralander seed custom style
 group: Custom Styling
 exampleItem: Harralander seed
 */
-#define VAR_HERBS_HARRALANDER_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_HARRALANDER_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5644,7 +5644,7 @@ label: Ranarr seed custom style
 group: Custom Styling
 exampleItem: Ranarr seed
 */
-#define VAR_HERBS_RANARR_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_RANARR_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5652,7 +5652,7 @@ label: Toadflax seed custom style
 group: Custom Styling
 exampleItem: Toadflax seed
 */
-#define VAR_HERBS_TOADFLAX_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TOADFLAX_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5660,7 +5660,7 @@ label: Irit seed custom style
 group: Custom Styling
 exampleItem: Irit seed
 */
-#define VAR_HERBS_IRIT_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_IRIT_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5668,7 +5668,7 @@ label: Avantoe seed custom style
 group: Custom Styling
 exampleItem: Avantoe seed
 */
-#define VAR_HERBS_AVANTOE_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_AVANTOE_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5676,7 +5676,7 @@ label: Kwuarm seed custom style
 group: Custom Styling
 exampleItem: Kwuarm seed
 */
-#define VAR_HERBS_KWUARM_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_KWUARM_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5684,7 +5684,7 @@ label: Huasca seed custom style
 group: Custom Styling
 exampleItem: Huasca seed
 */
-#define VAR_HERBS_HUASCA_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_HUASCA_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5692,7 +5692,7 @@ label: Snapdragon seed custom style
 group: Custom Styling
 exampleItem: Snapdragon seed
 */
-#define VAR_HERBS_SNAPDRAGON_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_SNAPDRAGON_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5700,7 +5700,7 @@ label: Cadantine seed custom style
 group: Custom Styling
 exampleItem: Cadantine seed
 */
-#define VAR_HERBS_CADANTINE_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_CADANTINE_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5708,7 +5708,7 @@ label: Lantadyme seed custom style
 group: Custom Styling
 exampleItem: Lantadyme seed
 */
-#define VAR_HERBS_LANTADYME_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_LANTADYME_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5716,7 +5716,7 @@ label: Dwarf weed seed custom style
 group: Custom Styling
 exampleItem: Dwarf weed seed
 */
-#define VAR_HERBS_DWARF_WEED_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_DWARF_WEED_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 /*@ define:input:herbs
 type: style
@@ -5724,7 +5724,7 @@ label: Torstol seed custom style
 group: Custom Styling
 exampleItem: Torstol seed
 */
-#define VAR_HERBS_TORSTOL_SEED_CUSTOMSTYLE textColor = "2ecc71";borderColor = "2ecc71";menuTextColor = "2ecc71";
+#define VAR_HERBS_TORSTOL_SEED_CUSTOMSTYLE textColor = "#2ecc71";borderColor = "#2ecc71";menuTextColor = "#2ecc71";
 
 
 /*@ define:input:herbs
