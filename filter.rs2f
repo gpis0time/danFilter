@@ -1,0 +1,1547 @@
+meta { name = "Bozo iron filter"; }
+// module:item_values
+
+#define VAR_VALUES_TIER_1_VALUE 20000
+#define VAR_VALUES_TIER_2_VALUE 100000
+#define VAR_VALUES_TIER_3_VALUE 1000000
+#define VAR_VALUES_TIER_4_VALUE 10000000
+
+#define VAR_VALUES_TIER_1_CUSTOMSTYLE textColor = "#FF66B2FF";textAccentColor = "#FF000000";menuTextColor = "#FFFF9600";
+#define VAR_VALUES_TIER_2_CUSTOMSTYLE textColor = "#FF99FF99";textAccentColor = "#FF000000";menuTextColor = "#FFFF9600";
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#50FFFFFF";borderColor = "#FFFF9600";textAccentColor = "#FF000000";menuTextColor = "#FFFF9600";showLootbeam = true;
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#50FFFFFF";borderColor = "#FFFF66B2";textAccentColor = "#FF000000";menuTextColor = "#FFFF66B2";showLootbeam = true;
+
+#define VAR_VALUES_TIER_1_SHOW []
+#define VAR_VALUES_TIER_2_SHOW []
+#define VAR_VALUES_TIER_3_SHOW []
+#define VAR_VALUES_TIER_4_SHOW []
+
+
+
+apply (value:>=VAR_VALUES_TIER_1_VALUE) {
+    VAR_VALUES_TIER_1_CUSTOMSTYLE 
+}
+apply (name:VAR_VALUES_TIER_1_SHOW) {
+    VAR_VALUES_TIER_1_CUSTOMSTYLE 
+}
+
+apply (value:>=VAR_VALUES_TIER_2_VALUE) {
+    VAR_VALUES_TIER_2_CUSTOMSTYLE 
+}
+apply (name:VAR_VALUES_TIER_2_SHOW) {
+    VAR_VALUES_TIER_2_CUSTOMSTYLE 
+}
+
+apply (value:>=VAR_VALUES_TIER_3_VALUE) {
+    VAR_VALUES_TIER_3_CUSTOMSTYLE 
+}
+apply (name:VAR_VALUES_TIER_3_SHOW) {
+    VAR_VALUES_TIER_3_CUSTOMSTYLE 
+}
+
+apply (value:>=VAR_VALUES_TIER_4_VALUE) {
+    VAR_VALUES_TIER_4_CUSTOMSTYLE 
+}
+apply (name:VAR_VALUES_TIER_4_SHOW) {
+    VAR_VALUES_TIER_4_CUSTOMSTYLE 
+}
+
+
+
+// endmodule:item_values
+
+// module:global
+
+#define VAR_GLOBAL_HIDE []
+#define VAR_GLOBAL_SHOW []
+
+#define VAR_GLOBAL_CUSTOMSTYLE 
+#define VAR_GLOBAL_SHOW_ICONS true
+
+#define VAR_GLOBAL_MINIMUM_VALUE 0
+
+
+
+apply (value:<VAR_GLOBAL_MINIMUM_VALUE) {
+    hidden = true;
+}
+
+apply (VAR_GLOBAL_SHOW_ICONS) {
+    icon = CurrentItem();
+}
+
+apply (name:"*") {
+    VAR_GLOBAL_CUSTOMSTYLE 
+}
+
+apply (name:VAR_GLOBAL_HIDE) {
+    hidden = true;
+}
+
+apply (name:VAR_GLOBAL_SHOW) {
+    hidden = false;
+}
+
+
+
+// endmodule:global
+
+// module:currency
+
+#define CONST_CURRENCY_LIST [\
+    "Abyssal pearls", \
+    "Agility arena ticket", \
+    "Anima-infused bark", \
+    "Archery ticket", \
+    "Barronite shards", \
+    "Blood money", \
+    "Brimhaven voucher", \
+    "Castle wars ticket", \
+    "Coins", \
+    "Ecto-token", \
+    "Frog token", \
+    "Glistening tear", \
+    "Golden nugget", \
+    "Hallowed mark", \
+    "Intelligence", \
+    "Mark of grace", \
+    "Mermaid's tear", \
+    "Minnow", \
+    "Molch pearl", \
+    "Mole claw", \
+    "Mole skin", \
+    "Nuggets", \
+    "Numulite", \
+    "Paramaya ticket", \
+    "Platinum token", \
+    "Rare creature parts", \
+    "Reward token credits", \
+    "Shantay pass", \
+    "Ship ticket", \
+    "Stardust", \
+    "Termites", \
+    "Tokkul", \
+    "Trading sticks", \
+    "Unidentified minerals", \
+    "Warrior guild token", \
+]
+
+#define VAR_CURRENCY_HIDE ["Archery ticket"]
+
+#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#f1c40f";
+
+#define VAR_ABYSSAL_PEARLS_MIN_QUANTITY 0
+#define VAR_AGILITY_ARENA_TICKET_MIN_QUANTITY 0
+#define VAR_ANIMA_INFUSED_BARK_MIN_QUANTITY 0
+#define VAR_ARCHERY_TICKET_MIN_QUANTITY 0
+#define VAR_BARRONITE_SHARDS_MIN_QUANTITY 0
+#define VAR_BLOOD_MONEY_MIN_QUANTITY 0
+#define VAR_BRIMHAVEN_VOUCHER_MIN_QUANTITY 0
+#define VAR_CASTLE_WARS_TICKET_MIN_QUANTITY 0
+#define VAR_COINS_MIN_QUANTITY 2001
+#define VAR_ECTO_TOKEN_MIN_QUANTITY 0
+#define VAR_FROG_TOKEN_MIN_QUANTITY 0
+#define VAR_GLISTENING_TEAR_MIN_QUANTITY 0
+#define VAR_GOLDEN_NUGGET_MIN_QUANTITY 0
+#define VAR_HALLOWED_MARK_MIN_QUANTITY 0
+#define VAR_INTELLIGENCE_MIN_QUANTITY 0
+#define VAR_MARK_OF_GRACE_MIN_QUANTITY 0
+#define VAR_MERMAIDS_TEAR_MIN_QUANTITY 0
+#define VAR_MINNOW_MIN_QUANTITY 0
+#define VAR_MOLCH_PEARL_MIN_QUANTITY 0
+#define VAR_MOLE_CLAW_MIN_QUANTITY 0
+#define VAR_MOLE_SKIN_MIN_QUANTITY 0
+#define VAR_NUGGETS_MIN_QUANTITY 0
+#define VAR_NUMULITE_MIN_QUANTITY 0
+#define VAR_PARAMAYA_TICKET_MIN_QUANTITY 0
+#define VAR_PLATINUM_TOKEN_MIN_QUANTITY 0
+#define VAR_RARE_CREATURE_PARTS_MIN_QUANTITY 0
+#define VAR_REWARD_TOKEN_CREDITS_MIN_QUANTITY 0
+#define VAR_SHANTAY_PASS_MIN_QUANTITY 0
+#define VAR_SHIP_TICKET_MIN_QUANTITY 0
+#define VAR_STARDUST_MIN_QUANTITY 0
+#define VAR_TERMITES_MIN_QUANTITY 0
+#define VAR_TOKKUL_MIN_QUANTITY 0
+#define VAR_TRADING_STICKS_MIN_QUANTITY 0
+#define VAR_UNIDENTIFIED_MINERALS_MIN_QUANTITY 0
+#define VAR_WARRIOR_GUILD_TOKEN_MIN_QUANTITY 0
+
+#define VAR_ABYSSAL_PEARLS_CUSTOMSTYLE 
+#define VAR_AGILITY_ARENA_TICKET_CUSTOMSTYLE 
+#define VAR_ANIMA_INFUSED_BARK_CUSTOMSTYLE 
+#define VAR_ARCHERY_TICKET_CUSTOMSTYLE 
+#define VAR_BARRONITE_SHARDS_CUSTOMSTYLE 
+#define VAR_BLOOD_MONEY_CUSTOMSTYLE 
+#define VAR_BRIMHAVEN_VOUCHER_CUSTOMSTYLE 
+#define VAR_CASTLE_WARS_TICKET_CUSTOMSTYLE 
+#define VAR_COINS_CUSTOMSTYLE 
+#define VAR_ECTO_TOKEN_CUSTOMSTYLE 
+#define VAR_FROG_TOKEN_CUSTOMSTYLE 
+#define VAR_GLISTENING_TEAR_CUSTOMSTYLE 
+#define VAR_GOLDEN_NUGGET_CUSTOMSTYLE 
+#define VAR_HALLOWED_MARK_CUSTOMSTYLE 
+#define VAR_INTELLIGENCE_CUSTOMSTYLE 
+#define VAR_MARK_OF_GRACE_CUSTOMSTYLE 
+#define VAR_MERMAIDS_TEAR_CUSTOMSTYLE 
+#define VAR_MINNOW_CUSTOMSTYLE 
+#define VAR_MOLCH_PEARL_CUSTOMSTYLE 
+#define VAR_MOLE_CLAW_CUSTOMSTYLE 
+#define VAR_MOLE_SKIN_CUSTOMSTYLE 
+#define VAR_NUGGETS_CUSTOMSTYLE 
+#define VAR_NUMULITE_CUSTOMSTYLE 
+#define VAR_PARAMAYA_TICKET_CUSTOMSTYLE 
+#define VAR_PLATINUM_TOKEN_CUSTOMSTYLE 
+#define VAR_RARE_CREATURE_PARTS_CUSTOMSTYLE 
+#define VAR_REWARD_TOKEN_CREDITS_CUSTOMSTYLE 
+#define VAR_SHANTAY_PASS_CUSTOMSTYLE 
+#define VAR_SHIP_TICKET_CUSTOMSTYLE 
+#define VAR_STARDUST_CUSTOMSTYLE 
+#define VAR_TERMITES_CUSTOMSTYLE 
+#define VAR_TOKKUL_CUSTOMSTYLE 
+#define VAR_TRADING_STICKS_CUSTOMSTYLE 
+#define VAR_UNIDENTIFIED_MINERALS_CUSTOMSTYLE 
+#define VAR_WARRIOR_GUILD_TOKEN_CUSTOMSTYLE 
+
+
+apply (name:CONST_CURRENCY_LIST) {
+    VAR_CURRENCY_CUSTOMSTYLE 
+}
+apply (name:VAR_CURRENCY_HIDE) {
+    hidden = true;
+}
+
+
+apply (name:"Archery ticket") {
+    VAR_ARCHERY_TICKET_CUSTOMSTYLE 
+}
+apply (name:"Archery ticket" && quantity:<VAR_ARCHERY_TICKET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Coins") {
+    VAR_COINS_CUSTOMSTYLE 
+}
+apply (name:"Coins" && quantity:<VAR_COINS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mole claw") {
+    VAR_MOLE_CLAW_CUSTOMSTYLE 
+}
+apply (name:"Mole claw" && quantity:<VAR_MOLE_CLAW_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mole skin") {
+    VAR_MOLE_SKIN_CUSTOMSTYLE 
+}
+apply (name:"Mole skin" && quantity:<VAR_MOLE_SKIN_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Numulite") {
+    VAR_NUMULITE_CUSTOMSTYLE 
+}
+apply (name:"Numulite" && quantity:<VAR_NUMULITE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Platinum token") {
+    VAR_PLATINUM_TOKEN_CUSTOMSTYLE 
+}
+apply (name:"Platinum token" && quantity:<VAR_PLATINUM_TOKEN_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Trading sticks") {
+    VAR_TRADING_STICKS_CUSTOMSTYLE 
+}
+apply (name:"Trading sticks" && quantity:<VAR_TRADING_STICKS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Shantay pass") {
+    VAR_SHANTAY_PASS_CUSTOMSTYLE 
+}
+apply (name:"Shantay pass" && quantity:<VAR_SHANTAY_PASS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Ship ticket") {
+    VAR_SHIP_TICKET_CUSTOMSTYLE 
+}
+apply (name:"Ship ticket" && quantity:<VAR_SHIP_TICKET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Abyssal pearls") {
+    VAR_ABYSSAL_PEARLS_CUSTOMSTYLE 
+}
+apply (name:"Abyssal pearls" && quantity:<VAR_ABYSSAL_PEARLS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Anima-infused bark") {
+    VAR_ANIMA_INFUSED_BARK_CUSTOMSTYLE 
+}
+apply (name:"Anima-infused bark" && quantity:<VAR_ANIMA_INFUSED_BARK_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Agility arena ticket") {
+    VAR_AGILITY_ARENA_TICKET_CUSTOMSTYLE 
+}
+apply (name:"Agility arena ticket" && quantity:<VAR_AGILITY_ARENA_TICKET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Barronite shards") {
+    VAR_BARRONITE_SHARDS_CUSTOMSTYLE 
+}
+apply (name:"Barronite shards" && quantity:<VAR_BARRONITE_SHARDS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Blood money") {
+    VAR_BLOOD_MONEY_CUSTOMSTYLE 
+}
+apply (name:"Blood money" && quantity:<VAR_BLOOD_MONEY_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Brimhaven voucher") {
+    VAR_BRIMHAVEN_VOUCHER_CUSTOMSTYLE 
+}
+apply (name:"Brimhaven voucher" && quantity:<VAR_BRIMHAVEN_VOUCHER_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Castle wars ticket") {
+    VAR_CASTLE_WARS_TICKET_CUSTOMSTYLE 
+}
+apply (name:"Castle wars ticket" && quantity:<VAR_CASTLE_WARS_TICKET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Ecto-token") {
+    VAR_ECTO_TOKEN_CUSTOMSTYLE 
+}
+apply (name:"Ecto-token" && quantity:<VAR_ECTO_TOKEN_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Frog token") {
+    VAR_FROG_TOKEN_CUSTOMSTYLE 
+}
+apply (name:"Frog token" && quantity:<VAR_FROG_TOKEN_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Golden nugget") {
+    VAR_GOLDEN_NUGGET_CUSTOMSTYLE 
+}
+apply (name:"Golden nugget" && quantity:<VAR_GOLDEN_NUGGET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Glistening tear") {
+    VAR_GLISTENING_TEAR_CUSTOMSTYLE 
+}
+apply (name:"Glistening tear" && quantity:<VAR_GLISTENING_TEAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Hallowed mark") {
+    VAR_HALLOWED_MARK_CUSTOMSTYLE 
+}
+apply (name:"Hallowed mark" && quantity:<VAR_HALLOWED_MARK_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Intelligence") {
+    VAR_INTELLIGENCE_CUSTOMSTYLE 
+}
+apply (name:"Intelligence" && quantity:<VAR_INTELLIGENCE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mark of grace") {
+    VAR_MARK_OF_GRACE_CUSTOMSTYLE 
+}
+apply (name:"Mark of grace" && quantity:<VAR_MARK_OF_GRACE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mermaid's tear") {
+    VAR_MERMAIDS_TEAR_CUSTOMSTYLE 
+}
+apply (name:"Mermaid's tear" && quantity:<VAR_MERMAIDS_TEAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Minnow") {
+    VAR_MINNOW_CUSTOMSTYLE 
+}
+apply (name:"Minnow" && quantity:<VAR_MINNOW_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Molch pearl") {
+    VAR_MOLCH_PEARL_CUSTOMSTYLE 
+}
+apply (name:"Molch pearl" && quantity:<VAR_MOLCH_PEARL_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Nuggets") {
+    VAR_NUGGETS_CUSTOMSTYLE 
+}
+apply (name:"Nuggets" && quantity:<VAR_NUGGETS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Paramaya ticket") {
+    VAR_PARAMAYA_TICKET_CUSTOMSTYLE 
+}
+apply (name:"Paramaya ticket" && quantity:<VAR_PARAMAYA_TICKET_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Rare creature parts") {
+    VAR_RARE_CREATURE_PARTS_CUSTOMSTYLE 
+}
+apply (name:"Rare creature parts" && quantity:<VAR_RARE_CREATURE_PARTS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Reward token credits") {
+    VAR_REWARD_TOKEN_CREDITS_CUSTOMSTYLE 
+}
+apply (name:"Reward token credits" && quantity:<VAR_REWARD_TOKEN_CREDITS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Stardust") {
+    VAR_STARDUST_CUSTOMSTYLE 
+}
+apply (name:"Stardust" && quantity:<VAR_STARDUST_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Tokkul") {
+    VAR_TOKKUL_CUSTOMSTYLE 
+}
+apply (name:"Tokkul" && quantity:<VAR_TOKKUL_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Termites") {
+    VAR_TERMITES_CUSTOMSTYLE 
+}
+apply (name:"Termites" && quantity:<VAR_TERMITES_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Unidentified minerals") {
+    VAR_UNIDENTIFIED_MINERALS_CUSTOMSTYLE 
+}
+apply (name:"Unidentified minerals" && quantity:<VAR_UNIDENTIFIED_MINERALS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Warrior guild token") {
+    VAR_WARRIOR_GUILD_TOKEN_CUSTOMSTYLE 
+}
+apply (name:"Warrior guild token" && quantity:<VAR_WARRIOR_GUILD_TOKEN_MIN_QUANTITY) {
+    hidden = true;
+}
+
+
+
+// endmodule:currency
+
+// module:theater_of_blood
+
+#define CONST_TOB_AREA [3153, 4233, 0, 3322, 4479, 0]
+
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ff0000";borderColor = "#ff0000";menuTextColor = "#ff0000";
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#ff0000";borderColor = "#ff0000";menuTextColor = "#ff0000";
+
+
+
+apply (name:"Dawnbringer") {
+    VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
+}
+apply (name:"Salve amulet (e)") {
+    VAR_TOB_SALVE_CUSTOMSTYLE 
+}
+
+
+
+// endmodule:theater_of_blood
+
+// module:herb
+
+#define CONST_HERB_HERBS [\
+  "*guam leaf",\
+  "*marrentill",\
+  "*tarromin",\
+  "*harralander",\
+  "*ranarr weed",\
+  "*toadflax",\
+  "*irit leaf",\
+  "*avantoe",\
+  "*kwuarm",\
+  "*huasca",\
+  "*snapdragon",\
+  "*cadantine",\
+  "*lantadyme",\
+  "*dwarf weed",\
+  "*torstol",\
+]
+
+#define CONST_FARMING_SEEDS_HERB_LIST ["Guam seed", "Marrentill seed", "Tarromin seed", "Harralander seed", "Ranarr seed", "Toadflax seed", "Irit seed", "Avantoe seed", "Kwuarm seed", "Snapdragon seed", "Huasca seed", "Cadantine seed", "Lantadyme seed", "Dwarf weed seed", "Torstol seed"]
+
+
+#define CONST_HERB_DEFAULTCOLOR GREEN
+
+#define VAR_HERB_MINVALUE 1
+#define VAR_HERB_SHOW []
+#define VAR_HERB_HIDE ["guam leaf","marrentill","tarromin","harralander"]
+#define VAR_HERB_CUSTOMSTYLE textColor = "#00ff00";borderColor = "#00ff00";menuTextColor = "#00ff00";
+
+#define VAR_HERB_seed_SHOW []
+#define VAR_HERB_seed_HIDE ["Guam seed","Marrentill seed","Tarromin seed","Harralander seed"]
+
+apply (name:CONST_HERB_HERBS) {
+  textColor = CONST_HERB_DEFAULTCOLOR;
+  VAR_HERB_CUSTOMSTYLE
+}
+
+apply (name:CONST_FARMING_SEEDS_HERB_LIST) {
+  textColor = CONST_HERB_DEFAULTCOLOR;
+  VAR_HERB_CUSTOMSTYLE
+}
+
+apply (name:CONST_HERB_HERBS && value:<VAR_HERB_MINVALUE) { hidden = true; }
+
+if (name:VAR_HERB_SHOW) { hidden = false; }
+if (name:VAR_HERB_HIDE) { hidden = true; }
+
+if (name:CONST_HERB_HERBS) {}
+
+if (name:VAR_HERB_seed_SHOW) { hidden = false; }
+if (name:VAR_HERB_seed_HIDE) { hidden = true; }
+
+if (name:CONST_HERB_HERBS) {}
+
+if (name:CONST_FARMING_SEEDS_HERB_LIST) {}
+// endmodule:herb
+
+// module:potions
+
+#define VAR_POTIONS_HIDE ["Attack potion(*","Strength potion(*","Serum 207(*","Compost potion(*","Restore potion(*","Energy potion(*","Defence potion(*","Agility potion(*","Combat potion(*","Fishing potion(*","Hunter potion(*","Antipoison(*","Superantipoison(*","Super energy(*","Super attack(*","Goading potion(*","Super strength(*","Prayer regeneration potion(*","Super defence(*","Antifire potion(*","Divine super defence potion(*","Divine super attack potion(*","Divine super strength potion(*","Magic potion(*"]
+
+#define VAR_ATTACK_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5032C6CC";borderColor = "#FF32C6CC";textAccentColor = "#FF000000";menuTextColor = "#FF32C6CC";
+#define VAR_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5081D838";borderColor = "#FF81D838";textAccentColor = "#FF000000";menuTextColor = "#FF81D838";
+#define VAR_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C9C754";borderColor = "#FFC9C754";textAccentColor = "#FF000000";menuTextColor = "#FFC9C754";
+#define VAR_SERUM_207_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5011768B";borderColor = "#FF11768B";textAccentColor = "#FF000000";menuTextColor = "#FF11768B";
+#define VAR_COMPOST_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508C655E";borderColor = "#FF8C655E";textAccentColor = "#FF000000";menuTextColor = "#FF8C655E";
+#define VAR_RESTORE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D4645D";borderColor = "#FFD4645D";textAccentColor = "#FF000000";menuTextColor = "#FFD4645D";
+#define VAR_ENERGY_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AA616D";borderColor = "#FFAA616D";textAccentColor = "#FF000000";menuTextColor = "#FFAA616D";
+#define VAR_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5059D45C";borderColor = "#FF59D45C";textAccentColor = "#FF000000";menuTextColor = "#FF59D45C";
+#define VAR_AGILITY_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E9812";borderColor = "#FF7E9812";textAccentColor = "#FF000000";menuTextColor = "#FF7E9812";
+#define VAR_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508AB977";borderColor = "#FF8AB977";textAccentColor = "#FF000000";menuTextColor = "#FF8AB977";
+#define VAR_PRAYER_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5059D4A8";borderColor = "#FF59D4A8";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";
+#define VAR_SUPER_ATTACK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505457C9";borderColor = "#FF5457C9";textAccentColor = "#FF000000";menuTextColor = "#FF5457C9";
+#define VAR_SUPERANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D03177";borderColor = "#FFD03177";textAccentColor = "#FF000000";menuTextColor = "#FFD03177";
+#define VAR_FISHING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50504B4B";borderColor = "#FF504B4B";textAccentColor = "#FF000000";menuTextColor = "#FF504B4B";
+#define VAR_SUPER_ENERGY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C0619F";borderColor = "#FFC0619F";textAccentColor = "#FF000000";menuTextColor = "#FFC0619F";
+#define VAR_HUNTER_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#500B5E61";borderColor = "#FF0B5E61";textAccentColor = "#FF000000";menuTextColor = "#FF0B5E61";
+#define VAR_GOADING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AA2315";borderColor = "#FFAA2315";textAccentColor = "#FF000000";menuTextColor = "#FFAA2315";
+#define VAR_SUPER_STRENGTH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D5D4D4";borderColor = "#FFD5D4D4";textAccentColor = "#FF000000";menuTextColor = "#FFD5D4D4";
+#define VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50815248";borderColor = "#FF815248";textAccentColor = "#FF000000";menuTextColor = "#FF815248";
+#define VAR_SUPER_RESTORE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AE3F6C";borderColor = "#FFAE3F6C";textAccentColor = "#FF000000";menuTextColor = "#FFAE3F6C";
+#define VAR_BSUPER_RESTORE_CUSTOMSTYLE 
+#define VAR_SANFEW_SERUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B97673";borderColor = "#FFB97673";textAccentColor = "#FF000000";menuTextColor = "#FFB97673";
+#define VAR_SUPER_DEFENCE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D2B45C";borderColor = "#FFD2B45C";textAccentColor = "#FF000000";menuTextColor = "#FFD2B45C";
+#define VAR_ANTIDOTE_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507E7E64";borderColor = "#FF7E7E64";textAccentColor = "#FF000000";menuTextColor = "#FF7E7E64";
+#define VAR_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5078129B";borderColor = "#FF78129B";textAccentColor = "#FF000000";menuTextColor = "#FF78129B";
+#define VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506365CD";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF6365CD";
+#define VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CDB365";borderColor = "#FFCDB365";textAccentColor = "#FF000000";menuTextColor = "#FFCDB365";
+#define VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CECDCD";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFCECDCD";
+#define VAR_RANGING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5052A8C9";borderColor = "#FF52A8C9";textAccentColor = "#FF000000";menuTextColor = "#FF52A8C9";
+#define VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5068B5D3";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF68B5D3";
+#define VAR_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C8ACA3";borderColor = "#FFC8ACA3";textAccentColor = "#FF000000";menuTextColor = "#FFC8ACA3";
+#define VAR_STAMINA_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50977546";borderColor = "#FF977546";textAccentColor = "#FF000000";menuTextColor = "#FF977546";
+#define VAR_ZAMORAK_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C59418";borderColor = "#FFC59418";textAccentColor = "#FF000000";menuTextColor = "#FFC59418";
+#define VAR_DIVINE_MAGIC_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50C6B1AA";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFC6B1AA";
+#define VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507A7E3A";borderColor = "#FF7A7E3A";textAccentColor = "#FF000000";menuTextColor = "#FF7A7E3A";
+#define VAR_BASTION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50BB6216";borderColor = "#FFBB6216";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D8A942";borderColor = "#FFD8A942";textAccentColor = "#FF000000";menuTextColor = "#FFD8A942";
+#define VAR_SARADOMIN_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50CAC962";borderColor = "#FFCAC962";textAccentColor = "#FF000000";menuTextColor = "#FFCAC962";
+#define VAR_EXTENDED_ANTIFIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506E3EC6";borderColor = "#FF6E3EC6";textAccentColor = "#FF000000";menuTextColor = "#FF6E3EC6";
+#define VAR_ANCIENT_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509451C0";borderColor = "#FF9451C0";textAccentColor = "#FF000000";menuTextColor = "#FF9451C0";
+#define VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50BB6216";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFBB6216";
+#define VAR_DIVINE_BATTLEMAGE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50D8A83E";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FFD8A83E";
+#define VAR_ANTI_VENOM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503A4A42";borderColor = "#FF3A4A42";textAccentColor = "#FF000000";menuTextColor = "#FF3A4A42";
+#define VAR_MENAPHITE_REMEDY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501F7BD0";borderColor = "#FF1F7BD0";textAccentColor = "#FF000000";menuTextColor = "#FF1F7BD0";
+#define VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5019640B";borderColor = "#FF19640B";textAccentColor = "#FF000000";menuTextColor = "#FF19640B";
+#define VAR_FORGOTTEN_BREW_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50594568";borderColor = "#FF594568";textAccentColor = "#FF000000";menuTextColor = "#FF594568";
+#define VAR_SUPER_ANTIFIRE_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#508D61AC";borderColor = "#FF8D61AC";textAccentColor = "#FF000000";menuTextColor = "#FF8D61AC";
+#define VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505C494F";borderColor = "#FF5C494F";textAccentColor = "#FF000000";menuTextColor = "#FF5C494F";
+#define VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#5066967B";borderColor = "#FF66967B";textAccentColor = "#FF000000";menuTextColor = "#FF66967B";
+#define VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#501C700B";borderColor = "#FFADC8C2";textAccentColor = "#FF000000";menuTextColor = "#FF1C700B";
+#define VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50B393CB";borderColor = "#FFB393CB";textAccentColor = "#FF000000";menuTextColor = "#FFB393CB";
+
+
+
+apply (name:VAR_POTIONS_HIDE) {
+    hidden = true;
+}
+
+apply (name:"Attack potion(*") {
+    VAR_ATTACK_POTION_CUSTOMSTYLE 
+}
+apply (name:"Antipoison(*") {
+    VAR_ANTIPOISON_CUSTOMSTYLE 
+}
+apply (name:"Strength potion(*") {
+    VAR_STRENGTH_POTION_CUSTOMSTYLE 
+}
+apply (name:"Serum 207(*") {
+    VAR_SERUM_207_CUSTOMSTYLE 
+}
+apply (name:"Compost potion(*") {
+    VAR_COMPOST_POTION_CUSTOMSTYLE 
+}
+apply (name:"Restore potion(*") {
+    VAR_RESTORE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Blighted super restore(*") {
+    VAR_BSUPER_RESTORE_CUSTOMSTYLE 
+}
+apply (name:"Energy potion(*") {
+    VAR_ENERGY_POTION_CUSTOMSTYLE 
+}
+apply (name:"Defence potion(*") {
+    VAR_DEFENCE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Agility potion(*") {
+    VAR_AGILITY_POTION_CUSTOMSTYLE 
+}
+apply (name:"Combat potion(*") {
+    VAR_COMBAT_POTION_CUSTOMSTYLE 
+}
+apply (name:"Prayer potion(*") {
+    VAR_PRAYER_POTION_CUSTOMSTYLE 
+}
+apply (name:"Super attack(*") {
+    VAR_SUPER_ATTACK_CUSTOMSTYLE 
+}
+apply (name:"Superantipoison(*") {
+    VAR_SUPERANTIPOISON_CUSTOMSTYLE 
+}
+apply (name:"Fishing potion(*") {
+    VAR_FISHING_POTION_CUSTOMSTYLE 
+}
+apply (name:"Super energy(*") {
+    VAR_SUPER_ENERGY_CUSTOMSTYLE 
+}
+apply (name:"Hunter potion(*") {
+    VAR_HUNTER_POTION_CUSTOMSTYLE 
+}
+apply (name:"Goading potion(*") {
+    VAR_GOADING_POTION_CUSTOMSTYLE 
+}
+apply (name:"Super strength(*") {
+    VAR_SUPER_STRENGTH_CUSTOMSTYLE 
+}
+apply (name:"Prayer regeneration potion(*") {
+    VAR_PRAYER_REGENERATION_POTION_CUSTOMSTYLE 
+}
+apply (name:"Super restore(*") {
+    VAR_SUPER_RESTORE_CUSTOMSTYLE 
+}
+apply (name:"Sanfew serum(*") {
+    VAR_SANFEW_SERUM_CUSTOMSTYLE 
+}
+apply (name:"Super defence(*") {
+    VAR_SUPER_DEFENCE_CUSTOMSTYLE 
+}
+apply (name:"Antidote+(*") {
+    VAR_ANTIDOTE_PLUS_CUSTOMSTYLE 
+}
+apply (name:"Antifire potion(*") {
+    VAR_ANTIFIRE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Divine super attack potion(*") {
+    VAR_DIVINE_SUPER_ATTACK_POTION_CUSTOMSTYLE 
+}
+apply (name:"Divine super defence potion(*") {
+    VAR_DIVINE_SUPER_DEFENCE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Divine super strength potion(*") {
+    VAR_DIVINE_SUPER_STRENGTH_POTION_CUSTOMSTYLE 
+}
+apply (name:"Ranging potion(*") {
+    VAR_RANGING_POTION_CUSTOMSTYLE 
+}
+apply (name:"Divine ranging potion(*") {
+    VAR_DIVINE_RANGING_POTION_CUSTOMSTYLE 
+}
+apply (name:"Magic potion(*") {
+    VAR_MAGIC_POTION_CUSTOMSTYLE 
+}
+apply (name:"Stamina potion(*") {
+    VAR_STAMINA_POTION_CUSTOMSTYLE 
+}
+apply (name:"Zamorak brew(*") {
+    VAR_ZAMORAK_BREW_CUSTOMSTYLE 
+}
+apply (name:"Divine magic potion(*") {
+    VAR_DIVINE_MAGIC_POTION_CUSTOMSTYLE 
+}
+apply (name:"Antidote++(*") {
+    VAR_ANTIDOTE_PLUS_PLUS_CUSTOMSTYLE 
+}
+apply (name:"Bastion potion(*") {
+    VAR_BASTION_POTION_CUSTOMSTYLE 
+}
+apply (name:"Battlemage potion(*") {
+    VAR_BATTLEMAGE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Saradomin brew(*") {
+    VAR_SARADOMIN_BREW_CUSTOMSTYLE 
+}
+apply (name:"Extended antifire(*") {
+    VAR_EXTENDED_ANTIFIRE_CUSTOMSTYLE 
+}
+apply (name:"Ancient brew(*") {
+    VAR_ANCIENT_BREW_CUSTOMSTYLE 
+}
+apply (name:"Divine bastion potion(*") {
+    VAR_DIVINE_BASTION_POTION_CUSTOMSTYLE 
+}
+apply (name:"Divine battlemage potion(*") {
+    VAR_DIVINE_BATTLEMAGE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Anti-venom(*") {
+    VAR_ANTI_VENOM_CUSTOMSTYLE 
+}
+apply (name:"Menaphite remedy(*") {
+    VAR_MENAPHITE_REMEDY_CUSTOMSTYLE 
+}
+apply (name:"Super combat potion(*") {
+    VAR_SUPER_COMBAT_POTION_CUSTOMSTYLE 
+}
+apply (name:"Forgotten brew(*") {
+    VAR_FORGOTTEN_BREW_CUSTOMSTYLE 
+}
+apply (name:"Super antifire potion(*") {
+    VAR_SUPER_ANTIFIRE_POTION_CUSTOMSTYLE 
+}
+apply (name:"Anti-venom+(*") {
+    VAR_ANTI_VENOM_PLUS_CUSTOMSTYLE 
+}
+apply (name:"Extended anti-venom+(*") {
+    VAR_EXTENDED_ANTI_VENOM_PLUS_CUSTOMSTYLE 
+}
+apply (name:"Divine super combat potion(*") {
+    VAR_DIVINE_SUPER_COMBAT_POTION_CUSTOMSTYLE 
+}
+apply (name:"Extended super antifire(*") {
+    VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE 
+}
+
+
+
+// endmodule:potions
+
+// module:runes
+
+#define CONST_RUNE_NAMES ["Air rune", "Mind rune", "Water rune", "Earth rune", "Fire rune", "Body rune", "Cosmic rune", "Chaos rune", "Nature rune", "Law rune", "Death rune", "Sunfire rune", "Astral rune", "Blood rune", "Soul rune", "Wrath rune", "Mist rune", "Dust rune", "Mud rune", "Smoke rune", "Steam rune", "Lava rune"]
+
+#define VAR_RUNES_HIDE []
+
+#define VAR_AIR_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_MIND_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_WATER_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_EARTH_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_FIRE_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_BODY_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_COSMIC_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_CHAOS_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_NATURE_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_LAW_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_DEATH_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_SUNFIRE_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_ASTRAL_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_BLOOD_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_SOUL_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_WRATH_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_MIST_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_DUST_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_MUD_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_SMOKE_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_STEAM_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+#define VAR_LAVA_RUNE_CUSTOMSTYLE menuTextColor = "#9b59b6";
+
+#define VAR_AIR_RUNE_MIN_QUANTITY 500
+#define VAR_WATER_RUNE_MIN_QUANTITY 500
+#define VAR_EARTH_RUNE_MIN_QUANTITY 500
+#define VAR_FIRE_RUNE_MIN_QUANTITY 500
+#define VAR_MIND_RUNE_MIN_QUANTITY 500
+#define VAR_BODY_RUNE_MIN_QUANTITY 500
+#define VAR_COSMIC_RUNE_MIN_QUANTITY 20
+#define VAR_CHAOS_RUNE_MIN_QUANTITY 20
+#define VAR_NATURE_RUNE_MIN_QUANTITY 20
+#define VAR_LAW_RUNE_MIN_QUANTITY 20
+#define VAR_DEATH_RUNE_MIN_QUANTITY 20
+#define VAR_SUNFIRE_RUNE_MIN_QUANTITY 20
+#define VAR_ASTRAL_RUNE_MIN_QUANTITY 20
+#define VAR_BLOOD_RUNE_MIN_QUANTITY 20
+#define VAR_SOUL_RUNE_MIN_QUANTITY 20
+#define VAR_WRATH_RUNE_MIN_QUANTITY 20
+#define VAR_MIST_RUNE_MIN_QUANTITY 50
+#define VAR_DUST_RUNE_MIN_QUANTITY 50
+#define VAR_MUD_RUNE_MIN_QUANTITY 50
+#define VAR_SMOKE_RUNE_MIN_QUANTITY 50
+#define VAR_STEAM_RUNE_MIN_QUANTITY 50
+#define VAR_LAVA_RUNE_MIN_QUANTITY 50
+
+// waiting on 1.6
+// apply (name:CONST_RUNE_NAMES && !VAR_RUNES_COLOR_MENU_TEXT) {
+//    menuTextColor=CONST_DEFAULT_MENU_TEXT_COLOR
+//}
+
+apply (name:VAR_RUNES_HIDE) {
+    hidden = true;
+}
+
+
+
+apply (name:"Air rune") {
+    VAR_AIR_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Air rune" && quantity:<VAR_AIR_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mind rune") {
+    VAR_MIND_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Mind rune" && quantity:<VAR_WATER_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Water rune") {
+    VAR_WATER_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Water rune" && quantity:<VAR_EARTH_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Earth rune") {
+    VAR_EARTH_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Earth rune" && quantity:<VAR_FIRE_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Fire rune") {
+    VAR_FIRE_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Fire rune" && quantity:<VAR_MIND_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Body rune") {
+    VAR_BODY_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Body rune" && quantity:<VAR_BODY_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Cosmic rune") {
+    VAR_COSMIC_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Cosmic rune" && quantity:<VAR_COSMIC_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Chaos rune") {
+    VAR_CHAOS_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Chaos rune" && quantity:<VAR_CHAOS_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Nature rune") {
+    VAR_NATURE_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Nature rune" && quantity:<VAR_NATURE_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Law rune") {
+    VAR_LAW_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Law rune" && quantity:<VAR_LAW_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Death rune") {
+    VAR_DEATH_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Death rune" && quantity:<VAR_DEATH_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Sunfire rune") {
+    VAR_SUNFIRE_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Sunfire rune" && quantity:<VAR_SUNFIRE_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Astral rune") {
+    VAR_ASTRAL_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Astral rune" && quantity:<VAR_ASTRAL_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Blood rune") {
+    VAR_BLOOD_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Blood rune" && quantity:<VAR_BLOOD_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Soul rune") {
+    VAR_SOUL_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Soul rune" && quantity:<VAR_SOUL_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Wrath rune") {
+    VAR_WRATH_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Wrath rune" && quantity:<VAR_WRATH_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mist rune") {
+    VAR_MIST_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Mist rune" && quantity:<VAR_MIST_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Dust rune") {
+    VAR_DUST_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Dust rune" && quantity:<VAR_DUST_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mud rune") {
+    VAR_MUD_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Mud rune" && quantity:<VAR_MUD_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Smoke rune") {
+    VAR_SMOKE_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Smoke rune" && quantity:<VAR_SMOKE_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Steam rune") {
+    VAR_STEAM_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Steam rune" && quantity:<VAR_STEAM_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Lava rune") {
+    VAR_LAVA_RUNE_CUSTOMSTYLE 
+}
+apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+
+// endmodule:runes
+
+// module:logs
+
+#define VAR_LOGS_HIDE ["Achey tree logs","Arctic pine logs","Scrapey tree logs","Juniper logs","Bark","Blisterwood logs","Logs","Oak logs","Willow logs","Maple logs"]
+
+#define VAR_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_OAK_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_WILLOW_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_MAPLE_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_YEW_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_MAGIC_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_REDWOOD_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_TEAK_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_MAHOGANY_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_ACHEY_TREE_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_ARCTIC_PINE_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_SCRAPEY_TREE_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_JUNIPER_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_BARK_CUSTOMSTYLE menuTextColor = "#8e6e53";
+#define VAR_BLISTERWOOD_LOGS_CUSTOMSTYLE menuTextColor = "#8e6e53";
+
+#define VAR_LOGS_MIN_QUANTITY 2
+#define VAR_OAK_LOGS_MIN_QUANTITY 2
+#define VAR_WILLOW_LOGS_MIN_QUANTITY 2
+#define VAR_MAPLE_LOGS_MIN_QUANTITY 2
+#define VAR_YEW_LOGS_MIN_QUANTITY 2
+#define VAR_MAGIC_LOGS_MIN_QUANTITY 2
+#define VAR_REDWOOD_LOGS_MIN_QUANTITY 2
+#define VAR_TEAK_LOGS_MIN_QUANTITY 2
+#define VAR_MAHOGANY_LOGS_MIN_QUANTITY 2
+#define VAR_ACHEY_TREE_LOGS_MIN_QUANTITY 2
+#define VAR_ARCTIC_PINE_LOGS_MIN_QUANTITY 2
+#define VAR_SCRAPEY_TREE_LOGS_MIN_QUANTITY 2
+#define VAR_JUNIPER_LOGS_MIN_QUANTITY 2
+#define VAR_BARK_MIN_QUANTITY 2
+#define VAR_BLISTERWOOD_LOGS_MIN_QUANTITY 2
+
+
+
+apply (name:VAR_LOGS_HIDE) {
+    hidden = true;
+}
+
+apply (name:"Logs") {
+    VAR_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Logs" && quantity:<VAR_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Oak logs") {
+    VAR_OAK_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Oak logs" && quantity:<VAR_OAK_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Willow logs") {
+    VAR_WILLOW_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Willow logs" && quantity:<VAR_WILLOW_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Maple logs") {
+    VAR_MAPLE_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Maple logs" && quantity:<VAR_MAPLE_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Yew logs") {
+    VAR_YEW_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Yew logs" && quantity:<VAR_YEW_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Magic logs") {
+    VAR_MAGIC_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Magic logs" && quantity:<VAR_MAGIC_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Redwood logs") {
+    VAR_REDWOOD_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Redwood logs" && quantity:<VAR_REDWOOD_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Teak logs") {
+    VAR_TEAK_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Teak logs" && quantity:<VAR_TEAK_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mahogany logs") {
+    VAR_MAHOGANY_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Mahogany logs" && quantity:<VAR_MAHOGANY_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Achey tree logs") {
+    VAR_ACHEY_TREE_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Achey tree logs" && quantity:<VAR_ACHEY_TREE_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Arctic pine logs") {
+    VAR_ARCTIC_PINE_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Arctic pine logs" && quantity:<VAR_ARCTIC_PINE_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Scrapey tree logs") {
+    VAR_SCRAPEY_TREE_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Scrapey tree logs" && quantity:<VAR_SCRAPEY_TREE_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Juniper logs") {
+    VAR_JUNIPER_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Juniper logs" && quantity:<VAR_JUNIPER_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Bark") {
+    VAR_BARK_CUSTOMSTYLE 
+}
+apply (name:"Bark" && quantity:<VAR_BARK_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Blisterwood logs") {
+    VAR_BLISTERWOOD_LOGS_CUSTOMSTYLE 
+}
+apply (name:"Blisterwood logs" && quantity:<VAR_BLISTERWOOD_LOGS_MIN_QUANTITY) {
+    hidden = true;
+}
+
+
+
+// endmodule:logs
+
+//module:bars
+
+#define VAR_BARS_HIDE ["Bronze bar","Iron bar","Silver bar","Gold bar"]
+
+#define VAR_BRONZE_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_IRON_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_SILVER_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_STEEL_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_GOLD_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_MITHRIL_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_ADAMANTITE_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_RUNITE_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_ELEMENTAL_METAL_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_PRIMED_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_PRIMED_MIND_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_BLURITE_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_ENCHANTED_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_LOVAKITE_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE menuTextColor = "#95a5a6";
+
+#define VAR_BRONZE_BAR_MIN_QUANTITY 2
+#define VAR_IRON_BAR_MIN_QUANTITY 2
+#define VAR_SILVER_BAR_MIN_QUANTITY 2
+#define VAR_STEEL_BAR_MIN_QUANTITY 2
+#define VAR_GOLD_BAR_MIN_QUANTITY 2
+#define VAR_MITHRIL_BAR_MIN_QUANTITY 2
+#define VAR_ADAMANTITE_BAR_MIN_QUANTITY 2
+#define VAR_RUNITE_BAR_MIN_QUANTITY 1
+#define VAR_ELEMENTAL_METAL_MIN_QUANTITY 2
+#define VAR_PRIMED_BAR_MIN_QUANTITY 2
+#define VAR_PRIMED_MIND_BAR_MIN_QUANTITY 2
+#define VAR_BLURITE_BAR_MIN_QUANTITY 2
+#define VAR_ENCHANTED_BAR_MIN_QUANTITY 2
+#define VAR_LOVAKITE_BAR_MIN_QUANTITY 2
+#define VAR_PERFECT_GOLD_BAR_MIN_QUANTITY 2
+
+
+
+apply (name:VAR_BARS_HIDE) {
+    hidden = true;
+}
+
+apply (name:"Bronze bar") {
+    VAR_BRONZE_BAR_CUSTOMSTYLE 
+}
+apply (name:"Bronze bar" && quantity:<VAR_BRONZE_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Iron bar") {
+    VAR_IRON_BAR_CUSTOMSTYLE 
+}
+apply (name:"Iron bar" && quantity:<VAR_IRON_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Silver bar") {
+    VAR_SILVER_BAR_CUSTOMSTYLE 
+}
+apply (name:"Silver bar" && quantity:<VAR_SILVER_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Steel bar") {
+    VAR_STEEL_BAR_CUSTOMSTYLE 
+}
+apply (name:"Steel bar" && quantity:<VAR_STEEL_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Gold bar") {
+    VAR_GOLD_BAR_CUSTOMSTYLE 
+}
+apply (name:"Gold bar" && quantity:<VAR_GOLD_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Mithril bar") {
+    VAR_MITHRIL_BAR_CUSTOMSTYLE 
+}
+apply (name:"Mithril bar" && quantity:<VAR_MITHRIL_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Adamantite bar") {
+    VAR_ADAMANTITE_BAR_CUSTOMSTYLE 
+}
+apply (name:"Adamantite bar" && quantity:<VAR_ADAMANTITE_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Runite bar") {
+    VAR_RUNITE_BAR_CUSTOMSTYLE 
+}
+apply (name:"Runite bar" && quantity:<VAR_RUNITE_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Elemental metal") {
+    VAR_ELEMENTAL_METAL_CUSTOMSTYLE 
+}
+apply (name:"Elemental metal" && quantity:<VAR_ELEMENTAL_METAL_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Primed bar") {
+    VAR_PRIMED_BAR_CUSTOMSTYLE 
+}
+apply (name:"Primed bar" && quantity:<VAR_PRIMED_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Primed mind bar") {
+    VAR_PRIMED_MIND_BAR_CUSTOMSTYLE 
+}
+apply (name:"Primed mind bar" && quantity:<VAR_PRIMED_MIND_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Blurite bar") {
+    VAR_BLURITE_BAR_CUSTOMSTYLE 
+}
+apply (name:"Blurite bar" && quantity:<VAR_BLURITE_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Enchanted bar") {
+    VAR_ENCHANTED_BAR_CUSTOMSTYLE 
+}
+apply (name:"Enchanted bar" && quantity:<VAR_ENCHANTED_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"Lovakite bar") {
+    VAR_LOVAKITE_BAR_CUSTOMSTYLE 
+}
+apply (name:"Lovakite bar" && quantity:<VAR_LOVAKITE_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"'Perfect' gold bar") {
+    VAR_PERFECT_GOLD_BAR_CUSTOMSTYLE 
+}
+apply (name:"'Perfect' gold bar" && quantity:<VAR_PERFECT_GOLD_BAR_MIN_QUANTITY) {
+    hidden = true;
+}
+
+// endmodule:bars
+
+// module:food
+
+#define CONST_HUNTER_FOODS_LIST ["Cooked wild kebbit", "Cooked larupia", "Cooked barb-tailed kebbit", "Cooked graahk", "Cooked kyatt", "Cooked pyre fox", "Cooked sunlight antelope", "Cooked dashing kebbit", "Cooked moonlight antelope"]
+#define CONST_FISH_FOODS_LIST ["Shrimp", "Sardine", "Karambwanji", "Herring", "Anchovies", "Mackerel", "Trout", "Cod", "Pike", "Slimy eel", "Salmon", "Tuna", "Rainbow fish", "Cave eel", "Lobster", "Bass", "Swordfish", "Lava eel", "Monkfish", "Cooked karambwan", "Shark", "Sea turtle", "Manta ray", "Anglerfish", "Dark crab"]
+
+#define VAR_FOOD_HUNTER_FOODS_HIDE []
+#define VAR_FOOD_FISH_FOODS_HIDE []
+
+#define VAR_FOOD_HUNTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_FOOD_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SHRIMP_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SARDINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_KARAMBWANJI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_HERRING_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_ANCHOVIES_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_MACKEREL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_TROUT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_COD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_PIKE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SLIMY_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SALMON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_TUNA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_RAINBOW_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_CAVE_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_LOBSTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_BASS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SWORDFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_LAVA_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_MONKFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_KARAMBWAN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SHARK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SEA_TURTLE_CUSTOMSTYLE 
+#define VAR_MANTA_RAY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_DARK_CRAB_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+
+
+apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
+    hidden = true;
+}
+apply (name:VAR_FOOD_FISH_FOODS_HIDE) {
+    hidden = true;
+}
+
+
+
+apply (name:CONST_HUNTER_FOODS_LIST) {
+    VAR_FOOD_HUNTER_CUSTOMSTYLE 
+}
+apply (name:CONST_FISH_FOODS_LIST) {
+    VAR_FOOD_FISH_CUSTOMSTYLE 
+}
+apply (name:"Shrimp") {
+    VAR_SHRIMP_CUSTOMSTYLE 
+}
+apply (name:"Sardine") {
+    VAR_SARDINE_CUSTOMSTYLE 
+}
+apply (name:"Karambwanji") {
+    VAR_KARAMBWANJI_CUSTOMSTYLE 
+}
+apply (name:"Herring") {
+    VAR_HERRING_CUSTOMSTYLE 
+}
+apply (name:"Anchovies") {
+    VAR_ANCHOVIES_CUSTOMSTYLE 
+}
+apply (name:"Mackerel") {
+    VAR_MACKEREL_CUSTOMSTYLE 
+}
+apply (name:"Trout") {
+    VAR_TROUT_CUSTOMSTYLE 
+}
+apply (name:"Cod") {
+    VAR_COD_CUSTOMSTYLE 
+}
+apply (name:"Pike") {
+    VAR_PIKE_CUSTOMSTYLE 
+}
+apply (name:"Slimy eel") {
+    VAR_SLIMY_EEL_CUSTOMSTYLE 
+}
+apply (name:"Salmon") {
+    VAR_SALMON_CUSTOMSTYLE 
+}
+apply (name:"Tuna") {
+    VAR_TUNA_CUSTOMSTYLE 
+}
+apply (name:"Rainbow fish") {
+    VAR_RAINBOW_FISH_CUSTOMSTYLE 
+}
+apply (name:"Cave eel") {
+    VAR_CAVE_EEL_CUSTOMSTYLE 
+}
+apply (name:"Lobster") {
+    VAR_LOBSTER_CUSTOMSTYLE 
+}
+apply (name:"Bass") {
+    VAR_BASS_CUSTOMSTYLE 
+}
+apply (name:"Swordfish") {
+    VAR_SWORDFISH_CUSTOMSTYLE 
+}
+apply (name:"Lava eel") {
+    VAR_LAVA_EEL_CUSTOMSTYLE 
+}
+apply (name:"Monkfish") {
+    VAR_MONKFISH_CUSTOMSTYLE 
+}
+apply (name:"Cooked Karambwan") {
+    VAR_KARAMBWAN_CUSTOMSTYLE 
+}
+apply (name:"Shark") {
+    VAR_SHARK_CUSTOMSTYLE 
+}
+apply (name:"Sea turtle") {
+    VAR_SEA_TURTLE_CUSTOMSTYLE 
+}
+apply (name:"Manta ray") {
+    VAR_MANTA_RAY_CUSTOMSTYLE 
+}
+apply (name:"Anglerfish") {
+    VAR_ANGLERFISH_CUSTOMSTYLE 
+}
+apply (name:"Dark crab") {
+    VAR_DARK_CRAB_CUSTOMSTYLE 
+}
+apply (name:"Summer pie") {
+    VAR_SUMMER_PIE_CUSTOMSTYLE
+}
+
+
+// endmodule:food
+
+// module:ores
+
+#define VAR_ORES_HIDE ["Copper ore","Tin ore","Silver ore"]
+
+#define VAR_COPPER_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_TIN_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_BLURITE_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_IRON_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_DAEYALT_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_SILVER_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_COAL_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_GOLD_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_BLASTED_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_MITHRIL_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_LOVAKITE_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_ADAMANTITE_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+#define VAR_RUNITE_ORE_CUSTOMSTYLE menuTextColor = "#95a5a6";
+
+#define VAR_COPPER_ORE_MIN_QUANTITY 2
+#define VAR_TIN_ORE_MIN_QUANTITY 2
+#define VAR_IRON_ORE_MIN_QUANTITY 2
+#define VAR_SILVER_ORE_MIN_QUANTITY 2
+#define VAR_COAL_ORE_MIN_QUANTITY 2
+#define VAR_GOLD_ORE_MIN_QUANTITY 2
+#define VAR_MITHRIL_ORE_MIN_QUANTITY 2
+#define VAR_ADAMANTITE_ORE_MIN_QUANTITY 2
+#define VAR_RUNITE_ORE_MIN_QUANTITY 2
+#define VAR_DAEYALT_ORE_MIN_QUANTITY 2
+#define VAR_BLASTED_ORE_MIN_QUANTITY 2
+#define VAR_BLURITE_ORE_MIN_QUANTITY 2
+#define VAR_LOVAKITE_ORE_MIN_QUANTITY 2
+
+
+
+apply (name:VAR_ORES_HIDE) {
+    hidden = true;
+}
+
+apply (name:"copper ore") {
+    VAR_COPPER_ORE_CUSTOMSTYLE 
+}
+apply (name:"copper ore" && quantity:<VAR_COPPER_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"tin ore") {
+    VAR_TIN_ORE_CUSTOMSTYLE 
+}
+apply (name:"tin ore" && quantity:<VAR_TIN_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"blurite ore") {
+    VAR_BLURITE_ORE_CUSTOMSTYLE 
+}
+apply (name:"blurite ore" && quantity:<VAR_IRON_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"iron ore") {
+    VAR_IRON_ORE_CUSTOMSTYLE 
+}
+apply (name:"iron ore" && quantity:<VAR_SILVER_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"daeyalt ore") {
+    VAR_DAEYALT_ORE_CUSTOMSTYLE 
+}
+apply (name:"daeyalt ore" && quantity:<VAR_COAL_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"silver ore") {
+    VAR_SILVER_ORE_CUSTOMSTYLE 
+}
+apply (name:"silver ore" && quantity:<VAR_GOLD_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"coal") {
+    VAR_COAL_ORE_CUSTOMSTYLE 
+}
+apply (name:"coal" && quantity:<VAR_MITHRIL_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"gold ore") {
+    VAR_GOLD_ORE_CUSTOMSTYLE 
+}
+apply (name:"gold ore" && quantity:<VAR_ADAMANTITE_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"blasted ore") {
+    VAR_BLASTED_ORE_CUSTOMSTYLE 
+}
+apply (name:"blasted ore" && quantity:<VAR_RUNITE_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"mithril ore") {
+    VAR_MITHRIL_ORE_CUSTOMSTYLE 
+}
+apply (name:"mithril ore" && quantity:<VAR_DAEYALT_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"lovakite ore") {
+    VAR_LOVAKITE_ORE_CUSTOMSTYLE 
+}
+apply (name:"lovakite ore" && quantity:<VAR_BLASTED_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"adamantite ore") {
+    VAR_ADAMANTITE_ORE_CUSTOMSTYLE 
+}
+apply (name:"adamantite ore" && quantity:<VAR_BLURITE_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+apply (name:"runite ore") {
+    VAR_RUNITE_ORE_CUSTOMSTYLE 
+}
+apply (name:"runite ore" && quantity:<VAR_LOVAKITE_ORE_MIN_QUANTITY) {
+    hidden = true;
+}
+
+
+
+// endmodule:ores
