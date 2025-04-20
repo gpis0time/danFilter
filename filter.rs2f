@@ -1,4 +1,9 @@
-meta { name = "bozo iron filter (updated: 16/04/2025)"; description = "undefined"; }
+/*@ define:module:__migration_header__
+name: __migration_header__
+hidden: true
+*/
+meta { name = "bozo iron filter (updated: 20/04/2025)"; description = "undefined"; }
+
 
 /*@ define:module:global_defaults
 ---
@@ -37,13 +42,13 @@ label: Show Despawn Timer
 type: boolean
 label: Show Tradeable Value
 */
-#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE false
+#define VAR_GLOBAL_SHOW_TRADEABLE_VALUE true
 
 /*@ define:input:global_defaults
 type: boolean
 label: Show Untradeable Value
 */
-#define VAR_GLOBAL_SHOW_UNTRADEABLE_VALUE false
+#define VAR_GLOBAL_SHOW_UNTRADEABLE_VALUE true
 
 /*@ define:input:global_defaults
 type: boolean
@@ -108,213 +113,7 @@ group: Value Based Filters
 */
 #define VAR_GLOBAL_NON_STACKABLE_MINIMUM_VALUE 0
 
-#define CONST_GLOBAL_TRADEABLE_NON_TRADEABLE_ITEMS [ \
-    "1/2 anchovy pizza", \
-    "1/2 meat pizza", \
-    "1/2 pineapple pizza", \
-    "1/2 plain pizza", \
-    "2/3 cake", \
-    "2/3 chocolate cake", \
-    "Adamant fire arrow", \
-    "Air rune pack", \
-    "Amethyst fire arrow", \
-    "An empty box", \
-    "Anchovy paste", \
-    "Apples(1)", \
-    "Apples(2)", \
-    "Apples(3)", \
-    "Apples(4)", \
-    "Astronomy book", \
-    "Bailing bucket", \
-    "Bananas(1)", \
-    "Bananas(2)", \
-    "Bananas(3)", \
-    "Bananas(4)", \
-    "Bandages", \
-    "Barricade", \
-    "Basket pack", \
-    "Black mask (1)", \
-    "Black mask (10)", \
-    "Black mask (2)", \
-    "Black mask (3)", \
-    "Black mask (4)", \
-    "Black mask (5)", \
-    "Black mask (6)", \
-    "Black mask (7)", \
-    "Black mask (8)", \
-    "Black mask (9)", \
-    "Black satchel", \
-    "Blue flowers", \
-    "Broken pole", \
-    "Bronze fire arrow", \
-    "Bruised banana", \
-    "Bucket of rubble", \
-    "Burnt anglerfish", \
-    "Burnt bat", \
-    "Burnt batta", \
-    "Burnt beast meat", \
-    "Burnt bird meat", \
-    "Burnt bread", \
-    "Burnt cake", \
-    "Burnt cave eel", \
-    "Burnt chicken", \
-    "Burnt crunchies", \
-    "Burnt curry", \
-    "Burnt dark crab", \
-    "Burnt eel", \
-    "Burnt egg", \
-    "Burnt fish", \
-    "Burnt fish", \
-    "Burnt fish", \
-    "Burnt fish", \
-    "Burnt fish", \
-    "Burnt fish", \
-    "Burnt gnomebowl", \
-    "Burnt jubbly", \
-    "Burnt karambwan", \
-    "Burnt lobster", \
-    "Burnt manta ray", \
-    "Burnt meat", \
-    "Burnt monkfish", \
-    "Burnt mushroom", \
-    "Burnt onion", \
-    "Burnt oomlie", \
-    "Burnt oomlie wrap", \
-    "Burnt pie", \
-    "Burnt pizza", \
-    "Burnt potato", \
-    "Burnt rabbit", \
-    "Burnt rainbow fish", \
-    "Burnt sea turtle", \
-    "Burnt shark", \
-    "Burnt shrimp", \
-    "Burnt snail", \
-    "Burnt spider (stick)", \
-    "Burnt stew", \
-    "Burnt sweetcorn", \
-    "Burnt swordfish", \
-    "Cadarn lineage", \
-    "Cat training medal", \
-    "Chaos rune pack", \
-    "Chaotic handegg", \
-    "Chocolate slice", \
-    "Climbing rope", \
-    "Coconut shell", \
-    "Coins", \
-    "Cooked chicken", \
-    "Cooked meat", \
-    "Crate", \
-    "Crushed gem", \
-    "Crystal singing for beginners", \
-    "Damp egg", \
-    "Damp tinderbox", \
-    "Dragon fire arrow", \
-    "Earth rune pack", \
-    "Empty oyster", \
-    "Explosive potion", \
-    "Feather pack", \
-    "Field ration", \
-    "Fire rune pack", \
-    "Flyer", \
-    "Fossilised Dung", \
-    "Glassblowing book", \
-    "Gold satchel", \
-    "Green satchel", \
-    "Ground bat bones", \
-    "Guthix balance (unf)", \
-    "Half a admiral pie", \
-    "Half a apple pie", \
-    "Half a botanical pie", \
-    "Half a dragonfruit pie", \
-    "Half a fish pie", \
-    "Half a garden pie", \
-    "Half a meat pie", \
-    "Half a mud pie", \
-    "Half a mushroom pie", \
-    "Half a redberry pie", \
-    "Half a summer pie", \
-    "Half a wild pie", \
-    "Half certificate (left)", \
-    "Half certificate (right)", \
-    "Half coconut", \
-    "Holy handegg", \
-    "Incomplete pizza", \
-    "Iron fire arrow", \
-    "Iron sickle", \
-    "Mind rune pack", \
-    "Miscellaneous key", \
-    "Mithril fire arrow", \
-    "Mud", \
-    "Muddy rock", \
-    "Newcomer map", \
-    "Newspaper", \
-    "Old wool", \
-    "Oranges(1)", \
-    "Oranges(2)", \
-    "Oranges(3)", \
-    "Oranges(4)", \
-    "Part admiral pie", \
-    "Part fish pie", \
-    "Part garden pie", \
-    "Part mud pie", \
-    "Part summer pie", \
-    "Part wild pie", \
-    "Peaceful handegg", \
-    "Pete's candlestick", \
-    "Phoenix crossbow", \
-    "Plain satchel", \
-    "Plant pot pack", \
-    "Platinum token", \
-    "Potion", \
-    "Raw beef", \
-    "Raw chicken", \
-    "Raw swamp paste", \
-    "Red flowers", \
-    "Red satchel", \
-    "Rock", \
-    "Rock", \
-    "Rotten food", \
-    "Rotten tomato", \
-    "Ruined chompy", \
-    "Ruined herb tea", \
-    "Rune fire arrow", \
-    "Rune satchel", \
-    "Sack pack", \
-    "Sample bottle", \
-    "Shayzien supply crate", \
-    "Slice of cake", \
-    "Smashed glass", \
-    "Smelly sock", \
-    "Spare controls", \
-    "Spider on shaft", \
-    "Spooky egg", \
-    "Steel fire arrow", \
-    "Strawberries(1)", \
-    "Strawberries(2)", \
-    "Strawberries(3)", \
-    "Strawberries(4)", \
-    "Strip of cloth", \
-    "Sulphur", \
-    "Tankard", \
-    "Tea leaves", \
-    "Tile", \
-    "Tomatoes(1)", \
-    "Tomatoes(2)", \
-    "Tomatoes(3)", \
-    "Tomatoes(4)", \
-    "Toolkit", \
-    "Tzhaar air rune pack", \
-    "Tzhaar earth rune pack", \
-    "Tzhaar fire rune pack", \
-    "Tzhaar water rune pack", \
-    "Ugthanki kebab", \
-    "Uncooked pizza", \
-    "Unfinished broad bolt pack", \
-    "Washing bowl", \
-    "Water rune pack", \
-    "Water-filled vial pack", \
-    "Weapon store key", \
-]
+#define CONST_GLOBAL_TRADEABLE_NON_TRADEABLE_ITEMS [     "1/2 anchovy pizza",     "1/2 meat pizza",     "1/2 pineapple pizza",     "1/2 plain pizza",     "2/3 cake",     "2/3 chocolate cake",     "Adamant fire arrow",     "Air rune pack",     "Amethyst fire arrow",     "An empty box",     "Anchovy paste",     "Apples(1)",     "Apples(2)",     "Apples(3)",     "Apples(4)",     "Astronomy book",     "Bailing bucket",     "Bananas(1)",     "Bananas(2)",     "Bananas(3)",     "Bananas(4)",     "Bandages",     "Barricade",     "Basket pack",     "Black mask (1)",     "Black mask (10)",     "Black mask (2)",     "Black mask (3)",     "Black mask (4)",     "Black mask (5)",     "Black mask (6)",     "Black mask (7)",     "Black mask (8)",     "Black mask (9)",     "Black satchel",     "Blue flowers",     "Broken pole",     "Bronze fire arrow",     "Bruised banana",     "Bucket of rubble",     "Burnt anglerfish",     "Burnt bat",     "Burnt batta",     "Burnt beast meat",     "Burnt bird meat",     "Burnt bread",     "Burnt cake",     "Burnt cave eel",     "Burnt chicken",     "Burnt crunchies",     "Burnt curry",     "Burnt dark crab",     "Burnt eel",     "Burnt egg",     "Burnt fish",     "Burnt fish",     "Burnt fish",     "Burnt fish",     "Burnt fish",     "Burnt fish",     "Burnt gnomebowl",     "Burnt jubbly",     "Burnt karambwan",     "Burnt lobster",     "Burnt manta ray",     "Burnt meat",     "Burnt monkfish",     "Burnt mushroom",     "Burnt onion",     "Burnt oomlie",     "Burnt oomlie wrap",     "Burnt pie",     "Burnt pizza",     "Burnt potato",     "Burnt rabbit",     "Burnt rainbow fish",     "Burnt sea turtle",     "Burnt shark",     "Burnt shrimp",     "Burnt snail",     "Burnt spider (stick)",     "Burnt stew",     "Burnt sweetcorn",     "Burnt swordfish",     "Cadarn lineage",     "Cat training medal",     "Chaos rune pack",     "Chaotic handegg",     "Chocolate slice",     "Climbing rope",     "Coconut shell",     "Coins",     "Cooked chicken",     "Cooked meat",     "Crate",     "Crushed gem",     "Crystal singing for beginners",     "Damp egg",     "Damp tinderbox",     "Dragon fire arrow",     "Earth rune pack",     "Empty oyster",     "Explosive potion",     "Feather pack",     "Field ration",     "Fire rune pack",     "Flyer",     "Fossilised Dung",     "Glassblowing book",     "Gold satchel",     "Green satchel",     "Ground bat bones",     "Guthix balance (unf)",     "Half a admiral pie",     "Half a apple pie",     "Half a botanical pie",     "Half a dragonfruit pie",     "Half a fish pie",     "Half a garden pie",     "Half a meat pie",     "Half a mud pie",     "Half a mushroom pie",     "Half a redberry pie",     "Half a summer pie",     "Half a wild pie",     "Half certificate (left)",     "Half certificate (right)",     "Half coconut",     "Holy handegg",     "Incomplete pizza",     "Iron fire arrow",     "Iron sickle",     "Mind rune pack",     "Miscellaneous key",     "Mithril fire arrow",     "Mud",     "Muddy rock",     "Newcomer map",     "Newspaper",     "Old wool",     "Oranges(1)",     "Oranges(2)",     "Oranges(3)",     "Oranges(4)",     "Part admiral pie",     "Part fish pie",     "Part garden pie",     "Part mud pie",     "Part summer pie",     "Part wild pie",     "Peaceful handegg",     "Pete's candlestick",     "Phoenix crossbow",     "Plain satchel",     "Plant pot pack",     "Platinum token",     "Potion",     "Raw beef",     "Raw chicken",     "Raw swamp paste",     "Red flowers",     "Red satchel",     "Rock",     "Rock",     "Rotten food",     "Rotten tomato",     "Ruined chompy",     "Ruined herb tea",     "Rune fire arrow",     "Rune satchel",     "Sack pack",     "Sample bottle",     "Shayzien supply crate",     "Slice of cake",     "Smashed glass",     "Smelly sock",     "Spare controls",     "Spider on shaft",     "Spooky egg",     "Steel fire arrow",     "Strawberries(1)",     "Strawberries(2)",     "Strawberries(3)",     "Strawberries(4)",     "Strip of cloth",     "Sulphur",     "Tankard",     "Tea leaves",     "Tile",     "Tomatoes(1)",     "Tomatoes(2)",     "Tomatoes(3)",     "Tomatoes(4)",     "Toolkit",     "Tzhaar air rune pack",     "Tzhaar earth rune pack",     "Tzhaar fire rune pack",     "Tzhaar water rune pack",     "Ugthanki kebab",     "Uncooked pizza",     "Unfinished broad bolt pack",     "Washing bowl",     "Water rune pack",     "Water-filled vial pack",     "Weapon store key", ]
 
 apply (VAR_GLOBAL_SHOW_ICONS) {
     icon = CurrentItem();
@@ -369,6 +168,7 @@ apply (name:VAR_GLOBAL_HIDE) {
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
 }
+
 
 
 
@@ -635,6 +435,7 @@ apply (name:VAR_VALUES_TIER_4_SHOW && VAR_VALUES_TIER_4_SOUND) {
     sound = VAR_VALUES_TIER_4_SOUND_ID;
 }
 
+
 /*@ define:module:currency
 ---
 name: Currency
@@ -643,43 +444,7 @@ description: |
   This module provides styling and quantity filters for all currencies in the game.
 */
 
-#define CONST_CURRENCY_LIST [ \
-  "Abyssal pearls", \
-  "Agility arena ticket", \
-  "Anima-infused bark", \
-  "Archery ticket", \
-  "Barronite shards", \
-  "Blood money", \
-  "Brimhaven voucher", \
-  "Castle wars ticket", \
-  "Coins", \
-  "Ecto-token", \
-  "Frog token", \
-  "Glistening tear", \
-  "Golden nugget", \
-  "Hallowed mark", \
-  "Intelligence", \
-  "Mark of grace", \
-  "Mermaid's tear", \
-  "Minnow", \
-  "Molch pearl", \
-  "Mole claw", \
-  "Mole skin", \
-  "Nuggets", \
-  "Numulite", \
-  "Paramaya ticket", \
-  "Platinum token", \
-  "Rare creature parts", \
-  "Reward token credits", \
-  "Shantay pass", \
-  "Ship ticket", \
-  "Stardust", \
-  "Termites", \
-  "Tokkul", \
-  "Trading sticks", \
-  "Unidentified minerals", \
-  "Warrior guild token", \
-]
+#define CONST_CURRENCY_LIST [   "Abyssal pearls",   "Agility arena ticket",   "Anima-infused bark",   "Archery ticket",   "Barronite shards",   "Blood money",   "Brimhaven voucher",   "Castle wars ticket",   "Coins",   "Ecto-token",   "Frog token",   "Glistening tear",   "Golden nugget",   "Hallowed mark",   "Intelligence",   "Mark of grace",   "Mermaid's tear",   "Minnow",   "Molch pearl",   "Mole claw",   "Mole skin",   "Nuggets",   "Numulite",   "Paramaya ticket",   "Platinum token",   "Rare creature parts",   "Reward token credits",   "Shantay pass",   "Ship ticket",   "Stardust",   "Termites",   "Tokkul",   "Trading sticks",   "Unidentified minerals",   "Warrior guild token", ]
 
 /*@ define:input:currency
 type: stringlist
@@ -1477,6 +1242,7 @@ apply (name:"Warrior guild token" && quantity:<VAR_WARRIOR_GUILD_TOKEN_MIN_QUANT
     hidden = true;
 }
 
+
 /*@ define:module:remains
 ---
 name: Remains
@@ -1485,77 +1251,10 @@ description: |
   For filtering out bones, ensouled heads, ashes, and shades of morton remains
 */
 
-#define CONST_BONES_LIST [ \
-  "Bones", \
-  "Wolf bones", \
-  "Burnt bones", \
-  "Monkey bones", \
-  "Bat bones", \
-  "Big bones", \
-  "Jogre bones", \
-  "Wyrmling bones", \
-  "Zogre bones", \
-  "Shaikahan bones", \
-  "Babydragon bones", \
-  "Wyrm bones", \
-  "Wyvern bones", \
-  "Dragon bones", \
-  "Drake bones", \
-  "Fayrg bones", \
-  "Lava dragon bones", \
-  "Raurg bones", \
-  "Hydra bones", \
-  "Dagannoth bones", \
-  "Ourg bones", \
-  "Superior dragon bones", \
-  "Bleached bones", \
-  "Small zombie monkey bones", \
-  "Large zombie monkey bones", \
-  "Small ninja monkey bones", \
-  "Medium ninja monkey bones", \
-  "Gorilla bones", \
-  "Bearded gorilla bones", \
-]
-#define CONST_ASHES_LIST [ \
-  "Fiendish ashes", \
-  "Vile ashes", \
-  "Malicious ashes", \
-  "Abyssal ashes", \
-  "Infernal ashes", \
-]
-#define CONST_SHADES_REMAINS_LIST [ \
-  "Loar remains", \
-  "Phrin remains", \
-  "Riyl remains", \
-  "Asyn remains", \
-  "Fiyr remains", \
-  "Urium remains", \
-]
-#define CONST_ENSOULED_HEAD_LIST [ \
-  "Ensouled goblin head", \
-  "Ensouled monkey head", \
-  "Ensouled imp head", \
-  "Ensouled minotaur head", \
-  "Ensouled scorpion head", \
-  "Ensouled bear head", \
-  "Ensouled unicorn head", \
-  "Ensouled dog head", \
-  "Ensouled chaos druid head", \
-  "Ensouled giant head", \
-  "Ensouled ogre head", \
-  "Ensouled elf head", \
-  "Ensouled troll head", \
-  "Ensouled horror head", \
-  "Ensouled kalphite head", \
-  "Ensouled dagannoth head", \
-  "Ensouled bloodveld head", \
-  "Ensouled tzHaar head", \
-  "Ensouled demon head", \
-  "Ensouled hellhound head", \
-  "Ensouled aviansie head", \
-  "Ensouled abyssal head", \
-  "Ensouled dragon head", \
-]
+#define CONST_BONES_LIST [   "Bones",   "Wolf bones",   "Burnt bones",   "Monkey bones",   "Bat bones",   "Big bones",   "Jogre bones",   "Wyrmling bones",   "Zogre bones",   "Shaikahan bones",   "Babydragon bones",   "Wyrm bones",   "Wyvern bones",   "Dragon bones",   "Drake bones",   "Fayrg bones",   "Lava dragon bones",   "Raurg bones",   "Hydra bones",   "Dagannoth bones",   "Ourg bones",   "Superior dragon bones",   "Bleached bones",   "Small zombie monkey bones",   "Large zombie monkey bones",   "Small ninja monkey bones",   "Medium ninja monkey bones",   "Gorilla bones",   "Bearded gorilla bones", ]
+#define CONST_ASHES_LIST [   "Fiendish ashes",   "Vile ashes",   "Malicious ashes",   "Abyssal ashes",   "Infernal ashes", ]
+#define CONST_SHADES_REMAINS_LIST [   "Loar remains",   "Phrin remains",   "Riyl remains",   "Asyn remains",   "Fiyr remains",   "Urium remains", ]
+#define CONST_ENSOULED_HEAD_LIST [   "Ensouled goblin head",   "Ensouled monkey head",   "Ensouled imp head",   "Ensouled minotaur head",   "Ensouled scorpion head",   "Ensouled bear head",   "Ensouled unicorn head",   "Ensouled dog head",   "Ensouled chaos druid head",   "Ensouled giant head",   "Ensouled ogre head",   "Ensouled elf head",   "Ensouled troll head",   "Ensouled horror head",   "Ensouled kalphite head",   "Ensouled dagannoth head",   "Ensouled bloodveld head",   "Ensouled tzHaar head",   "Ensouled demon head",   "Ensouled hellhound head",   "Ensouled aviansie head",   "Ensouled abyssal head",   "Ensouled dragon head", ]
 
 /*@ define:input:remains
 type: number
@@ -1686,6 +1385,7 @@ apply (name:VAR_ENSOULED_HEADS_HIDE) {
 apply (name:CONST_ENSOULED_HEAD_LIST && value:<VAR_REMAINS_MINIMUM_VALUE) {
     hidden = true;
 }
+
 
 
 /*@ define:module:chambers_of_xeric
@@ -2062,127 +1762,55 @@ apply (area:CONST_COX_AREA && name:VAR_COX_SEEDS_HIDE) {
 apply (area:CONST_COX_AREA && name:VAR_COX_MISC_DROPS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["elder (-)*", \
-  "elder potion*", \
-  "elder (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["elder (-)*",   "elder potion*",   "elder (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["twisted (-)*", \
-  "twisted potion*", \
-  "twisted (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["kodai (-)*", \
-  "kodai potion*", \
-  "kodai (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["kodai (-)*",   "kodai potion*",   "kodai (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["revitalisation (-)*", \
-  "revitalisation potion*", \
-  "revitalisation (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["prayer enhance (-)*", \
-  "prayer enhance (4)", \
-  "prayer enhance (3)", \
-  "prayer enhance (2)", \
-  "prayer enhance (1)", \
-  "prayer enhance (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["prayer enhance (-)*",   "prayer enhance (4)",   "prayer enhance (3)",   "prayer enhance (2)",   "prayer enhance (1)",   "prayer enhance (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["xeric's aid (-)*", \
-  "xeric's aid (4)", \
-  "xeric's aid (3)", \
-  "xeric's aid (2)", \
-  "xeric's aid (1)", \
-  "xeric's aid (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["xeric's aid (-)*",   "xeric's aid (4)",   "xeric's aid (3)",   "xeric's aid (2)",   "xeric's aid (1)",   "xeric's aid (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["antipoison (-)*", \
-  "antipoison (4)", \
-  "antipoison (3)", \
-  "antipoison (2)", \
-  "antipoison (1)", \
-  "antipoison (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["antipoison (-)*",   "antipoison (4)",   "antipoison (3)",   "antipoison (2)",   "antipoison (1)",   "antipoison (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
-apply (area:CONST_COX_AREA && name:["overload (-)*", \
-  "overload (4)", \
-  "overload (3)", \
-  "overload (2)", \
-  "overload (1)", \
-  "overload (+)*", \
-] && name:VAR_COX_POTIONS_HIDE) {
+apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
     hidden = true;
 }
 
 
 
-apply (area:CONST_COX_AREA && name:["elder (-)*", \
-  "elder potion*", \
-  "elder (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["elder (-)*",   "elder potion*",   "elder (+)*", ]) {
     VAR_COX_ELDER_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["twisted (-)*", \
-  "twisted potion*", \
-  "twisted (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ]) {
     VAR_COX_TWISTED_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["kodai (-)*", \
-  "kodai potion*", \
-  "kodai (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["kodai (-)*",   "kodai potion*",   "kodai (+)*", ]) {
     VAR_COX_KODAI_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["revitalisation (-)*", \
-  "revitalisation potion*", \
-  "revitalisation (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ]) {
     VAR_COX_REVITALISATION_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["prayer enhance (-)*", \
-  "prayer enhance (4)", \
-  "prayer enhance (3)", \
-  "prayer enhance (2)", \
-  "prayer enhance (1)", \
-  "prayer enhance (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["prayer enhance (-)*",   "prayer enhance (4)",   "prayer enhance (3)",   "prayer enhance (2)",   "prayer enhance (1)",   "prayer enhance (+)*", ]) {
     VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["xeric's aid (-)*", \
-  "xeric's aid (4)", \
-  "xeric's aid (3)", \
-  "xeric's aid (2)", \
-  "xeric's aid (1)", \
-  "xeric's aid (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["xeric's aid (-)*",   "xeric's aid (4)",   "xeric's aid (3)",   "xeric's aid (2)",   "xeric's aid (1)",   "xeric's aid (+)*", ]) {
     VAR_COX_XERICS_AID_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["antipoison (-)*", \
-  "antipoison (4)", \
-  "antipoison (3)", \
-  "antipoison (2)", \
-  "antipoison (1)", \
-  "antipoison (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["antipoison (-)*",   "antipoison (4)",   "antipoison (3)",   "antipoison (2)",   "antipoison (1)",   "antipoison (+)*", ]) {
     VAR_COX_ANTIPOISON_CUSTOMSTYLE 
 }
-apply (area:CONST_COX_AREA && name:["overload (-)*", \
-  "overload (4)", \
-  "overload (3)", \
-  "overload (2)", \
-  "overload (1)", \
-  "overload (+)*", \
-]) {
+apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ]) {
     VAR_COX_OVERLOAD_CUSTOMSTYLE 
 }
 apply (area:CONST_COX_AREA && name:"Golpar seed") {
@@ -2236,6 +1864,7 @@ apply (area:CONST_COX_AREA && name:"Water-filled gourd vial") {
 
 
 
+
 /*@ define:module:theatre_of_blood
 ---
 name: Theatre of Blood
@@ -2270,6 +1899,7 @@ apply (name:"Dawnbringer") {
 apply (name:"Salve amulet (e)") {
     VAR_TOB_SALVE_CUSTOMSTYLE 
 }
+
 
 
 
@@ -2603,6 +2233,7 @@ apply (area:CONST_TOA_AREA && name:"Tears of Elidinis (*") {
     VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE
 }
 
+
 /*@ define:module:ammo
 ---
 name: Ammo
@@ -2610,24 +2241,7 @@ subtitle: Forgetting your backpack?
 description: |
   Provides filtering for ammo either explicitly or based on value.
 */
-#define CONST_AMMO_STANDARD_ARROWS_LIST [ \
-  "Bronze Arrow*", \
-  "Iron Arrow*", \
-  "Steel Arrow*", \
-  "Mithril Arrow*", \
-  "Adamant Arrow*", \
-  "Rune Arrow*", \
-  "Amethyst Arrow*", \
-  "Dragon Arrow*", \
-  "Bronze fire arrow", \
-  "Iron fire arrow", \
-  "Steel fire arrow", \
-  "Mithril fire arrow", \
-  "Adamant fire arrow", \
-  "Rune fire arrow", \
-  "Amethyst fire arrow", \
-  "Dragon fire arrow", \
-]
+#define CONST_AMMO_STANDARD_ARROWS_LIST [   "Bronze Arrow*",   "Iron Arrow*",   "Steel Arrow*",   "Mithril Arrow*",   "Adamant Arrow*",   "Rune Arrow*",   "Amethyst Arrow*",   "Dragon Arrow*",   "Bronze fire arrow",   "Iron fire arrow",   "Steel fire arrow",   "Mithril fire arrow",   "Adamant fire arrow",   "Rune fire arrow",   "Amethyst fire arrow",   "Dragon fire arrow", ]
 /*@ define:input:ammo
 type: enumlist
 label: Standard arrows to force hidden
@@ -2683,15 +2297,7 @@ apply (name:CONST_AMMO_STANDARD_ARROWS_LIST && value:<VAR_AMMO_STANDARD_ARROWS_M
     hidden = true;
 }
 
-#define CONST_AMMO_BRUTAL_ARROWS_LIST [ \
-  "Bronze brutal", \
-  "Iron brutal", \
-  "Steel brutal", \
-  "Black brutal", \
-  "Mithril brutal", \
-  "Adamant brutal", \
-  "Rune brutal", \
-]
+#define CONST_AMMO_BRUTAL_ARROWS_LIST [   "Bronze brutal",   "Iron brutal",   "Steel brutal",   "Black brutal",   "Mithril brutal",   "Adamant brutal",   "Rune brutal", ]
 /*@ define:input:ammo
 type: enumlist
 label: Brutal arrows to force hidden
@@ -2743,12 +2349,7 @@ apply (name:CONST_AMMO_BRUTAL_ARROWS_LIST && value:<VAR_AMMO_BRUTAL_ARROWS_MIN_V
     hidden = true;
 }
 
-#define CONST_AMMO_SPECIAL_ARROWS_LIST [ \
-  "Training Arrow", \
-  "Ogre Arrow", \
-  "Ice Arrow", \
-  "Broad Arrow", \
-]
+#define CONST_AMMO_SPECIAL_ARROWS_LIST [   "Training Arrow",   "Ogre Arrow",   "Ice Arrow",   "Broad Arrow", ]
 /*@ define:input:ammo
 type: enumlist
 label: Special arrows to force hidden
@@ -2787,18 +2388,7 @@ group: Arrows
 apply (name:CONST_AMMO_SPECIAL_ARROWS_LIST && value:<VAR_AMMO_SPECIAL_ARROWS_MIN_VALUE) {
     hidden = true;
 }
-#define CONST_AMMO_DARTS_LIST [ \
-  "Bronze dart*", \
-  "Iron dart*", \
-  "Steel dart*", \
-  "Black dart*", \
-  "Mithril dart*", \
-  "Adamant dart*", \
-  "Rune dart*", \
-  "Amethyst dart*", \
-  "Dragon dart*", \
-  "Atlatl dart", \
-]
+#define CONST_AMMO_DARTS_LIST [   "Bronze dart*",   "Iron dart*",   "Steel dart*",   "Black dart*",   "Mithril dart*",   "Adamant dart*",   "Rune dart*",   "Amethyst dart*",   "Dragon dart*",   "Atlatl dart", ]
 /*@ define:input:ammo
 type: enumlist
 label: Darts to force hidden
@@ -2861,16 +2451,7 @@ group: Darts
 apply (name:CONST_AMMO_DARTS_LIST && value:<VAR_AMMO_DARTS_MIN_VALUE) {
     hidden = true;
 }
-#define CONST_AMMO_JAVELINS_LIST [ \
-  "Bronze javelin*", \
-  "Iron javelin*", \
-  "Steel javelin*", \
-  "Mithril javelin*", \
-  "Adamant javelin*", \
-  "Rune javelin*", \
-  "Amethyst javelin*", \
-  "Dragon javelin*", \
-]
+#define CONST_AMMO_JAVELINS_LIST [   "Bronze javelin*",   "Iron javelin*",   "Steel javelin*",   "Mithril javelin*",   "Adamant javelin*",   "Rune javelin*",   "Amethyst javelin*",   "Dragon javelin*", ]
 /*@ define:input:ammo
 type: enumlist
 label: Javelins to force hidden
@@ -2925,17 +2506,7 @@ group: Javelins
 apply (name:CONST_AMMO_JAVELINS_LIST && value:<VAR_AMMO_JAVELINS_MIN_VALUE) {
     hidden = true;
 }
-#define CONST_AMMO_BOLTS_LIST [ \
-  "Bronze bolts*", \
-  "Blurite bolts*", \
-  "Silver bolts*", \
-  "Iron bolts*", \
-  "Steel bolts*", \
-  "Mithril bolts*", \
-  "Adamant bolts*", \
-  "Runite bolts*", \
-  "Dragon bolts*", \
-]
+#define CONST_AMMO_BOLTS_LIST [   "Bronze bolts*",   "Blurite bolts*",   "Silver bolts*",   "Iron bolts*",   "Steel bolts*",   "Mithril bolts*",   "Adamant bolts*",   "Runite bolts*",   "Dragon bolts*", ]
 /*@ define:input:ammo
 type: enumlist
 label: Bolts to force hidden
@@ -2995,18 +2566,7 @@ apply (name:CONST_AMMO_BOLTS_LIST && value:<VAR_AMMO_BOLTS_MIN_VALUE) {
     hidden = true;
 }
 
-#define CONST_AMMO_BOLTS_E_LIST [ \
-  "Opal bolts (e)", \
-  "Jade bolts (e)", \
-  "Pearl bolts (e)", \
-  "Topaz bolts (e)", \
-  "Sapphire bolts (e)", \
-  "Emerald bolts (e)", \
-  "Ruby bolts (e)", \
-  "Diamond bolts (e)", \
-  "Dragonstone bolts (e)", \
-  "Onyx bolts (e)", \
-]
+#define CONST_AMMO_BOLTS_E_LIST [   "Opal bolts (e)",   "Jade bolts (e)",   "Pearl bolts (e)",   "Topaz bolts (e)",   "Sapphire bolts (e)",   "Emerald bolts (e)",   "Ruby bolts (e)",   "Diamond bolts (e)",   "Dragonstone bolts (e)",   "Onyx bolts (e)", ]
 /*@ define:input:ammo
 type: enumlist
 label: Enchanted bolts to force hidden
@@ -3070,18 +2630,7 @@ apply (name:CONST_AMMO_BOLTS_E_LIST && value:<VAR_AMMO_BOLTS_E_MIN_VALUE) {
     hidden = true;
 }
 
-#define CONST_AMMO_DRAGON_BOLTS_E_LIST [ \
-  "Opal dragon bolts (e)", \
-  "Jade dragon bolts (e)", \
-  "Pearl dragon bolts (e)", \
-  "Topaz dragon bolts (e)", \
-  "Sapphire dragon bolts (e)", \
-  "Emerald dragon bolts (e)", \
-  "Ruby dragon bolts (e)", \
-  "Diamond dragon bolts (e)", \
-  "Dragonstone dragon bolts (e)", \
-  "Onyx dragon bolts (e)", \
-]
+#define CONST_AMMO_DRAGON_BOLTS_E_LIST [   "Opal dragon bolts (e)",   "Jade dragon bolts (e)",   "Pearl dragon bolts (e)",   "Topaz dragon bolts (e)",   "Sapphire dragon bolts (e)",   "Emerald dragon bolts (e)",   "Ruby dragon bolts (e)",   "Diamond dragon bolts (e)",   "Dragonstone dragon bolts (e)",   "Onyx dragon bolts (e)", ]
 /*@ define:input:ammo
 type: enumlist
 label: Dragon enchanted bolts to force hidden
@@ -3145,16 +2694,7 @@ apply (name:CONST_AMMO_DRAGON_BOLTS_E_LIST && value:<VAR_AMMO_DRAGON_BOLTS_E_MIN
     hidden = true;
 }
 
-#define CONST_AMMO_SPECIAL_BOLTS_LIST [ \
-  "Sunlight antler bolts", \
-  "Moonlight antler bolts", \
-  "Kebbit bolts", \
-  "Long kebbit bolts", \
-  "Broad bolts", \
-  "Amethyst broad bolts", \
-  "Barbed bolts", \
-  "Bone bolts", \
-]
+#define CONST_AMMO_SPECIAL_BOLTS_LIST [   "Sunlight antler bolts",   "Moonlight antler bolts",   "Kebbit bolts",   "Long kebbit bolts",   "Broad bolts",   "Amethyst broad bolts",   "Barbed bolts",   "Bone bolts", ]
 /*@ define:input:ammo
 type: enumlist
 label: Special bolts to force hidden
@@ -3253,6 +2793,7 @@ apply (name:CONST_AMMO_SPECIAL_BOLTS_LIST && quantity:==1 && VAR_AMMO_BACKPACK_R
 }
 
 
+
 /*@ define:module:runes
 ---
 name: Runes
@@ -3261,30 +2802,7 @@ description: |
   Quantity thresholds, filters, and custom styling for runes.
 */
 
-#define CONST_RUNE_NAMES [ \
-  "Air rune", \
-  "Mind rune", \
-  "Water rune", \
-  "Earth rune", \
-  "Fire rune", \
-  "Body rune", \
-  "Cosmic rune", \
-  "Chaos rune", \
-  "Nature rune", \
-  "Law rune", \
-  "Death rune", \
-  "Sunfire rune", \
-  "Astral rune", \
-  "Blood rune", \
-  "Soul rune", \
-  "Wrath rune", \
-  "Mist rune", \
-  "Dust rune", \
-  "Mud rune", \
-  "Smoke rune", \
-  "Steam rune", \
-  "Lava rune", \
-]
+#define CONST_RUNE_NAMES [   "Air rune",   "Mind rune",   "Water rune",   "Earth rune",   "Fire rune",   "Body rune",   "Cosmic rune",   "Chaos rune",   "Nature rune",   "Law rune",   "Death rune",   "Sunfire rune",   "Astral rune",   "Blood rune",   "Soul rune",   "Wrath rune",   "Mist rune",   "Dust rune",   "Mud rune",   "Smoke rune",   "Steam rune",   "Lava rune", ]
 
 /*@ define:input:runes
 type: enumlist
@@ -3815,6 +3333,7 @@ apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:logs
 ---
 name: Logs
@@ -4184,6 +3703,7 @@ apply (name:"Blisterwood logs" && quantity:<VAR_BLISTERWOOD_LOGS_MIN_QUANTITY) {
     hidden = true;
 }
 
+
 /*@ define:module:ores
 ---
 name: Ores
@@ -4510,6 +4030,7 @@ apply (name:"runite ore" && quantity:<VAR_LOVAKITE_ORE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:gems
 ---
 name: Gems
@@ -4706,104 +4227,69 @@ apply (name:VAR_GEMS_HIDE) {
     hidden = true;
 }
 
-apply (name:["Uncut sapphire", \
-  "Sapphire", \
-]) {
+apply (name:["Uncut sapphire",   "Sapphire", ]) {
     VAR_SAPPHIRE_CUSTOMSTYLE 
 }
-apply (name:["Uncut sapphire", \
-  "Sapphire", \
-] && quantity:<VAR_SAPPHIRE_MIN_QUANTITY) {
+apply (name:["Uncut sapphire",   "Sapphire", ] && quantity:<VAR_SAPPHIRE_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut emerald", \
-  "Emerald", \
-]) {
+apply (name:["Uncut emerald",   "Emerald", ]) {
     VAR_EMERALD_CUSTOMSTYLE 
 }
-apply (name:["Uncut emerald", \
-  "Emerald", \
-] && quantity:<VAR_EMERALD_MIN_QUANTITY) {
+apply (name:["Uncut emerald",   "Emerald", ] && quantity:<VAR_EMERALD_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut ruby", \
-  "Ruby", \
-]) {
+apply (name:["Uncut ruby",   "Ruby", ]) {
     VAR_RUBY_CUSTOMSTYLE 
 }
-apply (name:["Uncut ruby", \
-  "Ruby", \
-] && quantity:<VAR_RUBY_MIN_QUANTITY) {
+apply (name:["Uncut ruby",   "Ruby", ] && quantity:<VAR_RUBY_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut diamond", \
-  "Diamond", \
-]) {
+apply (name:["Uncut diamond",   "Diamond", ]) {
     VAR_DIAMOND_CUSTOMSTYLE 
 }
-apply (name:["Uncut diamond", \
-  "Diamond", \
-] && quantity:<VAR_DIAMOND_MIN_QUANTITY) {
+apply (name:["Uncut diamond",   "Diamond", ] && quantity:<VAR_DIAMOND_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut opal", \
-  "Opal", \
-]) {
+apply (name:["Uncut opal",   "Opal", ]) {
     VAR_OPAL_CUSTOMSTYLE 
 }
-apply (name:["Uncut opal", \
-  "Opal", \
-] && quantity:<VAR_OPAL_MIN_QUANTITY) {
+apply (name:["Uncut opal",   "Opal", ] && quantity:<VAR_OPAL_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut jade", \
-  "Jade", \
-]) {
+apply (name:["Uncut jade",   "Jade", ]) {
     VAR_JADE_CUSTOMSTYLE 
 }
-apply (name:["Uncut jade", \
-  "Jade", \
-] && quantity:<VAR_JADE_MIN_QUANTITY) {
+apply (name:["Uncut jade",   "Jade", ] && quantity:<VAR_JADE_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut red topaz", \
-  "Red topaz", \
-]) {
+apply (name:["Uncut red topaz",   "Red topaz", ]) {
     VAR_RED_TOPAZ_CUSTOMSTYLE 
 }
- apply (name:["Uncut red topaz", \
-  "Red topaz", \
-] && quantity:<VAR_RED_TOPAZ_MIN_QUANTITY) {
+ apply (name:["Uncut red topaz",   "Red topaz", ] && quantity:<VAR_RED_TOPAZ_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut dragonstone", \
-  "Dragonstone", \
-]) {
+apply (name:["Uncut dragonstone",   "Dragonstone", ]) {
     VAR_DRAGONSTONE_CUSTOMSTYLE 
 }
-apply (name:["Uncut dragonstone", \
-  "Dragonstone", \
-] && quantity:<VAR_DRAGONSTONE_MIN_QUANTITY) {
+apply (name:["Uncut dragonstone",   "Dragonstone", ] && quantity:<VAR_DRAGONSTONE_MIN_QUANTITY) {
     hidden = true;
 }
 
-apply (name:["Uncut onyx", \
-  "Onyx", \
-]) {
+apply (name:["Uncut onyx",   "Onyx", ]) {
     VAR_ONYX_CUSTOMSTYLE 
 }
-apply (name:["Uncut onyx", \
-  "Onyx", \
-] && quantity:<VAR_ONYX_MIN_QUANTITY) {
+apply (name:["Uncut onyx",   "Onyx", ] && quantity:<VAR_ONYX_MIN_QUANTITY) {
     hidden = true;
 }
+
 
 
 
@@ -5180,6 +4666,7 @@ apply (name:"'Perfect' gold bar" && quantity:<VAR_PERFECT_GOLD_BAR_MIN_QUANTITY)
 }
 
 
+
 /*@ define:module:herbs
 ---
 name: Herbs
@@ -5188,38 +4675,7 @@ description: |
   Provides herb filters, quantity filters per herb, and custom styling for each herb. By default, this gives each herb unique styling.
 */
 
-#define CONST_ALL_HERBS [ \
-  "*guam leaf", \
-  "*marrentill", \
-  "*tarromin", \
-  "*harralander", \
-  "*ranarr weed", \
-  "*toadflax", \
-  "*irit leaf", \
-  "*avantoe", \
-  "*kwuarm", \
-  "*huasca", \
-  "*snapdragon", \
-  "*cadantine", \
-  "*lantadyme", \
-  "*dwarf weed", \
-  "*torstol", \
-  "Guam seed", \
-  "Marrentill seed", \
-  "Tarromin seed", \
-  "Harralander seed", \
-  "Ranarr seed", \
-  "Toadflax seed", \
-  "Irit seed", \
-  "Avantoe seed", \
-  "Kwuarm seed", \
-  "Snapdragon seed", \
-  "Huasca seed", \
-  "Cadantine seed", \
-  "Lantadyme seed", \
-  "Dwarf weed seed", \
-  "Torstol seed", \
-]
+#define CONST_ALL_HERBS [   "*guam leaf",   "*marrentill",   "*tarromin",   "*harralander",   "*ranarr weed",   "*toadflax",   "*irit leaf",   "*avantoe",   "*kwuarm",   "*huasca",   "*snapdragon",   "*cadantine",   "*lantadyme",   "*dwarf weed",   "*torstol",   "Guam seed",   "Marrentill seed",   "Tarromin seed",   "Harralander seed",   "Ranarr seed",   "Toadflax seed",   "Irit seed",   "Avantoe seed",   "Kwuarm seed",   "Snapdragon seed",   "Huasca seed",   "Cadantine seed",   "Lantadyme seed",   "Dwarf weed seed",   "Torstol seed", ]
 
 
 
@@ -6295,6 +5751,7 @@ apply (name:"Torstol seed" && quantity:<VAR_SEEDS_TORSTOL_MIN_QUANTITY) {
     hidden = true;
 }
 
+
 /*@ define:module:potions
 ---
 name: Potions
@@ -7253,6 +6710,7 @@ apply (name:"Extended super antifire(*") {
 
 
 
+
 /*@ define:module:food
 ---
 name: Food
@@ -7261,46 +6719,9 @@ description: |
   This module provides filters based on food groups with some sane defaults. It also provides styling options available for every food group that has a filter. This can be done at the group level or on a food-by-food basis. A few popular foods have been given custom styling out of the box.
 */
 
-#define CONST_HUNTER_FOODS_LIST [ \
-  "Cooked wild kebbit", \
-  "Cooked larupia", \
-  "Cooked barb-tailed kebbit", \
-  "Cooked graahk", \
-  "Cooked kyatt", \
-  "Cooked pyre fox", \
-  "Cooked sunlight antelope", \
-  "Cooked dashing kebbit", \
-  "Cooked moonlight antelope", \
-]
+#define CONST_HUNTER_FOODS_LIST [   "Cooked wild kebbit",   "Cooked larupia",   "Cooked barb-tailed kebbit",   "Cooked graahk",   "Cooked kyatt",   "Cooked pyre fox",   "Cooked sunlight antelope",   "Cooked dashing kebbit",   "Cooked moonlight antelope", ]
 
-#define CONST_FISH_FOODS_LIST [ \
-  "Shrimp", \
-  "Sardine", \
-  "Karambwanji", \
-  "Herring", \
-  "Anchovies", \
-  "Mackerel", \
-  "Trout", \
-  "Cod", \
-  "Pike", \
-  "Slimy eel", \
-  "Salmon", \
-  "Tuna", \
-  "Rainbow fish", \
-  "Cave eel", \
-  "Lobster", \
-  "Bass", \
-  "Swordfish", \
-  "Lava eel", \
-  "Monkfish", \
-  "Cooked karambwan", \
-  "Shark", \
-  "Sea turtle", \
-  "Manta ray", \
-  "Anglerfish", \
-  "Dark crab", \
-  "Summer pie", \
-]
+#define CONST_FISH_FOODS_LIST [   "Shrimp",   "Sardine",   "Karambwanji",   "Herring",   "Anchovies",   "Mackerel",   "Trout",   "Cod",   "Pike",   "Slimy eel",   "Salmon",   "Tuna",   "Rainbow fish",   "Cave eel",   "Lobster",   "Bass",   "Swordfish",   "Lava eel",   "Monkfish",   "Cooked karambwan",   "Shark",   "Sea turtle",   "Manta ray",   "Anglerfish",   "Dark crab",   "Summer pie", ]
 
 /*@ define:input:food
 type: enumlist
@@ -7415,7 +6836,7 @@ label: Hunter food style
 group: Food group style
 exampleItem: Cooked moonlight antelope
 */
-#define VAR_FOOD_HUNTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_FOOD_HUNTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7423,7 +6844,7 @@ label: Fish food default style
 group: Food group style
 exampleItem: Tuna
 */
-#define VAR_FOOD_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_FOOD_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7431,7 +6852,7 @@ label: Shrimp custom style
 group: Food style
 exampleItem: Shrimp
 */
-#define VAR_SHRIMP_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SHRIMP_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7439,7 +6860,7 @@ label: Sardine custom style
 group: Food style
 exampleItem: Sardine
 */
-#define VAR_SARDINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SARDINE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7447,7 +6868,7 @@ label: Karambwanji custom style
 group: Food style
 exampleItem: Karambwanji
 */
-#define VAR_KARAMBWANJI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_KARAMBWANJI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7455,7 +6876,7 @@ label: Herring custom style
 group: Food style
 exampleItem: Herring
 */
-#define VAR_HERRING_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_HERRING_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7463,7 +6884,7 @@ label: Anchovies custom style
 group: Food style
 exampleItem: Anchovies
 */
-#define VAR_ANCHOVIES_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_ANCHOVIES_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7471,7 +6892,7 @@ label: Mackerel custom style
 group: Food style
 exampleItem: Mackerel
 */
-#define VAR_MACKEREL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_MACKEREL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7479,7 +6900,7 @@ label: Trout custom style
 group: Food style
 exampleItem: Trout
 */
-#define VAR_TROUT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_TROUT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7487,7 +6908,7 @@ label: Cod custom style
 group: Food style
 exampleItem: Cod
 */
-#define VAR_COD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_COD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7495,7 +6916,7 @@ label: Pike custom style
 group: Food style
 exampleItem: Pike
 */
-#define VAR_PIKE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_PIKE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7503,7 +6924,7 @@ label: Slimy eel custom style
 group: Food style
 exampleItem: Slimy eel
 */
-#define VAR_SLIMY_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SLIMY_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7511,7 +6932,7 @@ label: Salmon custom style
 group: Food style
 exampleItem: Salmon
 */
-#define VAR_SALMON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SALMON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7519,7 +6940,7 @@ label: Tuna custom style
 group: Food style
 exampleItem: Tuna
 */
-#define VAR_TUNA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_TUNA_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7527,7 +6948,7 @@ label: Rainbow fish custom style
 group: Food style
 exampleItem: Rainbow fish
 */
-#define VAR_RAINBOW_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_RAINBOW_FISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7535,7 +6956,7 @@ label: Cave eel custom style
 group: Food style
 exampleItem: Cave eel
 */
-#define VAR_CAVE_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_CAVE_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7543,7 +6964,7 @@ label: Lobster custom style
 group: Food style
 exampleItem: Lobster
 */
-#define VAR_LOBSTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_LOBSTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7551,7 +6972,7 @@ label: Bass custom style
 group: Food style
 exampleItem: Bass
 */
-#define VAR_BASS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_BASS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7559,7 +6980,7 @@ label: Swordfish custom style
 group: Food style
 exampleItem: Swordfish
 */
-#define VAR_SWORDFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SWORDFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7567,7 +6988,7 @@ label: Lava eel custom style
 group: Food style
 exampleItem: Lava eel
 */
-#define VAR_LAVA_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_LAVA_EEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7575,7 +6996,7 @@ label: Monkfish custom style
 group: Food style
 exampleItem: Monkfish
 */
-#define VAR_MONKFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_MONKFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7591,7 +7012,7 @@ label: Shark custom style
 group: Food style
 exampleItem: Shark
 */
-#define VAR_SHARK_CUSTOMSTYLE textColor textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_SHARK_CUSTOMSTYLE backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7599,7 +7020,7 @@ label: Sea turtle custom style
 group: Food style
 exampleItem: Sea turtle
 */
-#define VAR_SEA_TURTLE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4"; 
+#define VAR_SEA_TURTLE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
