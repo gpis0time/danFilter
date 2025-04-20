@@ -2,7 +2,8 @@
 name: __migration_header__
 hidden: true
 */
-meta { name = "bozo iron filter"; description = "undefined"; }
+meta { name = "bozo iron filter (updated: 20/04/2025)"; description = "undefined"; }
+
 
 
 /*@ define:module:global_defaults
@@ -168,6 +169,7 @@ apply (name:VAR_GLOBAL_HIDE) {
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
 }
+
 
 
 
@@ -434,6 +436,7 @@ apply (value:>=VAR_VALUES_TIER_4_VALUE && VAR_VALUES_TIER_4_SOUND) {
 apply (name:VAR_VALUES_TIER_4_SHOW && VAR_VALUES_TIER_4_SOUND) {
     sound = VAR_VALUES_TIER_4_SOUND_ID;
 }
+
 
 
 /*@ define:module:currency
@@ -1243,6 +1246,7 @@ apply (name:"Warrior guild token" && quantity:<VAR_WARRIOR_GUILD_TOKEN_MIN_QUANT
 }
 
 
+
 /*@ define:module:remains
 ---
 name: Remains
@@ -1385,6 +1389,7 @@ apply (name:VAR_ENSOULED_HEADS_HIDE) {
 apply (name:CONST_ENSOULED_HEAD_LIST && value:<VAR_REMAINS_MINIMUM_VALUE) {
     hidden = true;
 }
+
 
 
 
@@ -1865,6 +1870,7 @@ apply (area:CONST_COX_AREA && name:"Water-filled gourd vial") {
 
 
 
+
 /*@ define:module:theatre_of_blood
 ---
 name: Theatre of Blood
@@ -1899,6 +1905,7 @@ apply (name:"Dawnbringer") {
 apply (name:"Salve amulet (e)") {
     VAR_TOB_SALVE_CUSTOMSTYLE 
 }
+
 
 
 
@@ -2232,6 +2239,7 @@ apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
 apply (area:CONST_TOA_AREA && name:"Tears of Elidinis (*") {
     VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE
 }
+
 
 
 /*@ define:module:ammo
@@ -2794,6 +2802,7 @@ apply (name:CONST_AMMO_SPECIAL_BOLTS_LIST && quantity:==1 && VAR_AMMO_BACKPACK_R
 
 
 
+
 /*@ define:module:runes
 ---
 name: Runes
@@ -3334,6 +3343,7 @@ apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:logs
 ---
 name: Logs
@@ -3704,6 +3714,7 @@ apply (name:"Blisterwood logs" && quantity:<VAR_BLISTERWOOD_LOGS_MIN_QUANTITY) {
 }
 
 
+
 /*@ define:module:ores
 ---
 name: Ores
@@ -4031,6 +4042,7 @@ apply (name:"runite ore" && quantity:<VAR_LOVAKITE_ORE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:gems
 ---
 name: Gems
@@ -4289,6 +4301,7 @@ apply (name:["Uncut onyx",   "Onyx", ]) {
 apply (name:["Uncut onyx",   "Onyx", ] && quantity:<VAR_ONYX_MIN_QUANTITY) {
     hidden = true;
 }
+
 
 
 
@@ -4664,6 +4677,7 @@ apply (name:"'Perfect' gold bar") {
 apply (name:"'Perfect' gold bar" && quantity:<VAR_PERFECT_GOLD_BAR_MIN_QUANTITY) {
     hidden = true;
 }
+
 
 
 
@@ -5752,6 +5766,7 @@ apply (name:"Torstol seed" && quantity:<VAR_SEEDS_TORSTOL_MIN_QUANTITY) {
 }
 
 
+
 /*@ define:module:potions
 ---
 name: Potions
@@ -6711,6 +6726,7 @@ apply (name:"Extended super antifire(*") {
 
 
 
+
 /*@ define:module:food
 ---
 name: Food
@@ -7064,7 +7080,7 @@ label: Blighted karambwan custom style
 group: Food style
 exampleItem: Blighted karambwan
 */
-#define VAR_Blighted_karambwan_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_BLIGHTED_KARAMBWAN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7072,7 +7088,7 @@ label: Blighted anglerfish custom style
 group: Food style
 exampleItem: Blighted anglerfish
 */
-#define VAR_Blighted_anglerfish_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
@@ -7167,9 +7183,15 @@ apply (name:"Manta ray") {
 apply (name:"Anglerfish") {
     VAR_ANGLERFISH_CUSTOMSTYLE 
 }
+apply (name:"Dark crab") {
+    VAR_DARK_CRAB_CUSTOMSTYLE 
+}
+apply (name:"Dark crab") {
+    VAR_DARK_CRAB_CUSTOMSTYLE 
+}
 apply (name:"Blighted karambwan") {
-    VAR_Blighted_karambwan_CUSTOMSTYLE 
+    VAR_BLIGHTED_KARAMBWAN_CUSTOMSTYLE 
 }
 apply (name:"Blighted anglerfish") {
-    VAR_Blighted_anglerfish_CUSTOMSTYLE 
+    VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE 
 }
