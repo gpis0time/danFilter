@@ -7064,7 +7064,7 @@ label: Blighted karambwan custom style
 group: Food style
 exampleItem: Blighted karambwan
 */
-#define VAR_BLIGHTED_KARAMbWAN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_Blighted_karambwan_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7072,7 +7072,7 @@ label: Blighted anglerfish custom style
 group: Food style
 exampleItem: Blighted anglerfish
 */
-#define VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_Blighted_anglerfish_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
@@ -7168,8 +7168,8 @@ apply (name:"Anglerfish") {
     VAR_ANGLERFISH_CUSTOMSTYLE 
 }
 apply (name:"Blighted karambwan") {
-    VAR_BLIGHTED_KARAMbWAN_CUSTOMSTYLE 
+    VAR_Blighted_karambwan_CUSTOMSTYLE 
 }
-apply (name:"Dark crab") {
-    VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE 
+apply (name:"Blighted anglerfish") {
+    VAR_Blighted_anglerfish_CUSTOMSTYLE 
 }
