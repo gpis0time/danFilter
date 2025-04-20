@@ -2,7 +2,7 @@
 name: __migration_header__
 hidden: true
 */
-meta { name = "bozo iron filter (updated: 20/04/2025)"; description = "undefined"; }
+meta { name = "bozo iron filter"; description = "undefined"; }
 
 
 /*@ define:module:global_defaults
@@ -6721,7 +6721,7 @@ description: |
 
 #define CONST_HUNTER_FOODS_LIST [   "Cooked wild kebbit",   "Cooked larupia",   "Cooked barb-tailed kebbit",   "Cooked graahk",   "Cooked kyatt",   "Cooked pyre fox",   "Cooked sunlight antelope",   "Cooked dashing kebbit",   "Cooked moonlight antelope", ]
 
-#define CONST_FISH_FOODS_LIST [   "Shrimp",   "Sardine",   "Karambwanji",   "Herring",   "Anchovies",   "Mackerel",   "Trout",   "Cod",   "Pike",   "Slimy eel",   "Salmon",   "Tuna",   "Rainbow fish",   "Cave eel",   "Lobster",   "Bass",   "Swordfish",   "Lava eel",   "Monkfish",   "Cooked karambwan",   "Shark",   "Sea turtle",   "Manta ray",   "Anglerfish",   "Dark crab",   "Summer pie", ]
+#define CONST_FISH_FOODS_LIST [   "Shrimp",   "Sardine",   "Karambwanji",   "Herring",   "Anchovies",   "Mackerel",   "Trout",   "Cod",   "Pike",   "Slimy eel",   "Salmon",   "Tuna",   "Rainbow fish",   "Cave eel",   "Lobster",   "Bass",   "Swordfish",   "Lava eel",   "Monkfish",   "Cooked karambwan",   "Shark",   "Sea turtle",   "Manta ray",   "Anglerfish",   "Dark crab",   "Summer pie",   "Blighted karambwan",   "Blighted anglerfish", ]
 
 /*@ define:input:food
 type: enumlist
@@ -6771,7 +6771,9 @@ enum: [
   "Manta ray",
   "Anglerfish",
   "Dark crab",
-  "Summer pie"
+  "Summer pie", \
+  "Blighted karambwan", \
+  "Blighted anglerfish", \
 ]
 */
 #define VAR_FOOD_FISH_FOODS_HIDE []
@@ -6824,7 +6826,9 @@ enum: [
   "Manta ray",
   "Anglerfish",
   "Dark crab",
-  "Summer pie"
+  "Summer pie", \
+  "Blighted karambwan", \
+  "Blighted anglerfish", \
 ]
 */
 #define VAR_FOOD_FISH_FOODS_SHOW []
@@ -7051,6 +7055,22 @@ type: style
 label: Summer pie custom style
 group: Food style
 exampleItem: Summer pie
+*/
+#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+
+/*@ define:input:food
+type: style
+label: Summer pie custom style
+group: Food style
+exampleItem: Summer pie
+*/
+#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+
+/*@ define:input:food
+type: style
+label: Blighted anglerfish custom style
+group: Food style
+exampleItem: Blighted anglerfish
 */
 #define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
