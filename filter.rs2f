@@ -7060,11 +7060,11 @@ exampleItem: Summer pie
 
 /*@ define:input:food
 type: style
-label: Summer pie custom style
+label: Blighted karambwan custom style
 group: Food style
-exampleItem: Summer pie
+exampleItem: Blighted karambwan
 */
-#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_BLIGHTED_KARAMbWAN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 /*@ define:input:food
 type: style
@@ -7072,7 +7072,7 @@ label: Blighted anglerfish custom style
 group: Food style
 exampleItem: Blighted anglerfish
 */
-#define VAR_SUMMER_PIE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
+#define VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50dad9d4";borderColor = "#FFdad9d4";textAccentColor = "#FF000000";menuTextColor = "#FFdad9d4";
 
 
 apply (name:VAR_FOOD_HUNTER_FOODS_HIDE) {
@@ -7167,9 +7167,9 @@ apply (name:"Manta ray") {
 apply (name:"Anglerfish") {
     VAR_ANGLERFISH_CUSTOMSTYLE 
 }
-apply (name:"Dark crab") {
-    VAR_DARK_CRAB_CUSTOMSTYLE 
+apply (name:"Blighted karambwan") {
+    VAR_BLIGHTED_KARAMbWAN_CUSTOMSTYLE 
 }
 apply (name:"Dark crab") {
-    VAR_SUMMER_PIE_CUSTOMSTYLE 
+    VAR_BLIGHTED_ANGLERFISH_CUSTOMSTYLE 
 }
