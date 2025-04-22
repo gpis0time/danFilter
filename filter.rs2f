@@ -6,6 +6,7 @@ meta { name = "bozo iron filter"; description = "undefined"; }
 
 
 
+
 /*@ define:module:global_defaults
 ---
 name: Global defaults
@@ -13,6 +14,7 @@ subtitle: The first layer of styling and filtering
 description: |
   This provides some default styling options to apply to all items, unless overridden by a module below. This also provides an option to explicitly show and hide specific items. This list however can be overridden in a below modules as well.
 */
+#define BABA_LOCATION [3789, 5397, 0, 3827, 5419, 0]
 
 /*@ define:input:global_defaults
 type: stringlist
@@ -131,7 +133,7 @@ apply (tradeable:false && VAR_GLOBAL_SHOW_UNTRADEABLE_VALUE) {
 apply (ownership:OWNERSHIP_NONE && VAR_GLOBAL_HIDE_SPAWN_ITEMS) {
     hidden = true;
 }
-apply (ownership:OWNERSHIP_OTHER && VAR_GLOBAL_HIDE_OTHER_PLAYERS_ITEMS) {
+apply (ownership:OWNERSHIP_OTHER && VAR_GLOBAL_HIDE_OTHER_PLAYERS_ITEMS && !area:BABA_LOCATION) {
     hidden = true;
 }
 
@@ -169,6 +171,7 @@ apply (name:VAR_GLOBAL_HIDE) {
 apply (name:VAR_GLOBAL_SHOW) {
     hidden = false;
 }
+
 
 
 
@@ -436,6 +439,7 @@ apply (value:>=VAR_VALUES_TIER_4_VALUE && VAR_VALUES_TIER_4_SOUND) {
 apply (name:VAR_VALUES_TIER_4_SHOW && VAR_VALUES_TIER_4_SOUND) {
     sound = VAR_VALUES_TIER_4_SOUND_ID;
 }
+
 
 
 
@@ -1247,6 +1251,7 @@ apply (name:"Warrior guild token" && quantity:<VAR_WARRIOR_GUILD_TOKEN_MIN_QUANT
 
 
 
+
 /*@ define:module:remains
 ---
 name: Remains
@@ -1393,6 +1398,8 @@ apply (name:CONST_ENSOULED_HEAD_LIST && value:<VAR_REMAINS_MINIMUM_VALUE) {
 
 
 
+
+
 /*@ define:module:chambers_of_xeric
 ---
 name: Chambers of Xeric
@@ -1402,6 +1409,22 @@ description: |
 */
 
 #define CONST_COX_AREA [3200, 5120, 0, 3391, 5759, 2]
+#define CONST_COX_OLM_AREA [3211, 5703, 0, 3254, 5761, 0]
+#define CONST_COX_VASA_AREA [3263, 5279, 0, 3360, 5312, 0]
+#define CONST_COX_SHAMANS_AREA [3263, 5247, 0, 3362, 5279, 0]
+#define CONST_COX_MUTADILE_AREA [3263, 5309, 1, 3360, 5344, 1]
+#define CONST_COX_TEKTON_AREA [3263, 5278, 1, 3361, 5311, 1]
+#define CONST_COX_TIGHTROPE_AREA [3263, 5341, 1, 3361, 5375, 1]
+#define CONST_COX_ICE_DEMON_AREA [3263, 5341, 0, 3361, 5375, 0]
+#define CONST_COX_THIEVING_AREA [3263, 5374, 0, 3360, 5408, 0]
+
+
+/*@ define:input:chambers_of_xeric
+type: stringlist
+label: Items to exempt from ownership filtering
+group: COX item filters
+*/
+#define VAR_COX_OWNERSHIP_EXEMPTION_ITEMS ["Elder*","Twisted*","Kodai*","Revitalisation*","Prayer enhance*","Xeric's aid*","Antipoison*","Overload*","Golpar seed","Buchu seed","Noxifer seed","Endarkened juice","Stinkhorn mushroom","Cicely","Mallignum root plank","Lockpick","Hammer"]
 
 /*@ define:input:chambers_of_xeric
 type: enumlist
@@ -1442,7 +1465,7 @@ enum: [
   }
 ]
 */
-#define VAR_COX_POTIONS_HIDE []
+#define VAR_COX_POTIONS_HIDE ["Elder*","Twisted*","Kodai*","Antipoison*"]
 
 /*@ define:input:chambers_of_xeric
 type: enumlist
@@ -1557,7 +1580,7 @@ enum: [
   "Rake"
 ]
 */
-#define VAR_COX_MISC_DROPS_HIDE ["Bones","Big bones","Fishing rod","Iron pickaxe","Iron axe","Butterfly net","Hammer","Tinderbox","Cave worms"]
+#define VAR_COX_MISC_DROPS_HIDE ["Bones","Big bones","Fishing rod","Iron pickaxe","Iron axe","Butterfly net","Tinderbox","Cave worms","Cavern grubs","Empty gourd vial","Water-filled gourd vial","Seed dipper","Rake","Spade"]
 
 
 /*@ define:input:chambers_of_xeric
@@ -1565,30 +1588,34 @@ type: style
 label: Elder potion custom style
 group: COX potion style
 exampleItem: Elder potion
+backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_ELDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50845B5C";borderColor = "#FF845B5C";textAccentColor = "#FF000000";menuTextColor = "#FF845B5C";
+#define VAR_COX_ELDER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50845B5C";borderColor = "#FF845B5C";textAccentColor = "#FF000000";menuTextColor = "#FF845B5C";hideOverlay = true;
 
 /*@ define:input:chambers_of_xeric
 type: style
 label: Twisted potion custom style
 group: COX potion style
 exampleItem: Twisted potion
+backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50657E69";borderColor = "#FF657E69";textAccentColor = "#FF000000";menuTextColor = "#FF657E69";
+#define VAR_COX_TWISTED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50657E69";borderColor = "#FF657E69";textAccentColor = "#FF000000";menuTextColor = "#FF657E69";hideOverlay = true;
 
 /*@ define:input:chambers_of_xeric
 type: style
 label: Kodai potion custom style
 group: COX potion style
 exampleItem: Kodai potion
+backgroundImage: Chambers of Xeric
 */
-#define VAR_COX_KODAI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507288A8";borderColor = "#FF7288A8";textAccentColor = "#FF000000";menuTextColor = "#FF7288A8";
+#define VAR_COX_KODAI_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507288A8";borderColor = "#FF7288A8";textAccentColor = "#FF000000";menuTextColor = "#FF7288A8";hideOverlay = true;
 
 /*@ define:input:chambers_of_xeric
 type: style
 label: Revitalisation potion custom style
 group: COX potion style
 exampleItem: Revitalisation potion
+backgroundImage: Chambers of Xeric
 */
 #define VAR_COX_REVITALISATION_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A56785";borderColor = "#FFA56785";textAccentColor = "#FF000000";menuTextColor = "#FFed89b5";
 
@@ -1597,6 +1624,7 @@ type: style
 label: Prayer enhance custom style
 group: COX potion style
 exampleItem: Prayer enhance
+backgroundImage: Chambers of Xeric
 */
 #define VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509257BA";borderColor = "#FF9257BA";textAccentColor = "#FF000000";menuTextColor = "#FF9257BA";
 
@@ -1605,6 +1633,7 @@ type: style
 label: Xeric's aid custom style
 group: COX potion style
 exampleItem: Xeric's aid
+backgroundImage: Chambers of Xeric
 */
 #define VAR_COX_XERICS_AID_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50AFAC73";borderColor = "#FFE7E6D5";textAccentColor = "#FF000000";menuTextColor = "#FFf7f84d";
 
@@ -1613,6 +1642,7 @@ type: style
 label: Antipoison custom style
 group: COX potion style
 exampleItem: Antipoison
+backgroundImage: Chambers of Xeric
 */
 #define VAR_COX_ANTIPOISON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A4D27E";borderColor = "#FFA4D27E";textAccentColor = "#FF000000";menuTextColor = "#FFA4D27E";
 
@@ -1621,6 +1651,7 @@ type: style
 label: Overload custom style
 group: COX potion style
 exampleItem: Overload
+backgroundImage: Chambers of Xeric
 */
 #define VAR_COX_OVERLOAD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50130F0F";borderColor = "#FF130F0F";textAccentColor = "#FF000000";menuTextColor = "#FF130F0F";
 
@@ -1629,6 +1660,7 @@ type: style
 label: Golpar seed custom style
 group: COX misc style
 exampleItem: Golpar seed
+backgroundImage: Chambers of Xeric
 */
 #define VAR_GOLPAR_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A6A1DE";borderColor = "#FFA6A1DE";textAccentColor = "#FF000000";menuTextColor = "#FFA6A1DE";
 
@@ -1637,6 +1669,7 @@ type: style
 label: Buchu seed custom style
 group: COX misc style
 exampleItem: Buchu seed
+backgroundImage: Chambers of Xeric
 */
 #define VAR_BUCHU_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50A5423C";borderColor = "#FFA5423C";textAccentColor = "#FF000000";menuTextColor = "#FFA5423C";
 
@@ -1645,6 +1678,7 @@ type: style
 label: Noxifer seed custom style
 group: COX misc style
 exampleItem: Noxifer seed
+backgroundImage: Chambers of Xeric
 */
 #define VAR_NOXIFER_SEED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#503E348F";borderColor = "#FF3E348F";textAccentColor = "#FF000000";menuTextColor = "#FF3E348F";
 
@@ -1653,6 +1687,7 @@ type: style
 label: Grimy golpar custom style
 group: COX misc style
 exampleItem: Grimy golpar
+backgroundImage: Chambers of Xeric
 */
 #define VAR_GRIMY_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50836138";borderColor = "#FF1AE4A6";textAccentColor = "#FF000000";menuTextColor = "#FF1AE4A6";
 
@@ -1661,6 +1696,7 @@ type: style
 label: Grimy buchu leaf custom style
 group: COX misc style
 exampleItem: Grimy buchu leaf
+backgroundImage: Chambers of Xeric
 */
 #define VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50856339";borderColor = "#FFD32C19";textAccentColor = "#FF000000";menuTextColor = "#FFD32C19";
 
@@ -1669,6 +1705,7 @@ type: style
 label: Grimy noxifer custom style
 group: COX misc style
 exampleItem: Grimy noxifer
+backgroundImage: Chambers of Xeric
 */
 #define VAR_GRIMY_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50805F38";borderColor = "#FFD3B4FC";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
 
@@ -1677,6 +1714,7 @@ type: style
 label: Golpar custom style
 group: COX misc style
 exampleItem: Golpar
+backgroundImage: Chambers of Xeric
 */
 #define VAR_GOLPAR_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505D4477";borderColor = "#FF1ADFA2";textAccentColor = "#FF000000";menuTextColor = "#FF1ADFA2";
 
@@ -1685,6 +1723,7 @@ type: style
 label: Buchu leaf custom style
 group: COX misc style
 exampleItem: Buchu leaf
+backgroundImage: Chambers of Xeric
 */
 #define VAR_BUCHU_LEAF_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505A4173";borderColor = "#FFD12C18";textAccentColor = "#FF000000";menuTextColor = "#FFD12C18";
 
@@ -1693,6 +1732,7 @@ type: style
 label: Noxifer custom style
 group: COX misc style
 exampleItem: Noxifer
+backgroundImage: Chambers of Xeric
 */
 #define VAR_NOXIFER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#505B4275";borderColor = "#FFD3B4FC";textAccentColor = "#FF000000";menuTextColor = "#FFD3B4FC";
 
@@ -1701,6 +1741,7 @@ type: style
 label: Endarkened juice custom style
 group: COX misc style
 exampleItem: Endarkened juice
+backgroundImage: Chambers of Xeric
 */
 #define VAR_ENDARKENED_JUICE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#507539e0";borderColor = "#FF7539e0";textAccentColor = "#FF000000";menuTextColor = "#FF7539e0";
 
@@ -1709,6 +1750,7 @@ type: style
 label: Stinkhorn mushroom custom style
 group: COX misc style
 exampleItem: Stinkhorn mushroom
+backgroundImage: Chambers of Xeric
 */
 #define VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#506d3532";borderColor = "#FF6d3532";textAccentColor = "#FF000000";menuTextColor = "#FF6d3532";
 
@@ -1717,6 +1759,7 @@ type: style
 label: Cicely custom style
 group: COX misc style
 exampleItem: Cicely
+backgroundImage: Chambers of Xeric
 */
 #define VAR_CICELY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50a48aa8";borderColor = "#FFa48aa8";textAccentColor = "#FF000000";menuTextColor = "#FFa48aa8";
 
@@ -1725,6 +1768,7 @@ type: style
 label: Mallignum root plank custom style
 group: COX misc style
 exampleItem: Mallignum root plank
+backgroundImage: Chambers of Xeric
 */
 #define VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50484320";borderColor = "#FF484320";textAccentColor = "#FF000000";menuTextColor = "#FFb2b099";
 
@@ -1733,6 +1777,7 @@ type: style
 label: Cavern grubs custom style
 group: COX misc style
 exampleItem: Cavern grubs
+backgroundImage: Chambers of Xeric
 */
 #define VAR_CAVERN_GRUBS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#509f7756";borderColor = "#FF9f7756";textAccentColor = "#FF000000";menuTextColor = "#FFcfbbaa";
 
@@ -1741,6 +1786,7 @@ type: style
 label: Empty gourd vial custom style
 group: COX misc style
 exampleItem: Empty gourd vial
+backgroundImage: Chambers of Xeric
 */
 #define VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50636165";borderColor = "#FFbeb8c2";textAccentColor = "#FF000000";menuTextColor = "#FFbeb8c2";
 
@@ -1749,8 +1795,127 @@ type: style
 label: Water-filled gourd vial custom style
 group: COX misc style
 exampleItem: Water-filled gourd vial
+backgroundImage: Chambers of Xeric
 */
 #define VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#50a7a8c0";borderColor = "#FFb8b2bc";textAccentColor = "#FF000000";menuTextColor = "#FFa7a8c0";
+
+
+apply (area:CONST_COX_AREA && name:VAR_COX_OWNERSHIP_EXEMPTION_ITEMS) {
+    hidden = false;
+}
+apply (area:CONST_COX_AREA && name:VAR_COX_FISH_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:VAR_COX_BATS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:VAR_COX_SEEDS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:VAR_COX_MISC_DROPS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["elder (-)*",   "elder potion*",   "elder (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["kodai (-)*",   "kodai potion*",   "kodai (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["prayer enhance (-)*",   "prayer enhance (4)",   "prayer enhance (3)",   "prayer enhance (2)",   "prayer enhance (1)",   "prayer enhance (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["xeric's aid (-)*",   "xeric's aid (4)",   "xeric's aid (3)",   "xeric's aid (2)",   "xeric's aid (1)",   "xeric's aid (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["antipoison (-)*",   "antipoison (4)",   "antipoison (3)",   "antipoison (2)",   "antipoison (1)",   "antipoison (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ] && name:VAR_COX_POTIONS_HIDE) {
+    hidden = true;
+}
+
+
+
+apply (area:CONST_COX_AREA && name:["elder (-)*",   "elder potion*",   "elder (+)*", ]) {
+    VAR_COX_ELDER_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["twisted (-)*",   "twisted potion*",   "twisted (+)*", ]) {
+    VAR_COX_TWISTED_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["kodai (-)*",   "kodai potion*",   "kodai (+)*", ]) {
+    VAR_COX_KODAI_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["revitalisation (-)*",   "revitalisation potion*",   "revitalisation (+)*", ]) {
+    VAR_COX_REVITALISATION_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["prayer enhance (-)*",   "prayer enhance (4)",   "prayer enhance (3)",   "prayer enhance (2)",   "prayer enhance (1)",   "prayer enhance (+)*", ]) {
+    VAR_COX_PRAYER_ENHANCE_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["xeric's aid (-)*",   "xeric's aid (4)",   "xeric's aid (3)",   "xeric's aid (2)",   "xeric's aid (1)",   "xeric's aid (+)*", ]) {
+    VAR_COX_XERICS_AID_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["antipoison (-)*",   "antipoison (4)",   "antipoison (3)",   "antipoison (2)",   "antipoison (1)",   "antipoison (+)*", ]) {
+    VAR_COX_ANTIPOISON_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:["overload (-)*",   "overload (4)",   "overload (3)",   "overload (2)",   "overload (1)",   "overload (+)*", ]) {
+    VAR_COX_OVERLOAD_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Golpar seed") {
+    VAR_GOLPAR_SEED_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Buchu seed") {
+    VAR_BUCHU_SEED_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Noxifer seed") {
+    VAR_NOXIFER_SEED_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Grimy golpar") {
+    VAR_GRIMY_GOLPAR_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Grimy buchu leaf") {
+    VAR_GRIMY_BUCHU_LEAF_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Grimy noxifer") {
+    VAR_GRIMY_NOXIFER_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"golpar") {
+    VAR_GOLPAR_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"buchu leaf") {
+    VAR_BUCHU_LEAF_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"noxifer") {
+    VAR_NOXIFER_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Endarkened juice") {
+    VAR_ENDARKENED_JUICE_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Stinkhorn mushroom") {
+    VAR_STINKHORN_MUSHROOM_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Cicely") {
+    VAR_CICELY_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Mallignum root plank") {
+    VAR_MALLIGNUM_ROOT_PLANK_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Cavern grubs") {
+    VAR_CAVERN_GRUBS_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Empty gourd vial") {
+    VAR_EMPTY_GOURD_VIAL_CUSTOMSTYLE 
+}
+apply (area:CONST_COX_AREA && name:"Water-filled gourd vial") {
+    VAR_WATER_FILLED_GOURD_VIAL_CUSTOMSTYLE 
+}
+
+
 
 
 
@@ -1871,6 +2036,7 @@ apply (area:CONST_COX_AREA && name:"Water-filled gourd vial") {
 
 
 
+
 /*@ define:module:theatre_of_blood
 ---
 name: Theatre of Blood
@@ -1905,6 +2071,7 @@ apply (name:"Dawnbringer") {
 apply (name:"Salve amulet (e)") {
     VAR_TOB_SALVE_CUSTOMSTYLE 
 }
+
 
 
 
@@ -2239,6 +2406,7 @@ apply (area:CONST_TOA_AREA && name:"Smelling salts (*") {
 apply (area:CONST_TOA_AREA && name:"Tears of Elidinis (*") {
     VAR_TEARS_OF_ELIDINIS_CUSTOMSTYLE
 }
+
 
 
 
@@ -2803,6 +2971,7 @@ apply (name:CONST_AMMO_SPECIAL_BOLTS_LIST && quantity:==1 && VAR_AMMO_BACKPACK_R
 
 
 
+
 /*@ define:module:runes
 ---
 name: Runes
@@ -3344,6 +3513,7 @@ apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:logs
 ---
 name: Logs
@@ -3715,6 +3885,7 @@ apply (name:"Blisterwood logs" && quantity:<VAR_BLISTERWOOD_LOGS_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:ores
 ---
 name: Ores
@@ -4043,6 +4214,7 @@ apply (name:"runite ore" && quantity:<VAR_LOVAKITE_ORE_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:gems
 ---
 name: Gems
@@ -4301,6 +4473,7 @@ apply (name:["Uncut onyx",   "Onyx", ]) {
 apply (name:["Uncut onyx",   "Onyx", ] && quantity:<VAR_ONYX_MIN_QUANTITY) {
     hidden = true;
 }
+
 
 
 
@@ -4677,6 +4850,7 @@ apply (name:"'Perfect' gold bar") {
 apply (name:"'Perfect' gold bar" && quantity:<VAR_PERFECT_GOLD_BAR_MIN_QUANTITY) {
     hidden = true;
 }
+
 
 
 
@@ -5767,6 +5941,7 @@ apply (name:"Torstol seed" && quantity:<VAR_SEEDS_TORSTOL_MIN_QUANTITY) {
 
 
 
+
 /*@ define:module:potions
 ---
 name: Potions
@@ -6721,6 +6896,7 @@ apply (name:"Divine super combat potion(*") {
 apply (name:"Extended super antifire(*") {
     VAR_EXTENDED_SUPER_ANTIFIRE_CUSTOMSTYLE 
 }
+
 
 
 
